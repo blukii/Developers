@@ -8,7 +8,7 @@ Furthermore this library lets you retrieve location based information that is as
 
 To learn about the usage of the library classes please find the [library's javadoc documentation](https://schneiderma.github.io/blukii_developer/android/blukii-info-sdk/javadoc/).
 
-We recommend you to start with the documentation page of class **BlukiiClient** where you can find some sample code fragments.
+We recommend you to start with the documentation page of class [BlukiiClient](https://schneiderma.github.io/blukii_developer/android/blukii-info-sdk/javadoc/com/blukii/infosdk/BlukiiClient.html) where you can find some sample code fragments.
 
 For further question please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com).
 
@@ -26,7 +26,7 @@ The blukii-info-sdk can be easily integrated by adding the following dependency 
 ```
  dependencies {
     ...
-    compile 'com.blukii:blukii-info-sdk:1.0.0'
+    compile 'com.blukii:blukii-info-sdk:1.0.1'
     ...
  }
 ```
