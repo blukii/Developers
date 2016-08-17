@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+            <img src="../img/header_logo.png" height="60" align="left" />
+			
+			<h1 id="library-title">
+				<a href="../index.html">blukiiSK Framework </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Schneider Schreibgeräte GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/SKManagerDidConnectToSmartKey:">- SKManagerDidConnectToSmartKey:</option>
+		
+		<option value="//api/name/SKManagerDidDetectModifiedSmartKey:">- SKManagerDidDetectModifiedSmartKey:</option>
+		
+		<option value="//api/name/SKManagerDidDisconnectFromSmartKey:">- SKManagerDidDisconnectFromSmartKey:</option>
+		
+		<option value="//api/name/SKManagerDidFindLinkedSmartKey:">- SKManagerDidFindLinkedSmartKey:</option>
+		
+		<option value="//api/name/SKManagerDidFinishConfiguration:">- SKManagerDidFinishConfiguration:</option>
+		
+		<option value="//api/name/SKManagerDidReceiveSmartKeys:">- SKManagerDidReceiveSmartKeys:</option>
+		
+		<option value="//api/name/SKManagerDidResetSecuritySettings">- SKManagerDidResetSecuritySettings</option>
+		
+		<option value="//api/name/SKManagerDidResetSmartKeyConfig:">- SKManagerDidResetSmartKeyConfig:</option>
+		
+		<option value="//api/name/SKManagerDidUpdateAuthenticationState:">- SKManagerDidUpdateAuthenticationState:</option>
+		
+		<option value="//api/name/SKManagerDidUpdateBatteryLevel:">- SKManagerDidUpdateBatteryLevel:</option>
+		
+		<option value="//api/name/SKManagerDidUpdateConfigState:">- SKManagerDidUpdateConfigState:</option>
+		
+		<option value="//api/name/SKManagerDidUpdateState:">- SKManagerDidUpdateState:</option>
+		
+		<option value="//api/name/SKManagerLinkedSmartKeyReady">- SKManagerLinkedSmartKeyReady</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKManagerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The SKManagerDelegate protocol defines methods that a delegate of the global
+available <a href="../Classes/SKManager.html">SKManager</a> object can optionally implement to handle the
+communication with a blukii<a href="../Classes/SmartKey.html">SmartKey</a> and some other generall processes of
+the <a href="../Classes/SKManager.html">SKManager</a>.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Generall" name="task_Generall"></a>
+						<h2 class="task-title">Generall</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SKManagerDidUpdateState:" title="SKManagerDidUpdateState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidUpdateState:">&ndash;&nbsp;SKManagerDidUpdateState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked due to the change of the iOS bluetooth availability.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidUpdateState:(SKManagerStates)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>The new state of the <a href="../Classes/SKManager.html">SKManager</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerDidResetSecuritySettings" title="SKManagerDidResetSecuritySettings"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidResetSecuritySettings">&ndash;&nbsp;SKManagerDidResetSecuritySettings</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked due to the execution of a reset security settings request or if any
+internal security dependent operation has failed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidResetSecuritySettings</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/resetSecuritySettings">[SKManager resetSecuritySettings]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Searching for SmartKeys" name="task_Searching for SmartKeys"></a>
+						<h2 class="task-title">Searching for SmartKeys</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SKManagerDidReceiveSmartKeys:" title="SKManagerDidReceiveSmartKeys:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidReceiveSmartKeys:">&ndash;&nbsp;SKManagerDidReceiveSmartKeys:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a <a href="../Classes/SmartKey.html">SmartKey</a> search request from the <a href="../Classes/SKManager.html">SKManager</a> has been completed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidReceiveSmartKeys:(NSArray *)<em>keys</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>keys</code></th>
+						<td><p>Array with the located SmartKey&rsquo;s. They are represented as
+objects from the <a href="../Classes/SmartKey.html">SmartKey</a> class. If no <a href="../Classes/SmartKey.html">SmartKey</a> has been located during the
+last request interval the array will be empty.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The <a href="../Classes/SKManager.html">SKManager</a> invokes this method when the related request
+interval is done. If a <a href="../Classes/SmartKey.html">SmartKey</a> is already linked as personal <a href="../Classes/SmartKey.html">SmartKey</a> due
+to the call of link<a href="../Classes/SmartKey.html">SmartKey</a>:, it will no longer be available in the keys
+array.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/requestSmartKeysWithTimeout:repeated:">[SKManager requestSmartKeysWithTimeout:repeated:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/linkSmartKey:">[SKManager linkSmartKey:]</a>:</p></code></li>
+					
+					<li><code><p>SKManagerDidFoundLinked<a href="../Classes/SmartKey.html">SmartKey</a>:</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerDidFindLinkedSmartKey:" title="SKManagerDidFindLinkedSmartKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidFindLinkedSmartKey:">&ndash;&nbsp;SKManagerDidFindLinkedSmartKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when a the <a href="../Classes/SmartKey.html">SmartKey</a> that is linked as personal <a href="../Classes/SmartKey.html">SmartKey</a> has been
+found during a request interval.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidFindLinkedSmartKey:(SmartKey *)<em>linkedKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>linkedKey</code></th>
+						<td><p>The linked <a href="../Classes/SmartKey.html">SmartKey</a> representation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method indicates if the personal SmartKey was found during
+the search interval which is triggered by
+<a href="../Classes/SKManager.html#//api/name/requestSmartKeysWithTimeout:repeated:">[SKManager requestSmartKeysWithTimeout:repeated:]</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/requestSmartKeysWithTimeout:repeated:">[SKManager requestSmartKeysWithTimeout:repeated:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/linkSmartKey:">[SKManager linkSmartKey:]</a>:</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Communicaton state" name="task_Communicaton state"></a>
+						<h2 class="task-title">Communicaton state</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SKManagerDidConnectToSmartKey:" title="SKManagerDidConnectToSmartKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidConnectToSmartKey:">&ndash;&nbsp;SKManagerDidConnectToSmartKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked due to the execution of a connection request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidConnectToSmartKey:(BOOL)<em>successful</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>successful</code></th>
+						<td><p>true: The connection is established successful.
+false: The connection could not be established.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/connectToSmartKey:">[SKManager connectToSmartKey:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerDidDisconnectFromSmartKey:" title="SKManagerDidDisconnectFromSmartKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidDisconnectFromSmartKey:">&ndash;&nbsp;SKManagerDidDisconnectFromSmartKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when the connection to the <a href="../Classes/SmartKey.html">SmartKey</a> has been disconnected or
+interrupted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidDisconnectFromSmartKey:(SKManagerDisconnectReasons)<em>reason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reason</code></th>
+						<td><p>The reason for the disconnect as <a href="../Constants/SKManagerDisconnectReasons.html">SKManagerDisconnectReasons</a>
+value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/disconnectFromSmartKey">[SKManager disconnectFromSmartKey]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerLinkedSmartKeyReady" title="SKManagerLinkedSmartKeyReady"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerLinkedSmartKeyReady">&ndash;&nbsp;SKManagerLinkedSmartKeyReady</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when the linked <a href="../Classes/SmartKey.html">SmartKey</a> is connected and ready for further
+communication.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerLinkedSmartKeyReady</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When this method is invoked, the linked <a href="../Classes/SmartKey.html">SmartKey</a> will be ready for
+further communication. Its recommended to wait for the invocation
+of this method after a call of the connectTo<a href="../Classes/SmartKey.html">SmartKey</a>: Method.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/connectToSmartKey:">[SKManager connectToSmartKey:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/linkSmartKey:">[SKManager linkSmartKey:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerDidResetSmartKeyConfig:" title="SKManagerDidResetSmartKeyConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidResetSmartKeyConfig:">&ndash;&nbsp;SKManagerDidResetSmartKeyConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked due to the execution of <a href="../Classes/SmartKey.html">SmartKey</a> configuration reset request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidResetSmartKeyConfig:(BOOL)<em>successful</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>successful</code></th>
+						<td><p>Indicate whether the reset has been done successfully or
+not. If it is succeeded the value will be true. If the reset fails the value
+will be false.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Resetting the <a href="../Classes/SmartKey.html">SmartKey</a> configuration is only possible when
+the reset config command is sent  within the <b><u>first 30 seconds after
+a power on reset </u></b> of the
+<a href="../Classes/SmartKey.html">SmartKey</a>. (e.g. due to a battery replacement).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/resetConfig">[SKManager resetConfig]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Update values" name="task_Update values"></a>
+						<h2 class="task-title">Update values</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SKManagerDidUpdateConfigState:" title="SKManagerDidUpdateConfigState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidUpdateConfigState:">&ndash;&nbsp;SKManagerDidUpdateConfigState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked due to the execution of a read config request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidUpdateConfigState:(SmartKeyConfigStates)<em>config</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>config</code></th>
+						<td><p>The config state of the linked <a href="../Classes/SmartKey.html">SmartKey</a> as <a href="../Constants/SmartKeyConfigStates.html">SmartKeyConfigStates</a>
+value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/readConfigState">[SKManager readConfigState]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerDidUpdateBatteryLevel:" title="SKManagerDidUpdateBatteryLevel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidUpdateBatteryLevel:">&ndash;&nbsp;SKManagerDidUpdateBatteryLevel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked due to the execution of a read battery level request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidUpdateBatteryLevel:(uint8_t)<em>level</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><p>The battery level of the linked <a href="../Classes/SmartKey.html">SmartKey</a> represented as a
+uint8_t value: 0% - 100%</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/readBatteryLevel">[SKManager readBatteryLevel]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuration" name="task_Configuration"></a>
+						<h2 class="task-title">Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SKManagerDidFinishConfiguration:" title="SKManagerDidFinishConfiguration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidFinishConfiguration:">&ndash;&nbsp;SKManagerDidFinishConfiguration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when the configuration which has been triggered by the invocation
+of one of the configuration methods is done.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidFinishConfiguration:(BOOL)<em>successful</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>successful</code></th>
+						<td><p>Indicates whether the configuration has been done successfully or
+not. If its succeeded the value is true otherwise, if the configuration has failed,
+the value will be false.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/configurateConvenienceMode">[SKManager configurateConvenienceMode]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/configuratePairingModeWithPairingKey:">[SKManager configuratePairingModeWithPairingKey:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/configurateSecureModeWithPairingKey:">[SKManager configurateSecureModeWithPairingKey:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Authentication" name="task_Authentication"></a>
+						<h2 class="task-title">Authentication</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/SKManagerDidUpdateAuthenticationState:" title="SKManagerDidUpdateAuthenticationState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidUpdateAuthenticationState:">&ndash;&nbsp;SKManagerDidUpdateAuthenticationState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoked when the <a href="../Classes/SKManager.html">SKManager</a> successfully authenticated with the linked <a href="../Classes/SmartKey.html">SmartKey</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidUpdateAuthenticationState:(SKManagerAuthenticationStates)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>The new authentication state</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The authentication is different with the three security levels.</p>
+
+<ul>
+<li>Convenience-Mode: The authentication is successful when the <a href="../Classes/SKManager.html">SKManager</a> located
+the <a href="../Classes/SmartKey.html">SmartKey</a> as result of a request<a href="../Classes/SmartKey.html">SmartKey</a>: search interval.</li>
+<li>Pairing-Mode:     In this mode the authentication must be triggered by the <a href="../Classes/SKManager.html">SKManager</a>
+method initiateAuthenticationChallenge. If the authenticationChallenge
+succeed the authentication will be granted here.</li>
+<li>Secure-Mode:      In this mode the authentication is a process of multiple steps.
+It must be triggered by the <a href="../Classes/SKManager.html">SKManager</a> method initiateAuthenticationChallenge.
+If the authenticationChallenge succeed the authentication will be granted here.</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/requestSmartKeysWithTimeout:repeated:">[SKManager requestSmartKeysWithTimeout:repeated:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/initiateAuthenticationChallenge">[SKManager initiateAuthenticationChallenge]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/SKManager.html#//api/name/linkSmartKey:">[SKManager linkSmartKey:]</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/SKManagerAuthenticationStates.html">SKManagerAuthenticationStates</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SKManagerDidDetectModifiedSmartKey:" title="SKManagerDidDetectModifiedSmartKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SKManagerDidDetectModifiedSmartKey:">&ndash;&nbsp;SKManagerDidDetectModifiedSmartKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be invoked when a <a href="../Classes/SmartKey.html">SmartKey</a> with wrong encryption keys
+or other configuration flags like the linked one has been detected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SKManagerDidDetectModifiedSmartKey:(SmartKey *)<em>sk</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sk</code></th>
+						<td><p>Representation of the modified SmartKeys</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If this method is invoked the SKManager still has resetted all the
+security settings too through the invocation of <a href="../Classes/SKManager.html#//api/name/resetSecuritySettings">[SKManager resetSecuritySettings]</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Schneider Schreibgeräte GmbH. All rights reserved. Updated: 2016-08-17</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

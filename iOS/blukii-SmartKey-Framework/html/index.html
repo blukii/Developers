@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>blukiiSK Framework Reference</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+            <img src="img/header_logo.png" height="60" align="left" />
+			
+			<h1 id="library-title">
+				<a href="index.html">blukiiSK Framework </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="index.html">Schneider Schreibgeräte GmbH</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="hierarchy.html">Hierarchy</a></li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview-contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">blukiiSK Framework Reference</h1>
+
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>About blukiiSK Framework </h2>
+
+<p>blukiiSK stands for blukii(S)mart(K)ey Framework. You can add user-friendly and secure authentication for the usage of secret
+areas in your application with blukii SmartKey&rsquo;s.</p>
+
+<h2>What is a blukii &ldquo;SmartKey&rdquo;?</h2>
+
+<p>To start, a <a href="Classes/SmartKey.html">SmartKey</a> is based on the <a href="http://www.blukii.com">blukii</a>
+hardware platform. It is developed by Schneider Schreibgeräte GmbH in Germany. Schneider Schreibgeräte GmbH also created the blukii <a href="Classes/SmartKey.html">SmartKey</a> concept.
+Using the blukii <a href="Classes/SmartKey.html">SmartKey</a> it is particularly comfortable and reliable to implement
+a high security two factor authentication. A person who wants authentification to use a tablet computer is a prime example. The user carries a blukii
+<a href="Classes/SmartKey.html">SmartKey</a> and wants to use a tablet (an Apple iPad in this case) as shown in the
+following drawing.</p>
+
+<div>
+<img style="position:relative; margin:0 0 0 25%;" src="img/twoFact.jpg" height ="100%" width="50%" align="center" alt="Picture of a two factor authentication">
+</div>
+
+
+<p>The first step of the two factor authentication is initiated by the user entering either a
+PIN or the user name and password into the app. Now the app establishes a Bluetooth Low
+Energy connection with the blukii <a href="Classes/SmartKey.html">SmartKey</a> and verifies the authenticity of the user input.
+Access to the sensitive app contents is granted only if the authentication challenge (which
+is initiated by the application) is successful. Additionally a proximity check can be
+used. In case the user carrying the blukii <a href="Classes/SmartKey.html">SmartKey</a> has moved too far away the app automatically
+locks the sensitive contents.</p>
+
+<h2>Security level</h2>
+
+<p>You can choose from three different security levels for your <a href="Classes/SmartKey.html">SmartKey</a>.</p>
+
+<h3>Level 1 - Convenience (Low security)</h3>
+
+<p>This security level gives kind of a proximity switch functions to the <a href="Classes/SmartKey.html">SmartKey</a>. The
+authentication depends on the ID of the <a href="Classes/SmartKey.html">SmartKey</a> (Bluetooth-Address) which is sent in
+the advertising data. The connection mode in this security level is
+generally <i>non connectable</i>. To change the advertising or connection parameter you
+will have to put the <a href="Classes/SmartKey.html">SmartKey</a> in the <i>service mode</i> which means that
+the connection mode will be set to <i>connectable</i> for the first 30 seconds after
+power up.</p>
+
+<p>You can use your <a href="Classes/SmartKey.html">SmartKey</a> easily with several master devices in this
+security level.</p>
+
+<h3>Level 2 - Pairing (Medium security)</h3>
+
+<p>Assuming that the configuration will be done in a tap-proof environment, this security
+level offers a higher security than the <i>convenience level</i>.</p>
+
+<p>The <a href="Classes/SmartKey.html">SmartKey</a> and the master device will be paired via the
+<i>Bluetooth Pairing/Bonding</i>. According to the pairing you have to choose a 6 digit
+pairing key which must be set during the configuration. The user of the <a href="Classes/SmartKey.html">SmartKey</a>
+has to type this pairing key once during the first authentication
+process. The connection mode is always <i>connectable</i> with this
+security level.</p>
+
+<p>You can use your <a href="Classes/SmartKey.html">SmartKey</a> with this security level on several master devices when
+you share the choosen pairing key to the users of the master devices.</p>
+
+<h3>Level 3 - Secure (High security)</h3>
+
+<p>Assumed that the configuration will be done in a tap-proof environment, this security
+level offers a much higher security than the <i>pairing level</i>.</p>
+
+<p>Like in security level <i>pairing</i> the <a href="Classes/SmartKey.html">SmartKey</a> and the master device will be paired
+via <i>Bluetooth Pairing/Bonding</i>. The difference
+between the <i>pairing level</i> and the <i>secure level</i> is the additionally
+encrypted (AES128) communication between the <a href="Classes/SmartKey.html">SmartKey</a> and the master device. The
+authentication process in this security level is based on a multiple step
+challenge/response authentication protocol. The connection mode is always
+<i>connectable</i> with this security level.</p>
+
+<p>You can use your <a href="Classes/SmartKey.html">SmartKey</a> <b>only on one master device</b> with this level. If needed
+it&rsquo;s possible to build your custom framework with an admin/user infrastructure
+to share encryption keys. If you need to do something like that feel free to
+contact us to get the SmartKey&rsquo;s firmware documentation.</p>
+
+<h2>How to use the framework</h2>
+
+<p>The following steps will help you with the first usage of the blukiiSK Framework.
+There is also a swift sample application in the download section below.</p>
+
+<h3>Initialize</h3>
+
+<p>First step is to get the shared <a href="Classes/SKManager.html">SKManager</a> object with the following method:</p>
+
+<pre><code>+(id)sharedManager;
+</code></pre>
+
+<p>If you got the shared object you have to set the delegate:</p>
+
+<pre><code>@property id SKManagerDelegate delegate;
+</code></pre>
+
+<p>At this point the <a href="Classes/SKManager.html">SKManager</a> is ready for further communication with SmartKeys.</p>
+
+<h3>Searching close SmartKeys</h3>
+
+<p>You have to start a request with the following method to get the SmartKeys nearby:</p>
+
+<pre><code>-(BOOL)requestSmartKeysWithTimeout:(int)ms repeated:(bool)repeat;
+</code></pre>
+
+<p>As result the <a href="Classes/SKManager.html">SKManager</a> will invoke the related delegate method depending on the
+timeout period you chose with the parameter <i>ms</i>.</p>
+
+<pre><code>-(void)SKManagerDidReceiveSmartKeys:(NSArray*)keys;
+</code></pre>
+
+<p>All SmartKeys which were found in the given timeout period will be included in the
+array <i>keys</i> as instances of the class <a href="Classes/SmartKey.html">SmartKey</a>. You have to pick the desired
+<a href="Classes/SmartKey.html">SmartKey</a> out of the array to handle the next steps.</p>
+
+<h3>Preparation</h3>
+
+<p>In order to connect and communicate with the <a href="Classes/SmartKey.html">SmartKey</a> you picked from the array with
+the found SmartKeys you will have to link it to the <a href="Classes/SKManager.html">SKManager</a>.</p>
+
+<pre><code>-(SKManagerStatusCodes)linkSmartKey:(SmartKey*)sk;
+</code></pre>
+
+<p>Once your <a href="Classes/SmartKey.html">SmartKey</a> is linked to the <a href="Classes/SKManager.html">SKManager</a> your <a href="Classes/SmartKey.html">SmartKey</a> will not longer appear
+in the array of found SmartKeys after the call of the request method. Instead you
+will get a invocation of the delegate method:</p>
+
+<pre><code>-(void)SKManagerDidFindLinkedSmartKey:(SmartKey*)linkedKey;
+</code></pre>
+
+<p>Each time you start a search request and your linked <a href="Classes/SmartKey.html">SmartKey</a> is around.</p>
+
+<h3>Configuration</h3>
+
+<p>At first you have to choose the desired security level for your application.</p>
+
+<p>After you chose the security level of the <a href="Classes/SmartKey.html">SmartKey</a> for your application the next step is
+to start the configuration and establish a connection. In order to do that call the connect
+method. Before calling it you should keep in mind that it&rsquo;s
+necessary to put the <a href="Classes/SmartKey.html">SmartKey</a> in the <i>service mode</i> before the configuration.
+(<i>service mode</i> means the first 30 seconds after power up):</p>
+
+<pre><code>-(SKManagerStatusCodes)connectToSmartKey:(BOOL)powerSaving;
+</code></pre>
+
+<p>As result, when the <a href="Classes/SmartKey.html">SmartKey</a> is ready for further communication, the <a href="Classes/SKManager.html">SKManager</a> will
+invoke the delegate method:</p>
+
+<pre><code>-(void)SKManagerLinkedSmartKeyReady;
+</code></pre>
+
+<p>In that case you are able to call one of the following configuration methods.</p>
+
+<p>To configurate the <a href="Classes/SmartKey.html">SmartKey</a> in the convenience mode:</p>
+
+<pre><code>-(SKManagerStatusCodes)configurateConvenienceMode;
+</code></pre>
+
+<p>To configurate the <a href="Classes/SmartKey.html">SmartKey</a> in the pairing mode:</p>
+
+<pre><code>-(SKManagerStatusCodes)configuratePairingModeWithPairingKey:(SKPairingKey*)key;
+</code></pre>
+
+<p>To configurate the <a href="Classes/SmartKey.html">SmartKey</a> in the secure mode:</p>
+
+<pre><code>-(SKManagerStatusCodes)configurateSecureModeWithPairingKey:(SKPairingKey*)key;
+</code></pre>
+
+<p>The <a href="Classes/SKManager.html">SKManager</a> will invoke the following delegate method as result of the configuration
+request.</p>
+
+<pre><code>-(void)SKManagerDidFinishConfiguration:(BOOL)successful;
+</code></pre>
+
+<h3>Authentication</h3>
+
+<p>If you have successfully done the configuration steps with the <a href="Classes/SmartKey.html">SmartKey</a> you are ready
+to do the authentication steps in your application.</p>
+
+<p>For a <a href="Classes/SmartKey.html">SmartKey</a> with the security level convenience you have to start a search request:</p>
+
+<pre><code>-(BOOL)requestSmartKeysWithTimeout:(int)ms repeated:(bool)repeat;
+</code></pre>
+
+<p>Call the following method if the <a href="Classes/SmartKey.html">SmartKey</a> has security level pairing or secure:</p>
+
+<pre><code>-(SKManagerStatusCodes)initiateAuthenticationChallenge;
+</code></pre>
+
+<p>The <a href="Classes/SKManager.html">SKManager</a> will invoke the following delegate method as result of the
+authentication process in the case of pairing and securing SmartKeys or if the linked
+<a href="Classes/SmartKey.html">SmartKey</a> could be found during the search period in case of convenience.</p>
+
+<pre><code>-(void)SKManagerDidUpdateAuthenticationState:(SKManagerAuthenticationStates)state;
+</code></pre>
+
+<h3>Reset</h3>
+
+<p>Once you have configured the <a href="Classes/SmartKey.html">SmartKey</a> it&rsquo;s recommended to reset the configuration
+before you want to change the security level. To do that you have to set the
+<a href="Classes/SmartKey.html">SmartKey</a> in the <i>service mode</i>. First (take the battery out, wait 10 seconds, put
+back the battery). Now you can call the following reset method:</p>
+
+<pre><code>-(SKManagerStatusCodes)resetConfig;
+</code></pre>
+
+<p>As result the following delegate method will be invoked from the <a href="Classes/SKManager.html">SKManager</a>.</p>
+
+<pre><code>-(void)SKManagerDidResetSmartKeyConfig:(BOOL)successful;
+</code></pre>
+
+<h2>Downloads</h2>
+
+<ul>
+<li><a href="examples/blukiiSK_Demo.zip">blukiiSK sample code</a></li>
+</ul>
+
+
+<h2>Release Notes </h2>
+
+<ul>
+<li><b>1.0</b>
+
+<ul>
+<li>Initial Release.</li>
+</ul>
+</li>
+</ul>
+
+						
+						
+					</div>
+					
+
+					<div class="index-container">
+						
+
+						
+						<div class="index-column">
+							<h2 class="index-title">Class References</h2>
+							<ul>
+								
+								<li><a href="Classes/SKCommon.html">SKCommon</a></li>
+								
+								<li><a href="Classes/SKManager.html">SKManager</a></li>
+								
+								<li><a href="Classes/SKPairingKey.html">SKPairingKey</a></li>
+								
+								<li><a href="Classes/SmartKey.html">SmartKey</a></li>
+								
+							</ul>
+						</div>
+						
+
+						
+						<div class="index-column">
+							
+							<h2 class="index-title">Protocol References</h2>
+							<ul>
+								
+								<li><a href="Protocols/SKManagerDelegate.html">SKManagerDelegate</a></li>
+								
+							</ul>
+							
+
+							
+							<h2 class="index-title">Constant References</h2>
+							<ul>
+								
+									<li><a href="Constants/SKManagerAuthenticationStates.html">SKManagerAuthenticationStates</a></li>
+								
+									<li><a href="Constants/SKManagerDisconnectReasons.html">SKManagerDisconnectReasons</a></li>
+								
+									<li><a href="Constants/SKManagerStates.html">SKManagerStates</a></li>
+								
+									<li><a href="Constants/SKManagerStatusCodes.html">SKManagerStatusCodes</a></li>
+								
+									<li><a href="Constants/SmartKeyCaseTypes.html">SmartKeyCaseTypes</a></li>
+								
+									<li><a href="Constants/SmartKeyConfigStates.html">SmartKeyConfigStates</a></li>
+								
+									<li><a href="Constants/SmartKeyHardwareTypes.html">SmartKeyHardwareTypes</a></li>
+								
+							</ul>
+							
+
+							
+						</div>
+						
+					</div>
+
+					<footer>
+						<div class="footer-copyright">
+							
+							<p class="copyright">Copyright &copy; 2016 Schneider Schreibgeräte GmbH. All rights reserved. Updated: 2016-08-17</p>
+							
+						</div>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</article>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
