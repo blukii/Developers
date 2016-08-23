@@ -18,6 +18,12 @@ The minimum iOS Version is iOS 8.4
 ### Installion with CocoaPods
 CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects like the blukiiSK.  [Here](https://cocoapods.org) you will find more information about CocoaPod. 
 
+Install cocoapods:
+```
+  sudo gem install cocoapods
+```
+
+
 Generate a podfile for your xcode Project:
 ```
    pod init
@@ -26,7 +32,9 @@ Generate a podfile for your xcode Project:
 Insert the new depency to your Podfile:
 
 ```
-  pod 'blukiiSK'
+ target 'YourApp' do
+   pod 'blukiiSK'
+ end
 ```
 
 Then run the following command: 
