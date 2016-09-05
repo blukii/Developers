@@ -26,7 +26,7 @@ The blukii-info-sdk can be easily integrated by adding the following dependency 
 ```
  dependencies {
     ...
-    compile 'com.blukii:blukii-info-sdk:1.0.1'
+    compile 'com.blukii:blukii-info-sdk:1.0.2'
     ...
  }
 ```
