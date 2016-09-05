@@ -6,6 +6,6 @@ Furthermore this library lets you retrieve location based information that is as
 
 ## Documentation and support
 
-BETA API Documentation: [blukiiInfoSDK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/html/
+BETA API Documentation: [blukiiInfoSDK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/
 
 Full Doucumentation will be released here soon.
