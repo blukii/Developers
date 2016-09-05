@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKResolveData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BKResolveData" class="dashAnchor"></a>
+    <a title="BKResolveData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKResolveData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/ErrorCode.html">– ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/InfoCode.html">– InfoCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiType.html">– BlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiHousing.html">– BlukiiHousing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInputElement.html">BKInputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement.html">BKOutputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement/ResolveState.html">– ResolveState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveData.html">BKResolveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings.html">BKResolveSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings/OutputLanguage.html">– OutputLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKInputSourceType.html">BKInputSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKResolveData</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKResolveData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Read only data object for resolved output data of the blukii info manager</p>
+
+<p><code>BKResolveData</code> can be valid for blukii modules only.</p>
+
+<p>It contains the result of a data request to the blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>).
+The <code>BKResolveData</code> fields contain the values of on corresponding blukii number.</p>
+
+<p><code>BKResolveData</code> is part of <code><a href="../Classes/BKOutputElement.html">BKOutputElement</a></code></p>
+
+<p>It will be set for the following cases:</p>
+
+<ul>
+<li>OutputElement ID (see <code><a href="../Classes/BKOutputElement.html#/s:vC10BlukiiInfo15BKOutputElement2idSS">BKOutputElement.id</a></code>) must be configured as a blukii number on the blukii Info Manager by an Info Manger user. This is an requierement for all <code><a href="../Classes/BKClient.html">BKClient</a></code> delegates!</li>
+<li><code>BKResolveData</code> will be requested during the discovery (see <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13initDiscoveryFT_T_">BKClient.initDiscovery()</a></code>) for all discovered Elelements if the setting <code><a href="../Classes/BKResolveSettings.html#/s:vC10BlukiiInfo17BKResolveSettings14resolveEnabledSb">BKResolveSettings.resolveEnabled</a></code> is set true. If some data is responded it will be returned as part of an <code><a href="../Classes/BKOutputElement.html">BKOutputElement</a></code> by delegate <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code> The result state of resolving can additionally be read by calling <code>BKOuputElement.resolveState</code>:
+
+<ul>
+<li>UNRESOLVED: Resolve is off (<code><a href="../Classes/BKResolveSettings.html#/s:vC10BlukiiInfo17BKResolveSettings14resolveEnabledSb">BKResolveSettings.resolveEnabled</a></code> is false) or blukii Info Manager is not connectable</li>
+<li>RESOLVED: blukii Info Manager has responded data for the OutputElement ID</li>
+<li>NODATA: blukii Info Manager is connectable but has responded no data for the OutputElement ID</li>
+<li>CACHED: ResolveData contains cached data that has been responded earlier (see cache settings on <code><a href="../Classes/BKResolveSettings.html">BKResolveSettings</a></code>)</li>
+</ul></li>
+<li><code>BKResolveData</code> will be requested for a single Element by calling (see <code>BKClient.resolveInputElement(BKInputElement)</code>). If some data is responded it will be returned as part of an <code><a href="../Classes/BKOutputElement.html">BKOutputElement</a></code> by delegate <code>BKClientResolveDelegate.onResolveInputElementResult(outputElement: BKOutputElement)</code>. The result state of resolving can additionally be read by calling <code><a href="../Classes/BKOutputElement.html#/s:vC10BlukiiInfo15BKOutputElement12resolveStateOS0_12ResolveState">BKOutputElement.resolveState</a></code>. For single element requests there is no cache available.
+
+<ul>
+<li>RESOLVED: blukii Info Manager has responded data for the OutputElement ID</li>
+<li>NODATA: blukii Info Manager has not responded data for the OutputElement ID</li>
+</ul></li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData5titleGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData5titleGSqSS_">title</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the language specific blukii number field <em>Title</em></p>
+
+<p>The language is defined by property <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData8languageGSqSS_">language</a></code>.</p>
+
+<p><strong>Note:</strong> If the language specific field <em>Title</em> is not set <code>title</code> contains the value of field <em>Name</em> (as fallback)</p>
+
+<p>Value of blukii number field <em>Title</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData3urlGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData3urlGSqSS_">url</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Value of the language specific blukii number field <em>URL</em></p>
+
+<p>The language is defined by property <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData8languageGSqSS_">language</a></code></p>
+
+<p><strong>Note:</strong> In most cases getUrl returns an url to a OutputType specific file. Exceptions are:</p>
+
+<ul>
+<li>OutputType <code><a href="../Enums/BKOutputType.html#/s:FO10BlukiiInfo12BKOutputType7MESSAGEFMS0_S0_">BKOutputType.MESSAGE</a></code>: The message text itself will be returned.</li>
+<li>Resolving single elements of <code><a href="../Enums/BKInputSourceType.html#/s:FO10BlukiiInfo17BKInputSourceType4SCANFMS0_S0_">BKInputSourceType.SCAN</a></code> by <code>BlukiiClient.resolveInputElement(BKInputElement)</code>: If you resolve a QR code with format <code><a href="../Enums/BKOutputType.html#/s:FO10BlukiiInfo12BKOutputType4WIFIFMS0_S0_">BKOutputType.WIFI</a></code> or <code><a href="../Enums/BKOutputType.html#/s:FO10BlukiiInfo12BKOutputType5VCARDFMS0_S0_">BKOutputType.VCARD</a></code> the WIFI or VCARD formatted code will be returned.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData10outputTypeGSqOS_12BKOutputType_"></a>
+                    <a name="//apple_ref/swift/Property/outputType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData10outputTypeGSqOS_12BKOutputType_">outputType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the blukii number selection <em>Option Info</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">outputType</span><span class="p">:</span> <span class="kt"><a href="../Enums/BKOutputType.html">BKOutputType</a></span><span class="p">?</span> <span class="c1">// war ContentType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData8languageGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/language" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData8languageGSqSS_">language</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The output language of the BKResolveData set.</p>
+
+<p>It shows the language specific selection of the blukii number fields <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData3urlGSqSS_">url</a></code> and <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData5titleGSqSS_">title</a></code>, for <code><a href="../Enums/BKOutputType.html#/s:FO10BlukiiInfo12BKOutputType3PDFFMS0_S0_">BKOutputType.PDF</a></code> also of <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData8urlExtraGSqSS_">urlExtra</a></code> and <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData14plainTextExtraGSqSS_">plainTextExtra</a></code></p>
+
+<p>The output language is chosen by the resolver process. If only one language specific blukii number URL and title is defined it will be returned. Otherwise the language is chosen according the language priority setting (see <code><a href="../Classes/BKResolveSettings.html#/s:FC10BlukiiInfo17BKResolveSettings19getLanguagePriorityFT_GSaOS0_14OutputLanguage_">BKResolveSettings.getLanguagePriority()</a></code>)</p>
+
+<p>The value can be one of the following languages codes: en-gb, fr-fr or de-de</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">language</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>         <span class="c1">// war languageCode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData8urlExtraGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/urlExtra" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData8urlExtraGSqSS_">urlExtra</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the value of the language specific blukii number field <em>Audio File URL</em>.</p>
+
+<p>The language is defined by property <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData8languageGSqSS_">language</a></code>.</p>
+
+<p><strong>Note:</strong> This field is optional and only valid for OutputType <em>PDF</em> (see <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData10outputTypeGSqOS_12BKOutputType_">outputType</a></code>). It contains a url of an audio file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">urlExtra</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>  <span class="c1">//War FileExtra</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData14plainTextExtraGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/plainTextExtra" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData14plainTextExtraGSqSS_">plainTextExtra</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the language specific blukii number field <em>Text to speech</em>.</p>
+
+<p>The language is defined by property <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData8languageGSqSS_">language</a></code>.</p>
+
+<p><strong>Note:</strong> This field is optional and only valid for OutputType <em>PDF</em> (see <code><a href="../Classes/BKResolveData.html#/s:vC10BlukiiInfo13BKResolveData10outputTypeGSqOS_12BKOutputType_">outputType</a></code>). It contains a text.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">plainTextExtra</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo13BKResolveData11resolveDateCSo6NSDate"></a>
+                    <a name="//apple_ref/swift/Property/resolveDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo13BKResolveData11resolveDateCSo6NSDate">resolveDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the date where the blukii Number was resolved</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">resolveDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>NSDate object</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

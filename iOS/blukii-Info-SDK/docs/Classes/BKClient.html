@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BKClient" class="dashAnchor"></a>
+    <a title="BKClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/ErrorCode.html">– ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/InfoCode.html">– InfoCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiType.html">– BlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiHousing.html">– BlukiiHousing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInputElement.html">BKInputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement.html">BKOutputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement/ResolveState.html">– ResolveState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveData.html">BKResolveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings.html">BKResolveSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings/OutputLanguage.html">– OutputLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKInputSourceType.html">BKInputSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKClient</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">BKDeviceDiscoveryServiceDelegate</span><span class="p">,</span> <span class="kt">BKBackendResolverDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p><a href='#main-controller-class-for-discovering-ble-modules-and-resolving-blukii-concerned-data-from-the-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='main-controller-class-for-discovering-ble-modules-and-resolving-blukii-concerned-data-from-the-blukii-info-manager'>Main Controller class for discovering BLE modules and resolving blukii concerned data from the blukii Info Manager.</h1></p>
+
+<p>BlukiiClient is a single point of contact for all data retieving actions as follows:
+- Discovering BLE modules, extracting BLE data and resolving data from blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>)
+- Resolving data for a single blukii module or tag from blukii Info Manager
+- Resolving news from blukii Info Manager</p>
+
+<p><a href='#a-discover-ble-modules-extract-their-ble-data-and-resolve-their-data-from-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='a-discover-ble-modules-extract-their-ble-data-and-resolve-their-data-from-blukii-info-manager'>A. Discover BLE modules, extract their BLE data and resolve their data from blukii Info Manager</h2></p>
+
+<p>Use this feature to discover BLE modules in your environment and optionally retrieve corresponding data from blukii Info Manager. </p>
+
+<p>To do this you have to do the following steps:</p>
+
+<p><a href='#1-initialize-and-start-discovery' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='1-initialize-and-start-discovery'>1. Initialize and start discovery</h3></p>
+
+<p>Call <code>initDiscovery()</code> and implement the <code><a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a></code> delegates. After initialization is ready (delegate <code>onDiscoveryInitialized()</code>) you can start the discovery.</p>
+
+<pre class="highlight plaintext"><code>var mBlukiiClient: BKClient!
+
+override func viewDidLoad() {
+    ...
+    mBlukiiClient = BKClient()
+    mBlukiiClient.discoveryDelegate = self
+    mBlukiiClient.initDiscovery()
+    ...
+}
+
+func onInitialized() {
+    if mBlukiiClient.startDiscovery() {
+        // Discovery successfully started
+    }
+}
+
+func onDiscoveryResult(discoveryResultList: [BlukiiInfo.BKOutputElement]) { }
+func onDiscoveryError(errorCode: BlukiiInfo.BKClient.ErrorCode) { }
+func onDiscoveryInfo(infoCode: BlukiiInfo.BKClient.InfoCode) { }
+</code></pre>
+
+<p><a href='#2-configure-discovery-settings' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='2-configure-discovery-settings'>2. Configure discovery settings</h3></p>
+
+<p>Use the <code><a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code> object for configuring discovery. Get <code><a href="../Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient17discoverySettingsGSQCS_19BKDiscoverySettings_">BKClient.discoverySettings</a></code> to retrieve the settings property set.</p>
+
+<pre class="highlight plaintext"><code>func onInitialized() {
+      // Discovery successfully initialized
+
+      let discoverySettings: BKDiscoverySettings = mBlukiiClient.discoverySettings
+      discoverySettings.setRssiThreshold(-100)
+      discoverySettings.scanDuration = 10000
+      ...
+
+      if mBlukiiClient.startDiscovery() {
+          // Discovery successfully started
+      }
+ }
+</code></pre>
+
+<p>When BLE scanner is started the BLE discovery is acting according to the <code><a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code>:</p>
+
+<ul>
+<li>The scanner is searching for BLE modules inside the defined rssi range (<code><a href="../Classes/BKDiscoverySettings.html#/s:FC10BlukiiInfo19BKDiscoverySettings16getRssiThresholdFT_Si">BKDiscoverySettings.getRssiThreshold()</a></code>).</li>
+<li>After one scan duration (<code><a href="../Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings12scanDurationSi">BKDiscoverySettings.scanDuration</a></code>) the results are called back to (<code>BKClientDiscoveryDelegate.onDiscoveryResult(_: )</code>)</li>
+<li>This is repeated until BLE Scanning is stopped by <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb">BKClient.stopDiscovery()</a></code> or the app did enter the background.</li>
+<li>if the scanner is paused according to the <code><a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code> the info <code><a href="../Classes/BKClient/InfoCode.html#/s:FOC10BlukiiInfo8BKClient8InfoCode21INFO_DISCOVERY_PAUSEDFMS1_S1_">BKClient.InfoCode.INFO_DISCOVERY_PAUSED</a></code> is called.</li>
+<li>For background scanning it is necessary to be in the iBeacon Region 123456789AB-CDEF-01234-00000000002 or 123456789AB-CDEF-01234-00000000003. In background it is possible to scan for iBeacon, EddystoneBeacon and InfoBeacon.</li>
+</ul>
+
+<p><a href='#3-configure-resolver-settings' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='3-configure-resolver-settings'>3. Configure resolver settings</h3></p>
+
+<p>Use the <code><a href="../Classes/BKResolveSettings.html">BKResolveSettings</a></code>object for configuring the resolving of the blukii Info Manager data.</p>
+
+<p>Call <code><a href="../Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient15resolveSettingsGSQCS_17BKResolveSettings_">BKClient.resolveSettings</a></code>to retrieve the settings property set. </p>
+
+<p><strong>Note:</strong> <code><a href="../Classes/BKResolveSettings.html#/s:vC10BlukiiInfo17BKResolveSettings14resolveEnabledSb">BKResolveSettings.resolveEnabled</a></code> has to be set true to enable the resolver!</p>
+
+<pre class="highlight plaintext"><code>func onInitialized() {
+      // Discovery successfully initialized
+
+      let discoverySettings: BKDiscoverySettings = mBlukiiClient.discoverySettings
+      discoverySettings.setRssiThreshold(-100)
+      discoverySettings.scanDuration = 10000
+      ...
+
+      // change resolver settings
+      let resolveSettings: BKResolveSettings = mBlukiiClient.resolveSettings
+      resolveSettings.resolveEnabled = true
+      resolveSettings.setLanguagePriority([BKResolveSettings.OutputLanguage.English, BKResolveSettings.OutputLanguage.German])
+      ...
+
+      if mBlukiiClient.startDiscovery() {
+          // Discovery successfully started
+      }
+ }
+</code></pre>
+
+<p><a href='#4-retrieve-results' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='4-retrieve-results'>4. Retrieve results</h3></p>
+
+<p>The callback <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code> will be called after finishing every discovery phase. It retrieves the discovered list of BKOutputElements.</p>
+
+<p><strong>Note:</strong> If no BLE moudles have been found discoveryResultList is empty (not nil).</p>
+
+<pre class="highlight plaintext"><code>func onDiscoveryResult(discoveryResultList: [BKOutputElement]) {
+  // Discovery phase has finished: list of OutputElements are retrieved
+
+  for outputElement in discoveryResultList {
+     let id = outputElement.id
+     let rssi = outputElement.discoveryData?.rssi
+     ...
+  }
+}
+</code></pre>
+
+<p><a href='#5-retrieve-errors-and-infos' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='5-retrieve-errors-and-infos'>5. Retrieve errors and infos</h3></p>
+
+<p>The callbacks <code>BKClientDiscoveryDelegate.onDiscoveryError(BKClient.ErrorCode)</code> and <code>BKClientDiscoveryDelegate.onDiscoveryInfo(BKClient.InfoCode)</code> will be called if there is important information about the discover process.</p>
+
+<pre class="highlight plaintext"><code>func onDiscoveryError(errorCode: BKClient.ErrorCode) {
+    // An error has been sent from discover
+}
+
+func onDiscoveryInfo(infoCode: BKClient.InfoCode) {
+    // An info has been sent from discovery
+}
+</code></pre>
+
+<p><a href='#b-resolve-data-for-a-single-blukii-module-or-tag-from-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='b-resolve-data-for-a-single-blukii-module-or-tag-from-blukii-info-manager'>B. Resolve data for a single blukii module or tag from blukii Info Manager</h2></p>
+
+<p>Retrieve data for a module or tag from blukii Info Manager by calling <code>resolveInputElement(InputElement)</code></p>
+
+<p>You have to prepare an <code><a href="../Classes/BKInputElement.html">BKInputElement</a></code> that stands for a blukii number, NFC tag or scan result. Please see <code><a href="../Classes/BKInputElement.html">BKInputElement</a></code> for more Information.</p>
+
+<p>If the resolving proccess is successfull the delegate <code>BKClientResolveDelegate.onResolveInputElementResult(outputElement: BKOutputElement)</code> is called.
+Otherwise the delegate <code>BKClientResolveDelegate.onResolveInputElementError(inputElement: BKInputElement, errorCode: BKClient.ErrorCode)</code> lets you know the error of the resolving proccess. </p>
+
+<pre class="highlight plaintext"><code>mBlukiiClient.resolveDelegate = self
+
+func resolveSingleElement() {
+    // call resolver
+    let inputElement = BKInputElement(tagID: "", inputType: BKInputSourceType.NFC)
+    mBlukiiClient.resolveInputElement(inputElement)
+}
+
+func onResolveInputElementResult(outputElement: BKOutputElement) {
+    let id = outputElement.id
+    let url = outputElement.resolveData?.url
+}
+
+func onResolveInputElementError(inputElement: BKInputElement, errorCode: BKClient.ErrorCode) {
+    // An error has been sent from resolver
+}
+</code></pre>
+
+<p><a href='#c-resolving-news-from-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='c-resolving-news-from-blukii-info-manager'>C. Resolving news from blukii Info Manager</h2></p>
+
+<p>Retrieve a translated news text from the blukii Info Manager.</p>
+
+<p>If the resolving process is successfull the delegate <code>BKClientNewsDelegate.onNewsResult(news: String)</code> is called. 
+Otherwise the delegate <code>BKClientNewsDelegate.onNewsError(errorCode: BKClient.ErrorCode)</code> lets you know the error of the resolving process.</p>
+
+<pre class="highlight plaintext"><code>mBlukiiClient.newsDelegate = self
+
+func resolveNews() {
+    mBlukiiClient.resolveServerNews("en-gb")
+}
+
+func onNewsResult(news: String) {
+    // news retrieved
+}
+
+func onNewsError(errorCode: BlukiiInfo.BKClient.ErrorCode) {
+    // An error has been sent from resolver
+}
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC10BlukiiInfo8BKClient9ErrorCode"></a>
+                    <a name="//apple_ref/swift/Enum/ErrorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC10BlukiiInfo8BKClient9ErrorCode">ErrorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Error codes for discovery and resolver</p>
+
+                        <a href="../Classes/BKClient/ErrorCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ErrorCode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC10BlukiiInfo8BKClient8InfoCode"></a>
+                    <a name="//apple_ref/swift/Enum/InfoCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC10BlukiiInfo8BKClient8InfoCode">InfoCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Info codes for discovery</p>
+
+                        <a href="../Classes/BKClient/InfoCode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">InfoCode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo8BKClient16featureValidatorGSQCS_18BKFeatureValidator_"></a>
+                    <a name="//apple_ref/swift/Property/featureValidator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo8BKClient16featureValidatorGSQCS_18BKFeatureValidator_">featureValidator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Helper Object to validate application and mobile device features.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">featureValidator</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Delegates"></a>
+                <a name="//apple_ref/swift/Section/Delegates" class="dashAnchor"></a>
+                <a href="#/Delegates">
+                  <h3 class="section-name">Delegates</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo8BKClient17discoveryDelegateGSqPS_25BKClientDiscoveryDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/discoveryDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo8BKClient17discoveryDelegateGSqPS_25BKClientDiscoveryDelegate__">discoveryDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Discovery Delegate for BLE discovery</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">discoveryDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo8BKClient15resolveDelegateGSqPS_23BKClientResolveDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/resolveDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo8BKClient15resolveDelegateGSqPS_23BKClientResolveDelegate__">resolveDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate for resolving of one single element.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">resolveDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo8BKClient12newsDelegateGSqPS_20BKClientNewsDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/newsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo8BKClient12newsDelegateGSqPS_20BKClientNewsDelegate__">newsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate for retrieving a translated blukii Info Manager news text.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">newsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Settings"></a>
+                <a name="//apple_ref/swift/Section/Settings" class="dashAnchor"></a>
+                <a href="#/Settings">
+                  <h3 class="section-name">Settings</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo8BKClient15resolveSettingsGSQCS_17BKResolveSettings_"></a>
+                    <a name="//apple_ref/swift/Property/resolveSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo8BKClient15resolveSettingsGSQCS_17BKResolveSettings_">resolveSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resolver Settings</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">resolveSettings</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKResolveSettings.html">BKResolveSettings</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo8BKClient17discoverySettingsGSQCS_19BKDiscoverySettings_"></a>
+                    <a name="//apple_ref/swift/Property/discoverySettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo8BKClient17discoverySettingsGSQCS_19BKDiscoverySettings_">discoverySettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Discovery Settings</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">discoverySettings</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init"></a>
+                <a name="//apple_ref/swift/Section/Init" class="dashAnchor"></a>
+                <a href="#/Init">
+                  <h3 class="section-name">Init</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClientcFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClientcFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructor for initiating a blukii client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Manage%20Discovery%20Service"></a>
+                <a name="//apple_ref/swift/Section/Manage Discovery Service" class="dashAnchor"></a>
+                <a href="#/Manage%20Discovery%20Service">
+                  <h3 class="section-name">Manage Discovery Service</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient13isDiscoveringFT_Sb"></a>
+                    <a name="//apple_ref/swift/Method/isDiscovering()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient13isDiscoveringFT_Sb">isDiscovering()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the state if BLE scanner is actuallly running.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isDiscovering</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true, if BLE scanner is scanning</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient13initDiscoveryFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/initDiscovery()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient13initDiscoveryFT_T_">initDiscovery()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the discovery service.</p>
+
+<p>If successful, the delegate <code><a href="../Protocols/BKClientDiscoveryDelegate.html#/s:FP10BlukiiInfo25BKClientDiscoveryDelegate22onDiscoveryInitializedFT_T_">BKClientDiscoveryDelegate.onDiscoveryInitialized()</a></code> is called.
+Otherwise the delegate `BKClientDiscoveryDelegate.onDiscoveryError(errorCode: BKClient.ErrorCode) is called with an error.</p>
+
+<p><strong>Note</strong>: By calling this function the service instance BKDeviceDiscoveryService is started and binded by the BKClient object. This is required before calling <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient14startDiscoveryFT_Sb">startDiscovery()</a></code> and <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb">stopDiscovery()</a></code> for starting and stopping the discovery for BLE modules. Without <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient14startDiscoveryFT_Sb">startDiscovery()</a></code>BKDeviceDiscoveryService is not do any action and therefore not using the battery. </p>
+
+<p><strong>Note</strong>: Use this function only, if the view is loaded. For Example viewDidAppear.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initDiscovery</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient22isDiscoveryInitializedFT_Sb"></a>
+                    <a name="//apple_ref/swift/Method/isDiscoveryInitialized()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient22isDiscoveryInitializedFT_Sb">isDiscoveryInitialized()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the state if the discovery service is initialized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isDiscoveryInitialized</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true, if discovery service is initialized</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient14startDiscoveryFT_Sb"></a>
+                    <a name="//apple_ref/swift/Method/startDiscovery()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient14startDiscoveryFT_Sb">startDiscovery()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the BLE scanner.</p>
+
+<p>It only can be started if the discovery service has been initialized befor by calling initDiscovery()!</p>
+
+<p><strong>Background mode</strong>: If the app change to the background, the scan will not stop. Conditions: </p>
+
+<ul>
+<li>capabilities -&gt; Background Modes -&gt; Location Update -&gt; enable</li>
+<li>capabilities -&gt; Background Modes -&gt; Use Bluetooth LE accessoires -&gt; enable</li>
+<li>info.plist: Enter a value for NSLocationAlwaysUsageDescription</li>
+<li><code><a href="../Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings16scanInBackgroundSb">BKDiscoverySettings.scanInBackground</a></code> -&gt; true</li>
+</ul>
+
+<p><strong>Note</strong>: Only when the BLE scanner is started successfully the <code><a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a></code> delegates are called if there is any discovery result, error or info.</p>
+
+<p>You can stop scanning by calling <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb">stopDiscovery()</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startDiscovery</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true, if start is successful.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb"></a>
+                    <a name="//apple_ref/swift/Method/stopDiscovery()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb">stopDiscovery()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops the BLE scanner.</p>
+
+<p>You can start scanning by calling <code><a href="../Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient14startDiscoveryFT_Sb">startDiscovery()</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopDiscovery</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true, if stop is successful.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Backend%20resolve"></a>
+                <a name="//apple_ref/swift/Section/Backend resolve" class="dashAnchor"></a>
+                <a href="#/Backend%20resolve">
+                  <h3 class="section-name">Backend resolve</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient19resolveInputElementFCS_14BKInputElementT_"></a>
+                    <a name="//apple_ref/swift/Method/resolveInputElement(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient19resolveInputElementFCS_14BKInputElementT_">resolveInputElement(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the resolver to retrieve blukii Info Manager data of one single element.</p>
+
+<p>Results will be asynchronously returned with the callbacks of the <code><a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a></code> delegate.</p>
+
+<p><strong>Note</strong>: BKResolveSettings.getLanguagePriority() is the only property that takes affect for resolving single elements. All other BKResolveSettings properties are affecting the discovery process only!</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resolveInputElement</span><span class="p">(</span><span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKInputElement.html">BKInputElement</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>BKInputElement</code> Data with specified format. therefore see <code>BKInputElement</code></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC10BlukiiInfo8BKClient17resolveServerNewsFSST_"></a>
+                    <a name="//apple_ref/swift/Method/resolveServerNews(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC10BlukiiInfo8BKClient17resolveServerNewsFSST_">resolveServerNews(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the resolver to retrieve a translated blukii Info Manager news text. </p>
+
+<p>Results will be asynchronously returned by the delegates of the <code><a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resolveServerNews</span><span class="p">(</span><span class="nv">languageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>languageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>language code for the translation, supported languages: <code>BKResolveSettings.OutputLanguage</code></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

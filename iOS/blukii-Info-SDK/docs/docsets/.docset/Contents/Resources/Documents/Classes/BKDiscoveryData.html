@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKDiscoveryData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BKDiscoveryData" class="dashAnchor"></a>
+    <a title="BKDiscoveryData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKDiscoveryData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/ErrorCode.html">– ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/InfoCode.html">– InfoCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiType.html">– BlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiHousing.html">– BlukiiHousing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInputElement.html">BKInputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement.html">BKOutputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement/ResolveState.html">– ResolveState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveData.html">BKResolveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings.html">BKResolveSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings/OutputLanguage.html">– OutputLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKInputSourceType.html">BKInputSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKDiscoveryData</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKDiscoveryData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Read only data object for emitted data of on BLE module.</p>
+
+<p><code>BKDiscoveryData</code> is a collection of BLE data that is scanned during one scan duration for one BLE module.</p>
+
+<p>It contains the following values if it is provided by the module&rsquo;s hardware and firmware</p>
+
+<ul>
+<li>Device found date</li>
+<li>RSSI value</li>
+<li>blukii Hardware specific advertising data like firmware, blukii type, advertising interval, battery and txPower</li>
+<li>Sensor data results of blukii sensor beacons. See <code><a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a></code></li>
+<li>Key data of blukii SmartKeys. See <code><a href="../Classes/BKKeyData.html">BKKeyData</a></code></li>
+<li>Eddystone protocol data values. See <code><a href="../Classes/BKEddystoneData.html">BKEddystoneData</a></code></li>
+<li>iBeacon protocol data values. See <code><a href="../Classes/BKiBeaconData.html">BKiBeaconData</a></code></li>
+</ul>
+
+<p><strong>Note</strong>: If the scan scan duration (see <code><a href="../Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings12scanDurationSi">BKDiscoverySettings.scanDuration</a></code>) is longer than the advertising interval of the module than each value is read only once. The following data frames of the same type are ignored if the corresponding fields are already set in the <code>BKDiscoveryData</code> object.
+The discovery date (<code>deviceFoundDate</code>) is the timestamp of the first BLE frame that is scanned by the mobile device. </p>
+
+<p><code>BKDiscoveryData</code> is a part of <code><a href="../Classes/BKOutputElement.html">BKOutputElement</a></code>
+It will be set if the <code><a href="../Classes/BKOutputElement.html">BKOutputElement</a></code> is returned by the delegate function <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code> after calling BKClient.initDiscovery(). For Other BKClient delegates BKDiscoveryData is <code>nil</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC10BlukiiInfo15BKDiscoveryData10BlukiiType"></a>
+                    <a name="//apple_ref/swift/Enum/BlukiiType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC10BlukiiInfo15BKDiscoveryData10BlukiiType">BlukiiType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Module Types</p>
+
+                        <a href="../Classes/BKDiscoveryData/BlukiiType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BlukiiType</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC10BlukiiInfo15BKDiscoveryData13BlukiiHousing"></a>
+                    <a name="//apple_ref/swift/Enum/BlukiiHousing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC10BlukiiInfo15BKDiscoveryData13BlukiiHousing">BlukiiHousing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Housing Sizes</p>
+
+                        <a href="../Classes/BKDiscoveryData/BlukiiHousing.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BlukiiHousing</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData4rssiGSqSi_"></a>
+                    <a name="//apple_ref/swift/Property/rssi" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData4rssiGSqSi_">rssi</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the RSSI value of the first scanned BLE frame that is inside the relevant RSSI range (see setting <code>BKDiscoverySettings.setRSSIThreshold()</code>).</p>
+
+<p>This field is set for every scanned BLE module. </p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">rssi</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RSSI Value</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData15deviceFoundDateGSqCSo6NSDate_"></a>
+                    <a name="//apple_ref/swift/Property/deviceFoundDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData15deviceFoundDateGSqCSo6NSDate_">deviceFoundDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the Timestamp of the first scanned BLE frame that is inside the relevant RSSI range (see setting <code>BKDiscoverySettings.setRSSIThreshold()</code>).</p>
+
+<p>This field is set for every scanned BLE module.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">deviceFoundDate</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Timestamp in milliseconds</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData10macAddressGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/macAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData10macAddressGSqSS_">macAddress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the MacAdress of the BLE module</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">macAddress</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>MAC-Adress of the BLE module</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData10identifierGSqCSo6NSUUID_"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData10identifierGSqCSo6NSUUID_">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the Identifier of the BLE module</p>
+
+<p>This field is set for every scanned BLE module. This value is to prefer, if you want to have a uniqe identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">NSUUID</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>CBPeripheral Identifier</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData10deviceNameGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/deviceName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData10deviceNameGSqSS_">deviceName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the Device Name of the BLE module.</p>
+
+<p>This field is set for every scanned BLE module.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">deviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Device Name</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData6deviceGSqCSo12CBPeripheral_"></a>
+                    <a name="//apple_ref/swift/Property/device" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData6deviceGSqCSo12CBPeripheral_">device</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the Bluetooth Device Object (CBPeripheral) of the BLE module.</p>
+
+<p>This field is set for every scanned BLE module</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">device</span><span class="p">:</span> <span class="kt">CBPeripheral</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>CBPeripheral Object</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData16beaconSensorDataGSqCS_18BKBeaconSensorData_"></a>
+                    <a name="//apple_ref/swift/Property/beaconSensorData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData16beaconSensorDataGSqCS_18BKBeaconSensorData_">beaconSensorData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a data object of blukii sensor data.</p>
+
+<p>This field is only valid for blukii beacons that contain sensors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconSensorData</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BeaconSensorData object, <code>nil</code> if no blukii beacon sensors are available</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData8firmwareGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/firmware" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData8firmwareGSqSS_">firmware</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the firmware number of a blukii</p>
+
+<p>It is a 4-digit string that you have to inerpret as follows for blukii 2.0: Firmware = ABCD means firmware number A.B.C.D</p>
+
+<p>For blukii 3.0 you have to interpret as follow: Firmware = AAABBB menas firmware number AAA.BBB</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">firmware</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Firmware string, <code>nil</code> if it is not supported</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData7productGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/product" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData7productGSqSS_">product</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the Product ID of a blukii</p>
+
+<p>This field can be <q>blukii 2.0</q> or <q>blukii 3.0</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">product</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Product ID string, nil if it is not supported</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData13eddystoneDataGSqCS_15BKEddystoneData_"></a>
+                    <a name="//apple_ref/swift/Property/eddystoneData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData13eddystoneDataGSqCS_15BKEddystoneData_">eddystoneData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets data object of Eddystone beacon data. </p>
+
+<p>This field is only valid for beacons that emit Eddystone UID, URL or TLM.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">eddystoneData</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKEddystoneData.html">BKEddystoneData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/BKEddystoneData.html">BKEddystoneData</a></code> Object, <code>nil</code> if it is not a Eddystone beacon</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData11iBeaconDataGSqCS_13BKiBeaconData_"></a>
+                    <a name="//apple_ref/swift/Property/iBeaconData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData11iBeaconDataGSqCS_13BKiBeaconData_">iBeaconData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a data object of iBeacon data.</p>
+
+<p>This field is only valid for beacons that emit iBeacon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">iBeaconData</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKiBeaconData.html">BKiBeaconData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/BKiBeaconData.html">BKiBeaconData</a></code> object, <code>nil</code> if it is not a iBeacon</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData7keyDataGSqCS_9BKKeyData_"></a>
+                    <a name="//apple_ref/swift/Property/keyData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData7keyDataGSqCS_9BKKeyData_">keyData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a data object of key data.</p>
+
+<p>this field is only valid for blukii SmartKeys.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">keyData</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKKeyData.html">BKKeyData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>KeyData object, nil if it is not a blukii Smart Key</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData4typeOS0_10BlukiiType"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData4typeOS0_10BlukiiType">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the module type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">type</span> <span class="o">=</span> <span class="kt"><a href="../Classes/BKDiscoveryData/BlukiiType.html">BlukiiType</a></span><span class="o">.</span><span class="kt">TYPE_NOBLUKII</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Modul Type as BlukiiType</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData11advIntervalSi"></a>
+                    <a name="//apple_ref/swift/Property/advInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData11advIntervalSi">advInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the advertising interval of a blukii.</p>
+
+<p>This field is only valid for Blukiis</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">advInterval</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>advertising interval in milliseconds, 0 if is not a blukii</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData7housingOS0_13BlukiiHousing"></a>
+                    <a name="//apple_ref/swift/Property/housing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData7housingOS0_13BlukiiHousing">housing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the housing value (size) of a blukii.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">housing</span> <span class="o">=</span> <span class="kt"><a href="../Classes/BKDiscoveryData/BlukiiHousing.html">BlukiiHousing</a></span><span class="o">.</span><span class="n">unknown</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Housing Value BlukkiHousing</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData7batterySi"></a>
+                    <a name="//apple_ref/swift/Property/battery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData7batterySi">battery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the battery level value of a blukii</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">battery</span> <span class="o">=</span> <span class="kt">Int</span><span class="o">.</span><span class="n">min</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Battery charge in percent, <code>Int.min</code> if it is not supported</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo15BKDiscoveryData7txPowerVs5Int16"></a>
+                    <a name="//apple_ref/swift/Property/txPower" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo15BKDiscoveryData7txPowerVs5Int16">txPower</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the txPower value of a blukii.</p>
+
+<p>It stands for the physical hardware setting of the BLE sender.</p>
+
+<p>This field is only valid for blukiis.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">txPower</span> <span class="o">=</span> <span class="kt">Int16</span><span class="o">.</span><span class="n">min</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>TxPower in dBm, <code>Int16.min</code> if it is not supported.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
