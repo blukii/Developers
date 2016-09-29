@@ -38,7 +38,7 @@ Insert the new depency to your Podfile:
 
 ```
 target 'YourApp' do
-pod 'blukiiInfoSDK', '~> 0.1.0-Beta'
+pod 'blukiiInfoSDK', '~> 0.1.0-Beta2'
 end
 ```
 
@@ -47,6 +47,8 @@ Then run the following command:
 ```
 pod install
 ```
+
+If you have and Objective-C Project, you have to insert a Swift file with the automatic generated Objective-C-Bridging-Header.h or you set the setting "Always Embed Swift Standard Libraries" to "YES"
 
 ### Ready!
 
