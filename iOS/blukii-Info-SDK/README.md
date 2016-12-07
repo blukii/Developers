@@ -1,4 +1,4 @@
-# blukii-info-sdk BETA
+# blukii-info-sdk
 
 blukii-info-sdk is the library for discovering Bluetooth LE modules (especially for blukiis) and reading their emitting data like blukii configuration values, beacon sensor data and data of the standard protocols Eddystone and iBeacon.
 
@@ -6,7 +6,7 @@ Furthermore this library lets you retrieve location based information that is as
 
 ## Documentation and support
 
-BETA API Documentation: [blukiiInfoSDK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/)
+API Documentation: [blukiiInfoSDK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/)
                                                             
 We recommend you to start with the documentation page of class [BKClient](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/Classes/BKClient.html)
 
@@ -38,7 +38,7 @@ Insert the new depency to your Podfile:
 
 ```
 target 'YourApp' do
-pod 'blukiiInfoSDK', '~> 0.1.0-Beta2'
+pod 'blukiiInfoSDK'
 end
 ```
 

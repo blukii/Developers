@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <p><a href="index.html"> Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -169,7 +169,7 @@ It will be set if the <code><a href="Classes/BKOutputElement.html">BKOutputEleme
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKDiscoveryData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKDiscoveryData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -209,7 +209,7 @@ It will be set if the <code><a href="Classes/BKOutputElement.html">BKOutputEleme
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKBeaconSensorData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKBeaconSensorData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -247,7 +247,7 @@ It will be set if the <code><a href="Classes/BKOutputElement.html">BKOutputEleme
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKDiscoverySettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKDiscoverySettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -283,7 +283,7 @@ It will be set if the <code><a href="Classes/BKOutputElement.html">BKOutputEleme
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKiBeaconData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKiBeaconData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -315,7 +315,7 @@ It will be set if the <code><a href="Classes/BKOutputElement.html">BKOutputEleme
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKAxisData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKAxisData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -401,7 +401,7 @@ func onDiscoveryInfo(infoCode: BlukiiInfo.BKClient.InfoCode) { }
 <li>The scanner is searching for BLE modules inside the defined rssi range (<code><a href="Classes/BKDiscoverySettings.html#/s:FC10BlukiiInfo19BKDiscoverySettings16getRssiThresholdFT_Si">BKDiscoverySettings.getRssiThreshold()</a></code>).</li>
 <li>After one scan duration (<code><a href="Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings12scanDurationSi">BKDiscoverySettings.scanDuration</a></code>) the results are called back to (<code>BKClientDiscoveryDelegate.onDiscoveryResult(_: )</code>)</li>
 <li>This is repeated until BLE Scanning is stopped by <code><a href="Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb">BKClient.stopDiscovery()</a></code> or the app did enter the background.</li>
-<li>if the scanner is paused according to the <code><a href="Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code> the info <code><a href="Classes/BKClient/InfoCode.html#/s:FOC10BlukiiInfo8BKClient8InfoCode21INFO_DISCOVERY_PAUSEDFMS1_S1_">BKClient.InfoCode.INFO_DISCOVERY_PAUSED</a></code> is called.</li>
+<li>if the scanner is paused according to the <code><a href="Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code> the info <code>BKClient.InfoCode.INFO_DISCOVERY_PAUSED</code> is called.</li>
 <li>For background scanning it is necessary to be in the iBeacon Region 123456789AB-CDEF-01234-00000000002 or 123456789AB-CDEF-01234-00000000003. In background it is possible to scan for iBeacon, EddystoneBeacon and InfoBeacon.</li>
 </ul>
 
@@ -518,7 +518,7 @@ func onNewsError(errorCode: BlukiiInfo.BKClient.ErrorCode) {
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKClient</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">BKDeviceDiscoveryServiceDelegate</span><span class="p">,</span> <span class="kt">BKBackendResolverDelegate</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKClient</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">BKDeviceDiscoveryServiceDelegate</span><span class="p">,</span> <span class="kt">BKBackendResolverDelegate</span></code></pre>
 
                         </div>
                       </div>
@@ -550,7 +550,7 @@ func onNewsError(errorCode: BlukiiInfo.BKClient.ErrorCode) {
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKKeyData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKKeyData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -590,7 +590,7 @@ func onNewsError(errorCode: BlukiiInfo.BKClient.ErrorCode) {
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKResolveSettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKResolveSettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -628,7 +628,7 @@ func onNewsError(errorCode: BlukiiInfo.BKClient.ErrorCode) {
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKEddystoneData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKEddystoneData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -675,7 +675,7 @@ If resolving is successful it will be unmodified part of <code><a href="Classes/
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKInputElement</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKInputElement</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -707,7 +707,7 @@ If resolving is successful it will be unmodified part of <code><a href="Classes/
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKFeatureValidator</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKFeatureValidator</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -766,7 +766,7 @@ The <code>BKResolveData</code> fields contain the values of on corresponding blu
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKResolveData</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKResolveData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -810,7 +810,7 @@ The <code>BKResolveData</code> fields contain the values of on corresponding blu
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKOutputElement</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKOutputElement</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -822,8 +822,8 @@ The <code>BKResolveData</code> fields contain the values of on corresponding blu
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-06)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

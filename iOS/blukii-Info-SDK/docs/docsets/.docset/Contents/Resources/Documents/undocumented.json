@@ -1,1 +1,222 @@
-{"warnings":[],"source_directory":"/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo"}
+{
+  "warnings": [
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKAxisData.swift",
+      "line": 41,
+      "symbol": "BKAxisData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKAxisData.swift",
+      "line": 56,
+      "symbol": "BKAxisData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKAxisData.swift",
+      "line": 62,
+      "symbol": "BKAxisData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKBeaconSensorData.swift",
+      "line": 78,
+      "symbol": "BKBeaconSensorData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKBeaconSensorData.swift",
+      "line": 101,
+      "symbol": "BKBeaconSensorData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKBeaconSensorData.swift",
+      "line": 110,
+      "symbol": "BKBeaconSensorData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKDiscoveryData.swift",
+      "line": 217,
+      "symbol": "BKDiscoveryData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKDiscoveryData.swift",
+      "line": 265,
+      "symbol": "BKDiscoveryData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKDiscoveryData.swift",
+      "line": 286,
+      "symbol": "BKDiscoveryData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKEddystoneData.swift",
+      "line": 82,
+      "symbol": "BKEddystoneData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKEddystoneData.swift",
+      "line": 107,
+      "symbol": "BKEddystoneData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKEddystoneData.swift",
+      "line": 119,
+      "symbol": "BKEddystoneData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKInputElement.swift",
+      "line": 80,
+      "symbol": "BKInputElement.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKInputElement.swift",
+      "line": 91,
+      "symbol": "BKInputElement.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKInputElement.swift",
+      "line": 96,
+      "symbol": "BKInputElement.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKKeyData.swift",
+      "line": 54,
+      "symbol": "BKKeyData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKKeyData.swift",
+      "line": 68,
+      "symbol": "BKKeyData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKKeyData.swift",
+      "line": 73,
+      "symbol": "BKKeyData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKOutputElement.swift",
+      "line": 122,
+      "symbol": "BKOutputElement.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKOutputElement.swift",
+      "line": 142,
+      "symbol": "BKOutputElement.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKOutputElement.swift",
+      "line": 151,
+      "symbol": "BKOutputElement.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKResolveData.swift",
+      "line": 126,
+      "symbol": "BKResolveData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKResolveData.swift",
+      "line": 151,
+      "symbol": "BKResolveData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKResolveData.swift",
+      "line": 161,
+      "symbol": "BKResolveData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKiBeaconData.swift",
+      "line": 55,
+      "symbol": "BKiBeaconData.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKiBeaconData.swift",
+      "line": 73,
+      "symbol": "BKiBeaconData.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/model/BKiBeaconData.swift",
+      "line": 82,
+      "symbol": "BKiBeaconData.supportsSecureCoding",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/util/BKReachability.swift",
+      "line": null,
+      "symbol": "BKReachability",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/util/BKReachability.swift",
+      "line": 29,
+      "symbol": "ReachabilityError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/util/BKReachability.swift",
+      "line": 36,
+      "symbol": "ReachabilityChangedNotification",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo/BlukiiInfo/util/BKReachability.swift",
+      "line": 49,
+      "symbol": "BKReachability",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/lennartfleig/ownCloud/stbu0056/InfoApp/blukii_iOS_infoApp/infoApp/BlukiiInfo"
+}

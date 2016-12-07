@@ -14,7 +14,7 @@
     <a title="BKDiscoverySettings Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <p><a href="../index.html"> Docs</a> (85% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -125,7 +125,7 @@
             <h1>BKDiscoverySettings</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BKDiscoverySettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKDiscoverySettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -168,7 +168,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">RSSI_MAX</span> <span class="o">=</span> <span class="o">-</span><span class="mi">20</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">RSSI_MAX</span> <span class="o">=</span> <span class="o">-</span><span class="mi">20</span></code></pre>
 
                         </div>
                       </div>
@@ -195,7 +195,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">RSSI_MIN</span> <span class="o">=</span> <span class="o">-</span><span class="mi">120</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">RSSI_MIN</span> <span class="o">=</span> <span class="o">-</span><span class="mi">120</span></code></pre>
 
                         </div>
                       </div>
@@ -222,7 +222,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">RSSI_DEFAULT</span> <span class="o">=</span> <span class="o">-</span><span class="mi">85</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">RSSI_DEFAULT</span> <span class="o">=</span> <span class="o">-</span><span class="mi">85</span></code></pre>
 
                         </div>
                       </div>
@@ -251,7 +251,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRssiThreshold</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">getRssiThreshold</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -287,7 +287,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setRssiThreshold</span><span class="p">(</span><span class="nv">rssiThreshold</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">setRssiThreshold</span><span class="p">(</span><span class="n">_</span> <span class="nv">rssiThreshold</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -325,7 +325,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">SCANDURATION_DEFAULT</span> <span class="o">=</span> <span class="mi">5000</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">SCANDURATION_DEFAULT</span> <span class="o">=</span> <span class="mi">5000</span></code></pre>
 
                         </div>
                       </div>
@@ -354,7 +354,115 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanDuration</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanDuration</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo19BKDiscoverySettings24SCANWAITDURATION_DEFAULTSi"></a>
+                    <a name="//apple_ref/swift/Property/SCANWAITDURATION_DEFAULT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo19BKDiscoverySettings24SCANWAITDURATION_DEFAULTSi">SCANWAITDURATION_DEFAULT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scan Wait duration between two discovery phase: 15000 milliseconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">SCANWAITDURATION_DEFAULT</span> <span class="o">=</span> <span class="mi">15000</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo19BKDiscoverySettings16scanWaitDurationSi"></a>
+                    <a name="//apple_ref/swift/Property/scanWaitDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo19BKDiscoverySettings16scanWaitDurationSi">scanWaitDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Value of the waiting time between two discovery phase in milliseconds. Default is <code><a href="../Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings24SCANWAITDURATION_DEFAULTSi">SCANWAITDURATION_DEFAULT</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanWaitDuration</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo19BKDiscoverySettings41DISABLESCANWAITTIMEATSTARTFORTIME_DEFAULTSi"></a>
+                    <a name="//apple_ref/swift/Property/DISABLESCANWAITTIMEATSTARTFORTIME_DEFAULT" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo19BKDiscoverySettings41DISABLESCANWAITTIMEATSTARTFORTIME_DEFAULTSi">DISABLESCANWAITTIMEATSTARTFORTIME_DEFAULT</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default Value for disableWaitTimeAtStartForTime</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">DISABLESCANWAITTIMEATSTARTFORTIME_DEFAULT</span> <span class="o">=</span> <span class="mi">120</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo19BKDiscoverySettings33disableScanWaitTimeAtStartForTimeSi"></a>
+                    <a name="//apple_ref/swift/Property/disableScanWaitTimeAtStartForTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo19BKDiscoverySettings33disableScanWaitTimeAtStartForTimeSi">disableScanWaitTimeAtStartForTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Value of the Time in seconds, wich the scanWaitDuration will be disabled, at the start of a scan. Default is <code>DISABLEWAITTIMEATSTARTFORTIME_DEFAULT</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">disableScanWaitTimeAtStartForTime</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -381,7 +489,13 @@
 <ul>
 <li>capabilities -&gt; Background Modes -&gt; Location Update -&gt; enable</li>
 <li>capabilities -&gt; Background Modes -&gt; Use Bluetooth LE accessoires -&gt; enable</li>
-<li>info.plist: Enter a value for NSLocationAlwaysUsageDescription</li>
+<li>info.plist: Enter a value for NSLocationAlwaysUsageDescription
+Insert the following code in the didEnterBackground Delegate in the AppDelegate:
+<code>var task = UIBackgroundTaskIdentifier()
+task = UIApplication.shared.beginBackgroundTask {
+UIApplication.shared.endBackgroundTask(task)
+task = UIBackgroundTaskInvalid
+}</code></li>
 </ul>
 
 <p>For power saving BLE scan is only in a iBeacon region active (Default-Region: 01234567-89AB-CDEF-000000000001 and 01234567-89AB-CDEF-000000000002) . If you want to scan an InfoBeacon in Background, you have to configure the blukii smartBeacon in Multimode, so that the blukii smartBeacon send iBeacon an infoBeacon protocol.</p>
@@ -391,7 +505,61 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanInBackground</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanInBackground</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo19BKDiscoverySettings28scanContinuouslyOnBackgroundSb"></a>
+                    <a name="//apple_ref/swift/Property/scanContinuouslyOnBackground" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo19BKDiscoverySettings28scanContinuouslyOnBackgroundSb">scanContinuouslyOnBackground</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>State if the scan wait duration between two discovery phases is disabled on background. Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanContinuouslyOnBackground</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo19BKDiscoverySettings28scanContinuouslyOnForegroundSb"></a>
+                    <a name="//apple_ref/swift/Property/scanContinuouslyOnForeground" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo19BKDiscoverySettings28scanContinuouslyOnForegroundSb">scanContinuouslyOnForeground</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sate if the scan wait duration between two discovery phases is disabled on foreground. Default value is <code>true</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanContinuouslyOnForeground</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
 
                         </div>
                       </div>
@@ -422,7 +590,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanNonBlukiis</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanNonBlukiis</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
 
                         </div>
                       </div>
@@ -455,7 +623,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanBeaconSensorData</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanBeaconSensorData</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
 
                         </div>
                       </div>
@@ -486,7 +654,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanEddystoneData</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanEddystoneData</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
 
                         </div>
                       </div>
@@ -519,7 +687,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanIBeaconData</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">scanIBeaconData</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
 
                         </div>
                       </div>
@@ -553,7 +721,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">IBEACONREGIONS_DEFAULT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"01234567-89AB-CDEF-0123-000000000001"</span><span class="p">,</span> <span class="s">"01234567-89AB-CDEF-0123-000000000002"</span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">let</span> <span class="nv">IBEACONREGIONS_DEFAULT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"01234567-89AB-CDEF-0123-000000000001"</span><span class="p">,</span> <span class="s">"01234567-89AB-CDEF-0123-000000000002"</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -582,7 +750,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setScanIBeaconRegions</span><span class="p">(</span><span class="nv">regions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">setScanIBeaconRegions</span><span class="p">(</span><span class="n">_</span> <span class="nv">regions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -629,7 +797,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getScanIBeaconRegions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">getScanIBeaconRegions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -646,8 +814,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-06)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
