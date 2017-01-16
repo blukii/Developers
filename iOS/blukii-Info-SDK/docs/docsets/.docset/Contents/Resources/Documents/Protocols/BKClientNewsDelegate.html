@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKClientNewsDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/BKClientNewsDelegate" class="dashAnchor"></a>
+    <a title="BKClientNewsDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (85% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKClientNewsDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/ErrorCode.html">– ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/InfoCode.html">– InfoCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiType.html">– BlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiHousing.html">– BlukiiHousing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInputElement.html">BKInputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement.html">BKOutputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement/ResolveState.html">– ResolveState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveData.html">BKResolveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings.html">BKResolveSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings/OutputLanguage.html">– OutputLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKInputSourceType.html">BKInputSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKClientNewsDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BKClientNewsDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate for retreiving a translated blukii Info Manager news text.</p>
+
+<p>The Delegate are registered by <code><a href="../Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient12newsDelegateGSqPS_20BKClientNewsDelegate__">BKClient.newsDelegate</a></code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10BlukiiInfo20BKClientNewsDelegate12onNewsResultFSST_"></a>
+                    <a name="//apple_ref/swift/Method/onNewsResult(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10BlukiiInfo20BKClientNewsDelegate12onNewsResultFSST_">onNewsResult(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Will be called once after calling <code>BKClient.resolveServerNews(languageId: String)</code></p>
+
+<p>If the element can not be resolved because of no data or any error, <code>onNewsError(errorCode: BKClient.ErrorCode)</code> will be called instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">onNewsResult</span><span class="p">(</span><span class="n">_</span> <span class="nv">news</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>news</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>translated news text</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10BlukiiInfo20BKClientNewsDelegate11onNewsErrorFOCS_8BKClient9ErrorCodeT_"></a>
+                    <a name="//apple_ref/swift/Method/onNewsError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10BlukiiInfo20BKClientNewsDelegate11onNewsErrorFOCS_8BKClient9ErrorCodeT_">onNewsError(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Will be called once after calling <code>BKClient.resolveServerNews(languageId: String)</code></p>
+
+<p>If the element can successfully be resolved, <code>onNewsResult(news: String)</code> will be called instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">onNewsError</span><span class="p">(</span><span class="n">_</span> <span class="nv">errorCode</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKClient.html">BKClient</a></span><span class="o">.</span><span class="kt">ErrorCode</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKBeaconSensorData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BKBeaconSensorData" class="dashAnchor"></a>
+    <a title="BKBeaconSensorData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (85% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKBeaconSensorData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/ErrorCode.html">– ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient/InfoCode.html">– InfoCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiType.html">– BlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData/BlukiiHousing.html">– BlukiiHousing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInputElement.html">BKInputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement.html">BKOutputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKOutputElement/ResolveState.html">– ResolveState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveData.html">BKResolveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings.html">BKResolveSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKResolveSettings/OutputLanguage.html">– OutputLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKInputSourceType.html">BKInputSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKBeaconSensorData</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKBeaconSensorData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                </div>
+              </div>
+            <p>Read only data object for sensor data that is emitted by blukii beacons</p>
+
+<p>BeaconSensor values are part of <code><a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a></code></p>
+
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <code><a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a></code>
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/SensorValues"></a>
+                <a name="//apple_ref/swift/Section/SensorValues" class="dashAnchor"></a>
+                <a href="#/SensorValues">
+                  <h3 class="section-name">SensorValues</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo18BKBeaconSensorData11airPressureVs5Int16"></a>
+                    <a name="//apple_ref/swift/Property/airPressure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo18BKBeaconSensorData11airPressureVs5Int16">airPressure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the air pressure sensor. (Read-Only)</p>
+
+<p>If the beacon does not emit air pressure the default value is Int16.min</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">airPressure</span> <span class="o">=</span> <span class="kt">Int16</span><span class="o">.</span><span class="n">min</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Air pressure in hP</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo18BKBeaconSensorData5lightVs5Int16"></a>
+                    <a name="//apple_ref/swift/Property/light" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo18BKBeaconSensorData5lightVs5Int16">light</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the light sensor. (Read-Only)</p>
+
+<p>If the beacon does not emit light the default value is Int16.min</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">light</span> <span class="o">=</span> <span class="kt">Int16</span><span class="o">.</span><span class="n">min</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Light in Lux</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo18BKBeaconSensorData8humidityVs5Int16"></a>
+                    <a name="//apple_ref/swift/Property/humidity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo18BKBeaconSensorData8humidityVs5Int16">humidity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the humidity sensor. (Read-Only)</p>
+
+<p>If the beacon does not emit humidity the default value is Int16.min</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">humidity</span> <span class="o">=</span> <span class="kt">Int16</span><span class="o">.</span><span class="n">min</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Humidity in percent (%)</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo18BKBeaconSensorData11temperatureSf"></a>
+                    <a name="//apple_ref/swift/Property/temperature" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo18BKBeaconSensorData11temperatureSf">temperature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the temperature sensor. (Read-Only)</p>
+
+<p>If the beacon does not emit temperature the default value is Float()</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">temperature</span> <span class="o">=</span> <span class="kt">Float</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Temperature in degrees Celsius (°C)</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo18BKBeaconSensorData12accelerationGSqCS_10BKAxisData_"></a>
+                    <a name="//apple_ref/swift/Property/acceleration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo18BKBeaconSensorData12accelerationGSqCS_10BKAxisData_">acceleration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The 3D axis Valuee of the acceleration sensor.</p>
+
+<p><strong>Note:</strong> If the scan duration longer than one advertising interval duration the maximum value of each axis is returned</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">acceleration</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKAxisData.html">BKAxisData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>AxisData values of acceleration</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10BlukiiInfo18BKBeaconSensorData9magnetismGSqCS_10BKAxisData_"></a>
+                    <a name="//apple_ref/swift/Property/magnetism" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10BlukiiInfo18BKBeaconSensorData9magnetismGSqCS_10BKAxisData_">magnetism</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The  3D axis values of magnetism sensor.</p>
+
+<p><strong>Note:</strong> If the scan duration is longer than one advertising interval duration the maximum value of each axis is returned</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal(set)</span> <span class="n">open</span> <span class="k">var</span> <span class="nv">magnetism</span><span class="p">:</span> <span class="kt"><a href="../Classes/BKAxisData.html">BKAxisData</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>AxisData values of magnetism</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

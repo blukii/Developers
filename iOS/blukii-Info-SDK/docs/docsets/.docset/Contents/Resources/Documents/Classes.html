@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (85% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKClient/ErrorCode.html">– ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKClient/InfoCode.html">– InfoCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKDiscoveryData/BlukiiType.html">– BlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKDiscoveryData/BlukiiHousing.html">– BlukiiHousing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKInputElement.html">BKInputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKOutputElement.html">BKOutputElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKOutputElement/ResolveState.html">– ResolveState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKResolveData.html">BKResolveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKResolveSettings.html">BKResolveSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKResolveSettings/OutputLanguage.html">– OutputLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/BKInputSourceType.html">BKInputSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/BKClientNewsDelegate.html">BKClientNewsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/BKClientResolveDelegate.html">BKClientResolveDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo15BKDiscoveryData"></a>
+                    <a name="//apple_ref/swift/Class/BKDiscoveryData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo15BKDiscoveryData">BKDiscoveryData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data object for emitted data of on BLE module.</p>
+
+<p><code>BKDiscoveryData</code> is a collection of BLE data that is scanned during one scan duration for one BLE module.</p>
+
+<p>It contains the following values if it is provided by the module&rsquo;s hardware and firmware</p>
+
+<ul>
+<li>Device found date</li>
+<li>RSSI value</li>
+<li>blukii Hardware specific advertising data like firmware, blukii type, advertising interval, battery and txPower</li>
+<li>Sensor data results of blukii sensor beacons. See <code><a href="Classes/BKBeaconSensorData.html">BKBeaconSensorData</a></code></li>
+<li>Key data of blukii SmartKeys. See <code><a href="Classes/BKKeyData.html">BKKeyData</a></code></li>
+<li>Eddystone protocol data values. See <code><a href="Classes/BKEddystoneData.html">BKEddystoneData</a></code></li>
+<li>iBeacon protocol data values. See <code><a href="Classes/BKiBeaconData.html">BKiBeaconData</a></code></li>
+</ul>
+
+<p><strong>Note</strong>: If the scan scan duration (see <code><a href="Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings12scanDurationSi">BKDiscoverySettings.scanDuration</a></code>) is longer than the advertising interval of the module than each value is read only once. The following data frames of the same type are ignored if the corresponding fields are already set in the <code>BKDiscoveryData</code> object.
+The discovery date (<code>deviceFoundDate</code>) is the timestamp of the first BLE frame that is scanned by the mobile device. </p>
+
+<p><code>BKDiscoveryData</code> is a part of <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code>
+It will be set if the <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code> is returned by the delegate function <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code> after calling BKClient.initDiscovery(). For Other BKClient delegates BKDiscoveryData is <code>nil</code>.</p>
+
+                        <a href="Classes/BKDiscoveryData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKDiscoveryData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo18BKBeaconSensorData"></a>
+                    <a name="//apple_ref/swift/Class/BKBeaconSensorData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo18BKBeaconSensorData">BKBeaconSensorData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data object for sensor data that is emitted by blukii beacons</p>
+
+<p>BeaconSensor values are part of <code><a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a></code></p>
+
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <code><a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a></code>
+
+</div>
+
+                        <a href="Classes/BKBeaconSensorData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKBeaconSensorData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo19BKDiscoverySettings"></a>
+                    <a name="//apple_ref/swift/Class/BKDiscoverySettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo19BKDiscoverySettings">BKDiscoverySettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property set of settings to configure the discovering process.</p>
+
+<p>The DiscoverySettings properties are affecting the discovery process that is started by <code><a href="Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13initDiscoveryFT_T_">BKClient.initDiscovery()</a></code> and the <code><a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a></code> contents of the result delegate.</p>
+
+<p>You can access the DiscoverySettings by <code><a href="Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient17discoverySettingsGSQCS_19BKDiscoverySettings_">BKClient.discoverySettings</a></code></p>
+
+<p>Every setting value is writeable and has a default value that is used if not changed by the developer.</p>
+
+                        <a href="Classes/BKDiscoverySettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKDiscoverySettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo13BKiBeaconData"></a>
+                    <a name="//apple_ref/swift/Class/BKiBeaconData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo13BKiBeaconData">BKiBeaconData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><a href='#read-only-data-object-for-ibeacon-data-that-is-emitted-by-beacons' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='read-only-data-object-for-ibeacon-data-that-is-emitted-by-beacons'>Read only data object for iBeacon data that is emitted by beacons</h1></p>
+
+<p>See iBeacon specification at <a href="https://developer.apple.com/ibeacon">https://developer.apple.com/ibeacon</a></p>
+
+<p>iBeaconData values are part of <code><a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a></code></p>
+
+                        <a href="Classes/BKiBeaconData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKiBeaconData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo10BKAxisData"></a>
+                    <a name="//apple_ref/swift/Class/BKAxisData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo10BKAxisData">BKAxisData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data set for 3D axis data</p>
+
+                        <a href="Classes/BKAxisData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKAxisData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo8BKClient"></a>
+                    <a name="//apple_ref/swift/Class/BKClient" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo8BKClient">BKClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><a href='#main-controller-class-for-discovering-ble-modules-and-resolving-blukii-concerned-data-from-the-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='main-controller-class-for-discovering-ble-modules-and-resolving-blukii-concerned-data-from-the-blukii-info-manager'>Main Controller class for discovering BLE modules and resolving blukii concerned data from the blukii Info Manager.</h1></p>
+
+<p>BlukiiClient is a single point of contact for all data retieving actions as follows:
+- Discovering BLE modules, extracting BLE data and resolving data from blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>)
+- Resolving data for a single blukii module or tag from blukii Info Manager
+- Resolving news from blukii Info Manager</p>
+
+<p><a href='#a-discover-ble-modules-extract-their-ble-data-and-resolve-their-data-from-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='a-discover-ble-modules-extract-their-ble-data-and-resolve-their-data-from-blukii-info-manager'>A. Discover BLE modules, extract their BLE data and resolve their data from blukii Info Manager</h2></p>
+
+<p>Use this feature to discover BLE modules in your environment and optionally retrieve corresponding data from blukii Info Manager. </p>
+
+<p>To do this you have to do the following steps:</p>
+
+<p><a href='#1-initialize-and-start-discovery' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='1-initialize-and-start-discovery'>1. Initialize and start discovery</h3></p>
+
+<p>Call <code>initDiscovery()</code> and implement the <code><a href="Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a></code> delegates. After initialization is ready (delegate <code>onDiscoveryInitialized()</code>) you can start the discovery.</p>
+
+<pre class="highlight plaintext"><code>var mBlukiiClient: BKClient!
+
+override func viewDidLoad() {
+    ...
+    mBlukiiClient = BKClient()
+    mBlukiiClient.discoveryDelegate = self
+    mBlukiiClient.initDiscovery()
+    ...
+}
+
+func onInitialized() {
+    if mBlukiiClient.startDiscovery() {
+        // Discovery successfully started
+    }
+}
+
+func onDiscoveryResult(discoveryResultList: [BlukiiInfo.BKOutputElement]) { }
+func onDiscoveryError(errorCode: BlukiiInfo.BKClient.ErrorCode) { }
+func onDiscoveryInfo(infoCode: BlukiiInfo.BKClient.InfoCode) { }
+</code></pre>
+
+<p><a href='#2-configure-discovery-settings' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='2-configure-discovery-settings'>2. Configure discovery settings</h3></p>
+
+<p>Use the <code><a href="Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code> object for configuring discovery. Get <code><a href="Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient17discoverySettingsGSQCS_19BKDiscoverySettings_">BKClient.discoverySettings</a></code> to retrieve the settings property set.</p>
+
+<pre class="highlight plaintext"><code>func onInitialized() {
+      // Discovery successfully initialized
+
+      let discoverySettings: BKDiscoverySettings = mBlukiiClient.discoverySettings
+      discoverySettings.setRssiThreshold(-100)
+      discoverySettings.scanDuration = 10000
+      ...
+
+      if mBlukiiClient.startDiscovery() {
+          // Discovery successfully started
+      }
+ }
+</code></pre>
+
+<p>When BLE scanner is started the BLE discovery is acting according to the <code><a href="Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code>:</p>
+
+<ul>
+<li>The scanner is searching for BLE modules inside the defined rssi range (<code><a href="Classes/BKDiscoverySettings.html#/s:FC10BlukiiInfo19BKDiscoverySettings16getRssiThresholdFT_Si">BKDiscoverySettings.getRssiThreshold()</a></code>).</li>
+<li>After one scan duration (<code><a href="Classes/BKDiscoverySettings.html#/s:vC10BlukiiInfo19BKDiscoverySettings12scanDurationSi">BKDiscoverySettings.scanDuration</a></code>) the results are called back to (<code>BKClientDiscoveryDelegate.onDiscoveryResult(_: )</code>)</li>
+<li>This is repeated until BLE Scanning is stopped by <code><a href="Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13stopDiscoveryFT_Sb">BKClient.stopDiscovery()</a></code> or the app did enter the background.</li>
+<li>if the scanner is paused according to the <code><a href="Classes/BKDiscoverySettings.html">BKDiscoverySettings</a></code> the info <code>BKClient.InfoCode.INFO_DISCOVERY_PAUSED</code> is called.</li>
+<li>For background scanning it is necessary to be in the iBeacon Region 123456789AB-CDEF-01234-00000000002 or 123456789AB-CDEF-01234-00000000003. In background it is possible to scan for iBeacon, EddystoneBeacon and InfoBeacon.</li>
+</ul>
+
+<p><a href='#3-configure-resolver-settings' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='3-configure-resolver-settings'>3. Configure resolver settings</h3></p>
+
+<p>Use the <code><a href="Classes/BKResolveSettings.html">BKResolveSettings</a></code>object for configuring the resolving of the blukii Info Manager data.</p>
+
+<p>Call <code><a href="Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient15resolveSettingsGSQCS_17BKResolveSettings_">BKClient.resolveSettings</a></code>to retrieve the settings property set. </p>
+
+<p><strong>Note:</strong> <code><a href="Classes/BKResolveSettings.html#/s:vC10BlukiiInfo17BKResolveSettings14resolveEnabledSb">BKResolveSettings.resolveEnabled</a></code> has to be set true to enable the resolver!</p>
+
+<pre class="highlight plaintext"><code>func onInitialized() {
+      // Discovery successfully initialized
+
+      let discoverySettings: BKDiscoverySettings = mBlukiiClient.discoverySettings
+      discoverySettings.setRssiThreshold(-100)
+      discoverySettings.scanDuration = 10000
+      ...
+
+      // change resolver settings
+      let resolveSettings: BKResolveSettings = mBlukiiClient.resolveSettings
+      resolveSettings.resolveEnabled = true
+      resolveSettings.setLanguagePriority([BKResolveSettings.OutputLanguage.English, BKResolveSettings.OutputLanguage.German])
+      ...
+
+      if mBlukiiClient.startDiscovery() {
+          // Discovery successfully started
+      }
+ }
+</code></pre>
+
+<p><a href='#4-retrieve-results' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='4-retrieve-results'>4. Retrieve results</h3></p>
+
+<p>The callback <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code> will be called after finishing every discovery phase. It retrieves the discovered list of BKOutputElements.</p>
+
+<p><strong>Note:</strong> If no BLE modules have been found discoveryResultList is empty (not nil).</p>
+
+<pre class="highlight plaintext"><code>func onDiscoveryResult(discoveryResultList: [BKOutputElement]) {
+  // Discovery phase has finished: list of OutputElements are retrieved
+
+  for outputElement in discoveryResultList {
+     let id = outputElement.id
+     let rssi = outputElement.discoveryData?.rssi
+     ...
+  }
+}
+</code></pre>
+
+<p><a href='#5-retrieve-errors-and-infos' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='5-retrieve-errors-and-infos'>5. Retrieve errors and infos</h3></p>
+
+<p>The callbacks <code>BKClientDiscoveryDelegate.onDiscoveryError(BKClient.ErrorCode)</code> and <code>BKClientDiscoveryDelegate.onDiscoveryInfo(BKClient.InfoCode)</code> will be called if there is important information about the discover process.</p>
+
+<pre class="highlight plaintext"><code>func onDiscoveryError(errorCode: BKClient.ErrorCode) {
+    // An error has been sent from discover
+}
+
+func onDiscoveryInfo(infoCode: BKClient.InfoCode) {
+    // An info has been sent from discovery
+}
+</code></pre>
+
+<p><a href='#b-resolve-data-for-a-single-blukii-module-or-tag-from-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='b-resolve-data-for-a-single-blukii-module-or-tag-from-blukii-info-manager'>B. Resolve data for a single blukii module or tag from blukii Info Manager</h2></p>
+
+<p>Retrieve data for a module or tag from blukii Info Manager by calling <code>resolveInputElement(InputElement)</code></p>
+
+<p>You have to prepare an <code><a href="Classes/BKInputElement.html">BKInputElement</a></code> that stands for a blukii number, NFC tag or scan result. Please see <code><a href="Classes/BKInputElement.html">BKInputElement</a></code> for more Information.</p>
+
+<p>If the resolving proccess is successfull the delegate <code>BKClientResolveDelegate.onResolveInputElementResult(outputElement: BKOutputElement)</code> is called.
+Otherwise the delegate <code>BKClientResolveDelegate.onResolveInputElementError(inputElement: BKInputElement, errorCode: BKClient.ErrorCode)</code> lets you know the error of the resolving proccess. </p>
+
+<pre class="highlight plaintext"><code>mBlukiiClient.resolveDelegate = self
+
+func resolveSingleElement() {
+    // call resolver
+    let inputElement = BKInputElement(tagID: "", inputType: BKInputSourceType.NFC)
+    mBlukiiClient.resolveInputElement(inputElement)
+}
+
+func onResolveInputElementResult(outputElement: BKOutputElement) {
+    let id = outputElement.id
+    let url = outputElement.resolveData?.url
+}
+
+func onResolveInputElementError(inputElement: BKInputElement, errorCode: BKClient.ErrorCode) {
+    // An error has been sent from resolver
+}
+</code></pre>
+
+<p><a href='#c-resolving-news-from-blukii-info-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='c-resolving-news-from-blukii-info-manager'>C. Resolving news from blukii Info Manager</h2></p>
+
+<p>Retrieve a translated news text from the blukii Info Manager.</p>
+
+<p>If the resolving process is successfull the delegate <code>BKClientNewsDelegate.onNewsResult(news: String)</code> is called. 
+Otherwise the delegate <code>BKClientNewsDelegate.onNewsError(errorCode: BKClient.ErrorCode)</code> lets you know the error of the resolving process.</p>
+
+<pre class="highlight plaintext"><code>mBlukiiClient.newsDelegate = self
+
+func resolveNews() {
+    mBlukiiClient.resolveServerNews("en-gb")
+}
+
+func onNewsResult(news: String) {
+    // news retrieved
+}
+
+func onNewsError(errorCode: BlukiiInfo.BKClient.ErrorCode) {
+    // An error has been sent from resolver
+}
+</code></pre>
+
+                        <a href="Classes/BKClient.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKClient</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">BKDeviceDiscoveryServiceDelegate</span><span class="p">,</span> <span class="kt">BKBackendResolverDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo9BKKeyData"></a>
+                    <a name="//apple_ref/swift/Class/BKKeyData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo9BKKeyData">BKKeyData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data set for blukii SmartKey</p>
+
+                        <a href="Classes/BKKeyData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKKeyData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo17BKResolveSettings"></a>
+                    <a name="//apple_ref/swift/Class/BKResolveSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo17BKResolveSettings">BKResolveSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property set of settings to configure the resolving process of data from blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>)</p>
+
+<p>You can access the BKResolveSettings by calling <code><a href="Classes/BKClient.html#/s:vC10BlukiiInfo8BKClient15resolveSettingsGSQCS_17BKResolveSettings_">BKClient.resolveSettings</a></code></p>
+
+<p>Every settings value is writeable and has a default value that is used if not changed by the developer.</p>
+
+<p>With the exception of <code>getLanguagePriority()</code> the ResolveSettings properties are only affecting the discovery process that is started by <code><a href="Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13initDiscoveryFT_T_">BKClient.initDiscovery()</a></code></p>
+
+<p>For the single resolving process that is started by <code>BKClient.resolveInputElement(input: BKInputElement)</code> only <code>getLanguagePriority()</code> is relevant.</p>
+
+                        <a href="Classes/BKResolveSettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKResolveSettings</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo15BKEddystoneData"></a>
+                    <a name="//apple_ref/swift/Class/BKEddystoneData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo15BKEddystoneData">BKEddystoneData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data object for Eddystone data that is emitted by beacons</p>
+
+<p>See Eddystone specification at <a href="https://github.com/google/eddystone/blob/master/protocol-specification.md">https://github.com/google/eddystone/blob/master/protocol-specification.md</a></p>
+
+<p><code>BKEddystoneData</code> can contain data of unencrypted EddyStone UID, URL and TLM.</p>
+
+<p><code>BKEddystoneData</code> values are part of <code><a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a></code>.</p>
+
+                        <a href="Classes/BKEddystoneData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKEddystoneData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo14BKInputElement"></a>
+                    <a name="//apple_ref/swift/Class/BKInputElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo14BKInputElement">BKInputElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data Object that defines the input data for resolving requests to blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>).</p>
+
+<p>It is used in two cases:</p>
+
+<ul>
+<li><strong>Delegate</strong> <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code>:</li>
+</ul>
+
+<p><code>BKInputElement</code> is part of every <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code>. It contains input type <code>BKInputSourceTpye.BLUKII</code> and the device name of the discovered BLE module.</p>
+
+<ul>
+<li><strong>Function</strong> <code>BKClient.resolveInputElement(BKInputElement)</code>:</li>
+</ul>
+
+<p><code>BKInputElement</code> is used as input property for a single recolving action. It has to be created by initializer <code>BKInputElement(String, BKInputSourceType)</code>.
+If resolving is successful it will be unmodified part of <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code> that is returned by delegate <code>BKClientResolveDelegate.onResolveInputElementResult(outputElement: BKOutputElement)</code></p>
+
+                        <a href="Classes/BKInputElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKInputElement</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo18BKFeatureValidator"></a>
+                    <a name="//apple_ref/swift/Class/BKFeatureValidator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo18BKFeatureValidator">BKFeatureValidator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper class to validate application and mobile device features</p>
+
+                        <a href="Classes/BKFeatureValidator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKFeatureValidator</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo13BKResolveData"></a>
+                    <a name="//apple_ref/swift/Class/BKResolveData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo13BKResolveData">BKResolveData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data object for resolved output data of the blukii info manager</p>
+
+<p><code>BKResolveData</code> can be valid for blukii modules only.</p>
+
+<p>It contains the result of a data request to the blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>).
+The <code>BKResolveData</code> fields contain the values of on corresponding blukii number.</p>
+
+<p><code>BKResolveData</code> is part of <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code></p>
+
+<p>It will be set for the following cases:</p>
+
+<ul>
+<li>OutputElement ID (see <code><a href="Classes/BKOutputElement.html#/s:vC10BlukiiInfo15BKOutputElement2idSS">BKOutputElement.id</a></code>) must be configured as a blukii number on the blukii Info Manager by an Info Manger user. This is an requierement for all <code><a href="Classes/BKClient.html">BKClient</a></code> delegates!</li>
+<li><code>BKResolveData</code> will be requested during the discovery (see <code><a href="Classes/BKClient.html#/s:FC10BlukiiInfo8BKClient13initDiscoveryFT_T_">BKClient.initDiscovery()</a></code>) for all discovered Elelements if the setting <code><a href="Classes/BKResolveSettings.html#/s:vC10BlukiiInfo17BKResolveSettings14resolveEnabledSb">BKResolveSettings.resolveEnabled</a></code> is set true. If some data is responded it will be returned as part of an <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code> by delegate <code>BKClientDiscoveryDelegate.onDiscoveryResult(discoveryResultList: [BKOutputElement])</code> The result state of resolving can additionally be read by calling <code>BKOuputElement.resolveState</code>:
+
+<ul>
+<li>UNRESOLVED: Resolve is off (<code><a href="Classes/BKResolveSettings.html#/s:vC10BlukiiInfo17BKResolveSettings14resolveEnabledSb">BKResolveSettings.resolveEnabled</a></code> is false) or blukii Info Manager is not connectable</li>
+<li>RESOLVED: blukii Info Manager has responded data for the OutputElement ID</li>
+<li>NODATA: blukii Info Manager is connectable but has responded no data for the OutputElement ID</li>
+<li>CACHED: ResolveData contains cached data that has been responded earlier (see cache settings on <code><a href="Classes/BKResolveSettings.html">BKResolveSettings</a></code>)</li>
+</ul></li>
+<li><code>BKResolveData</code> will be requested for a single Element by calling (see <code>BKClient.resolveInputElement(BKInputElement)</code>). If some data is responded it will be returned as part of an <code><a href="Classes/BKOutputElement.html">BKOutputElement</a></code> by delegate <code>BKClientResolveDelegate.onResolveInputElementResult(outputElement: BKOutputElement)</code>. The result state of resolving can additionally be read by calling <code><a href="Classes/BKOutputElement.html#/s:vC10BlukiiInfo15BKOutputElement12resolveStateOS0_12ResolveState">BKOutputElement.resolveState</a></code>. For single element requests there is no cache available.
+
+<ul>
+<li>RESOLVED: blukii Info Manager has responded data for the OutputElement ID</li>
+<li>NODATA: blukii Info Manager has not responded data for the OutputElement ID</li>
+</ul></li>
+</ul>
+
+                        <a href="Classes/BKResolveData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKResolveData</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:C10BlukiiInfo15BKOutputElement"></a>
+                    <a name="//apple_ref/swift/Class/BKOutputElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:C10BlukiiInfo15BKOutputElement">BKOutputElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only data object for data of BLE discover and resolving process.</p>
+
+<p><code>BKOutputElement</code> is returned by delegates of the BKClient functions for discovery and resolve of BLE modules.</p>
+
+<p>It is an combination of data that is encapsulated in specific data objects:</p>
+
+<ul>
+<li><code><a href="Classes/BKInputElement.html">BKInputElement</a></code>: input data that is created by discovery process (blukii number) or external inputs (NFC tag id, scan of barcodes).
+                 A cnversion of the <code>BKInputelement.tagID</code> is saved in <code>id</code></li>
+<li><code><a href="Classes/BKDiscoveryData.html">BKDiscoveryData</a></code>: emitted data of the BLE module</li>
+<li><code><a href="Classes/BKResolveData.html">BKResolveData</a></code>: resolved data requested from blukii Info Manager (<a href="https://manager.blukiiinfo.com">https://manager.blukiiinfo.com</a>)
+               The state of resolve process is saved by <code>resolveState</code></li>
+</ul>
+
+                        <a href="Classes/BKOutputElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">BKOutputElement</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
