@@ -8,11 +8,11 @@ For more information about blukii, please find our blukii website on [www.blukii
 
 ## Content
 
-### [blukii-info-sdk for Android] (android/blukii-info-sdk)
+### [blukii-sdk for Android] (android/blukii-sdk)
 
-blukii-info-sdk is the library for discovering Bluetooth LE modules (especially for blukiis) and reading their emitting data like blukii configuration values, beacon sensor data and data of the standard protocols Eddystone and iBeacon.
+blukii-sdk is the library for discovery and connection based configuration of blukii modules.
 
-Furthermore this library lets you retrieve location based information that is assigned to any blukii on the [blukii Info Manager](https://manager.blukiiinfo.com)
+Please note: this library replaces the former library blukii-info-sdk.
 
 ### [blukii-SmartKey-Framework for iOS] (iOS/blukii-SmartKey-Framework)
 
