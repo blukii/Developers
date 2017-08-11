@@ -21,6 +21,14 @@ Follow the steps to switch from blukii-info-sdk to blukii-sdk:
 1. Replace the dependency from  'com.blukii:blukii-info-sdk:1.0.x' to 'com.blukii:blukii-sdk:1.0.1'
 2. Find and Replace the package name all dependent import statements from 'com.blukii.infosdk' to 'com.blukii.sdk.info'.
 
+## Changelog
+### Version 1.0.1
+First version
+
+### Version 1.0.2
+- package info: compatibility for new Info Manager Update of Aug 2017
+- Bug fixes
+
 ## Getting started
 
 Please follow the instructions for using the blukii-sdk in your Android Studio project.
