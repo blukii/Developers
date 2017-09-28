@@ -61,7 +61,7 @@ For Apps with **targetSdkVersion 23** (Android 6) and later you need to add a th
 ```
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 ```
-Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog] gives you a good instruction.
+Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog](https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en) gives you a good instruction.
 
 
 If you want to resolve data from the [blukii Info Manager](https://manager.blukiiinfo.com) (package **info**) you need to add the following:
