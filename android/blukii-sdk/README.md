@@ -57,6 +57,13 @@ For Bluetooth LE you need to insert the following permissions to your AndroidMan
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 ```
 
+For Apps with **targetSdkVersion 23** (Android 6) and later you need to add a third permission:
+```
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+```
+Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog] gives you a good instruction.
+
+
 If you want to resolve data from the [blukii Info Manager](https://manager.blukiiinfo.com) (package **info**) you need to add the following:
 ```
     <uses-permission android:name="android.permission.INTERNET" />
