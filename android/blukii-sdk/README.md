@@ -18,7 +18,7 @@ For further question please contact the blukii developer support at [support@blu
 If you are already using our blukii-info-sdk, please note that it has been moved into blukii-sdk package **info**, containing the compatible object model.
 
 Follow the steps to switch from blukii-info-sdk to blukii-sdk:
-1. Replace the dependency from  'com.blukii:blukii-info-sdk:1.0.x' to 'com.blukii:blukii-sdk:1.0.1'
+1. Replace the dependency from  'com.blukii:blukii-info-sdk:1.0.x' to 'com.blukii:blukii-sdk:1.0.3'
 2. Find and Replace the package name all dependent import statements from 'com.blukii.infosdk' to 'com.blukii.sdk.info'.
 
 ## Changelog
@@ -27,6 +27,11 @@ First version
 
 ### Version 1.0.2
 - package info: compatibility for new Info Manager Update of Aug 2017
+- Bug fixes
+
+### Version 1.0.3
+- package info: termination of discovery (BlukiiClient) optimized
+- package config: compatibility to blukii beacon firmware version 00X.006
 - Bug fixes
 
 ## Getting started
@@ -43,7 +48,7 @@ The blukii-sdk can be easily integrated by adding the following dependency to yo
 ```
  dependencies {
     ...
-    compile 'com.blukii:blukii-sdk:1.0.1'
+    compile 'com.blukii:blukii-sdk:1.0.3'
     ...
  }
 ```
