@@ -13,7 +13,11 @@ Please follow the instructions for using the blukii-smartKey-framework in your x
 
 ### iOS Version
 
-The minimum iOS Version is iOS 8.4
+The minimum iOS Version is iOS 10.0
+
+### Mac Version
+
+The minimum Mac Version is Mac OS 10.13
 
 ### Installion with CocoaPods
 CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects like the blukiiSK.  [Here](https://cocoapods.org) you will find more information about CocoaPod. 
