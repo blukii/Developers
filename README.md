@@ -1,6 +1,6 @@
 # blukii_developer
 
-Welcome to the blukii developer page! 
+Welcome to the blukii developer page!
 
 Below are libraries concerning documentation for developing software for blukii beacons, sensors, keys and tags.
 
@@ -22,3 +22,8 @@ blukii-info-sdk is the library for discovering Bluetooth LE modules (especially 
 ### [blukii-SmartKey-Framework for iOS](iOS/blukii-SmartKey-Framework)
 
 blukii-SmartKey-Framwork is a framework for an easy use of our blukii SmartKey in your own app.  With the framework you can configure the blukii SmartKey and authenticate with the blukii SmartKey.
+
+### [blukii Hub](blukiiHub)
+
+The blukii Hub is a hardware for collecting sensorBeacon data. The blukiiHub collects the data and makes it available via REST Api.
+
