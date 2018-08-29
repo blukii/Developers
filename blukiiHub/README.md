@@ -1,4 +1,3 @@
-![ ](Bilder/Quick.PNG)
 
 # Quickstart with the blukii Hub
 
