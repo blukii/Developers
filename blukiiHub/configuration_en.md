@@ -1,48 +1,48 @@
 # blukii Hub Configuration
 
-In dieser Dokumentation werden die Konfigurationsmöglichkeiten des blukii Hubs beschrieben.
+This documentation describes the configuration options of the blukii hub.
 
-##Aufruf der Konfigurationsoberfläche
-Die Konfigurationsoberfläche wird über folgende URL aufgerufen:
+##Call the configuration interface
+The configuration interface is called via the following URL:
 ```
 http://<hostname>/conf
 ```
-**Beispiel:**
+**Example:**
 ```
 http://192.168.178.20/conf
 ```
-Auf der Loginseite kann sich mit dem Benutzer "admin" und dem Passwort "admin" angemeldet werden.
+On the login page you can log in with the user "admin" and the password "schneider".
 
-##Konfiguration
-Die Konfiguration ist in drei sections aufgeteilt:
-- blukiiHub Configuration: Hier sind alle Konfigurationsparameter für den blukiiHub zu setzten
-- Log-Files: Hier können die Logfiles für Supportzwecke heruntergeladen werden
-- Change Password: Hier kann das Passwort des Benutzers admin geändert werden.
+##Configuration
+The configuration is divided into three sections:
+- blukiiHub Configuration: Here are all configuration parameters for the blukiiHub set
+- Log-Files: Here you can download the logfiles for support purposes
+- Change Password: Here the password of the user admin can be changed.
 
 ### blukiiHub Configuration
-Im Formularfeld werden die Parameter im INI Format dargestellt. Hier kann wie folgt konfiguriert werden:
+The form field displays the parameters in INI format. Here can be configured as follows:
 
 #### Section blukiiHub
-In dieser Section sind die Parameter für den blukiiHub Collector.
+In this section are the parameters for the blukiiHub Collector.
 ```
 push_server = http://localhost/api/
 ```
-Server, an den die Daten des blukiiHub Collectors gesendet werden sollen. Default ist der interne blukiiHub Server.
+Server to which the data of the blukiiHub Collector should be sent. Default is the internal blukiiHub server.
 
 ```
 put_interval = 60
 ```
-Interval in Sekunden, indem die Daten an push_server gesendet werden.
+Interval in seconds by sending the data to push_server.
 
 ```
 transaction_interval = 1
 ```
-Interval in Sekunden in dem die Daten vom Scan Services in die interne Datenbank geschrieben werden.
+Interval in seconds in which the data is written by the Scan Services into the internal database.
 
 ```
 log_level = 0
 ```
-Loglevel für den blukiiHub Collector.
+Loglevel for the blukiiHub Collector.
 Loglevels:
 - 0 = Critical
 - 1 = Warning
@@ -50,16 +50,16 @@ Loglevels:
 - 3 = Debug
 
 #### Section blukiiServer
-In dieser Section sind die Parameter für den blukiiHub Server.
+In this section are the parameters for the blukiiHub server.
 ```
 buffer_time = 1440
 ```
-Zeit in Minuten, in der auf dem Server die Daten vorgehalten werden. Alles was älter als x Minuten ist, wird aus der DB gelöscht.
+Time in minutes in which data is kept on the server. Anything older than x minutes will be deleted from the DB.
 
 ```
 log_level = 0
 ```
-Loglevel für den blukiiHub Server.
+Loglevel for the blukiiHub Server.
 Loglevels:
 - 0 = Critical
 - 1 = Warning
@@ -67,39 +67,39 @@ Loglevels:
 - 3 = Debug
 
 #### Section blukiiSystem
-In dieser Section sind die System Parameter für den blukiiHub.
+In this section are the system parameters for the blukiiHub.
 
 ```
 hostname = blukiiHub
 ```
-Der Name des blukiiHubs. Mit diesem Namen ist der blukiiHub im Netzwerk sichtbar.
+The name of the blukiiHub. With this name, the blukiiHub is visible in the network.
 
 ```
 dhcp = True
 ```
-Aktivieren/Deaktivieren des DHCP-Clients. Wert muss vorhanden sein.
+Enable / disable the DHCP client. Value must be present.
 
 ```
 ip = 192.168.178.10
 ```
-IP Adresse des blukiiHub.
+IP address of the blukiiHub.
 
 ```
 gateway = 192.168.178.1
 ```
-Das Default Gateway für den blukiiHub.
+The default gateway for the blukiiHub.
 
 ```
 dns_server = 192.168.178.1
 ```
-DNS Server des blukiiHubs. Mehrere Können via komma getrennt eingetragen werden. 
+DNS server of the blukiiHubs. Several servers can be entered separately via comma.
 
 ```
 ssh = False
 ```
-Aktivieren/Deaktivieren von SSH. Nur für den Support!
+Enable / Disable SSH. Only for the support!
 
 ```
 ntp =
 ```
-Angabe eine eigenen NTP Servers für die Zeitsynchronistation.
+Specify your own NTP server for the time synchronization station.
