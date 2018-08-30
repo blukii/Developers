@@ -2,7 +2,7 @@
 
 This documentation describes the configuration options of the blukii hub.
 
-##Call the configuration interface
+## Call the configuration interface
 The configuration interface is called via the following URL:
 ```
 http://<hostname>/conf
@@ -13,7 +13,7 @@ http://192.168.178.20/conf
 ```
 On the login page you can log in with the user "admin" and the password "schneider".
 
-##Configuration
+## Configuration
 The configuration is divided into three sections:
 - blukiiHub Configuration: Here are all configuration parameters for the blukiiHub set
 - Log-Files: Here you can download the logfiles for support purposes
