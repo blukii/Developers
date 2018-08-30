@@ -56,3 +56,5 @@ Depending on the hardware variant and configuration of your blukii sensorBeacon 
 
 
 You have successfully completed the initial commissioning. A more detailed explanation and description of all functions can be found here: [API Documentation](doku_api_en.md)
+
+The configuration file of the blukii Hub with a detailed explanation for the different parameters can be found here: [blukii Hub Configuration File](configuration_en.md) 
