@@ -94,10 +94,6 @@ dns_server = 192.168.178.1
 ```
 DNS server of the blukiiHubs. Several servers can be entered separately via comma.
 
-```
-ssh = False
-```
-Enable / Disable SSH. Only for the support!
 
 ```
 ntp =
