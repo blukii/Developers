@@ -6,9 +6,9 @@ This short guide will show you how to get your blukii Hub up and how to get the 
 ## 1. Connect blukii Hub to power sulpply
 - Connect the blukii Hub with the supplied power supply unit and ensure the power supply.
 
-Attention: Before the startup or shutdown of the blukii Hub it is important to press the little button on the side of the hub.
-On startup the led next to the button will start to blink. As soon as the led is constantly on the hub is up and running.
-On shutdown please wait until the led is off.
+Attention: Before the startup (exception: not when power supply cable is attached for the first time) or shutdown of the blukii Hub it is important to press the little button on the side of the hub.
+- On startup after pressing the button please wait until the led is constantly on. Then the hub is up and running.
+- On shutdown ater pressing the button the led will blink 3 times and is constantly on again. As soon as shutdown ist reached led will be switched off.
 
 
 ## 2. Determine the IP address / host name of the blukii Hub
