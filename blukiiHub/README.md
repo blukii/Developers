@@ -6,13 +6,18 @@ This short guide will show you how to get your blukii Hub up and how to get the 
 ## 1. Connect blukii Hub to power sulpply
 - Connect the blukii Hub with the supplied power supply unit and ensure the power supply.
 
+Attention: Before the startup or shutdown of the blukii Hub it is important to press the little button on the side of the hub.
+On startup the led next to the button will start to blink. As soon as the led is constantly on the hub is up and running.
+On shutdown please wait until the led is off.
+
+
 ## 2. Determine the IP address / host name of the blukii Hub
 The blukii Hub is assigned an IP address that is needed to retrieve data.
 The IP address can be determined as follows:
 - For small networks over the router.
 - For large networks you need to contact your network administrator   
 
-## 3. Place blukii sensorBeacon near the blukii Hub
+## 3. Place blukii Sensor Beacon near the blukii Hub
 - Place a blukii Sensor Beacon near the blukii Hub.
 The blukii Sensor Beacon now sends readings to the blukii Hub.
 
