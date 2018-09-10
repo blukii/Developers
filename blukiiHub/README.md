@@ -1,7 +1,7 @@
 
 # Quickstart with the blukii Hub
 
-This short guide will show you how to get your blukii Hub up and how to get the data from a Sensor Beacon.
+This short guide will show you how to get your blukii Hub up and how to get the data from a Sensor Beacon.  
 
 ## 1. Connect blukii Hub to power sulpply
 - Connect the blukii Hub with the supplied power supply unit and ensure the power supply.
