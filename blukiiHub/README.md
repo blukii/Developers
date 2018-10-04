@@ -1,9 +1,9 @@
 
 # Quickstart with the blukii Hub
 
-This short guide will show you how to get your blukii Hub up and how to get the data from a Sensor Beacon.  
+This short guide will show you how to get your blukii Hub up and how to get the data from a Sensor Beacon (or a Smart Beacon, if you enable the Eddystone TLM frame)
 
-## 1. Connect blukii Hub to power sulpply
+## 1. Connect blukii Hub to power supply
 - Connect the blukii Hub with the supplied power supply unit and ensure the power supply.
 
 Attention: Before the startup (exception: not when power supply cable is attached for the first time) or shutdown of the blukii Hub it is important to press the little button on the side of the hub.
