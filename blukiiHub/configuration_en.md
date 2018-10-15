@@ -49,7 +49,7 @@ Loglevels:
 - 2 = Info
 - 3 = Debug
 
-Attention: Please use Loglevel = 3 only for a short period of time. Ohterwise there is the risk of the memory card filling up what leads to the system not working any more.
+Attention: Please use Loglevel higher than 0 only for a short period of time. Ohterwise there is the risk of the memory card filling up what leads to the system not working any more.
 
 #### Section blukiiServer
 In this section are the parameters for the blukiiHub server.
@@ -67,6 +67,8 @@ Loglevels:
 - 1 = Warning
 - 2 = Info
 - 3 = Debug
+
+Attention: Please use Loglevel higher than 0 only for a short period of time. Ohterwise there is the risk of the memory card filling up what leads to the system not working any more.
 
 #### Section blukiiSystem
 In this section are the system parameters for the blukiiHub.
