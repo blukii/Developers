@@ -5,11 +5,11 @@ blukii-sdk is the library for discovery and connection based configuration of bl
 
 ## Documentation and support
 
-To learn about the usage of the library classes please find the [library's javadoc documentation](https://schneiderma.github.io/blukii_developer/android/blukii-sdk/javadoc/).
+To learn about the usage of the library classes please find the [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/).
 
 We recommend you to start with the following documentation pages where you can find some sample code fragments:
-- package **info**: class [info/BlukiiClient](https://schneiderma.github.io/blukii_developer/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiClient.html), for discovery of Bluetooth LE modules (especially for blukiis) and detection of their emitting data like blukii configuration values, beacon sensor data and data of the standard protocols Eddystone and iBeacon. Furthermore this library lets you retrieve location based information that is assigned to any blukii on the [blukii Info Manager](https://manager.blukiiinfo.com).
-- package **config**: class [config/Blukii](https://schneiderma.github.io/blukii_developer/android/blukii-sdk/javadoc/com/blukii/sdk/config/Blukii.html), for connection based configuring of core blukii and type-based settings for SmartBeacon, SmartKey and SmartSensor modules. 
+- package **info**: class [info/BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiClient.html), for discovery of Bluetooth LE modules (especially for blukiis) and detection of their emitting data like blukii configuration values, beacon sensor data and data of the standard protocols Eddystone and iBeacon. Furthermore this library lets you retrieve location based information that is assigned to any blukii on the [blukii Manager](https://manager.blukii.com).
+- package **config**: class [config/Blukii](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/config/Blukii.html), for connection based configuring of core blukii and type-based settings for SmartBeacon, SmartKey and SmartSensor modules. 
 
 For further question please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com).
 
@@ -69,7 +69,7 @@ For Apps with **targetSdkVersion 23** (Android 6) and later you need to add a th
 Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog](https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en) gives you a good instruction.
 
 
-If you want to resolve data from the [blukii Info Manager](https://manager.blukiiinfo.com) (package **info**) you need to add the following:
+If you want to resolve data from the [blukii Manager](https://manager.blukii.com) (package **info**) you need to add the following:
 ```
     <uses-permission android:name="android.permission.INTERNET" />
 ```
@@ -78,4 +78,4 @@ If you want to resolve data from the [blukii Info Manager](https://manager.bluki
 
 Now you are ready to start developing your blukii App!
 
-The [library's javadoc documentation](https://schneiderma.github.io/blukii_developer/android/blukii-sdk/javadoc/) should help you to understand developing based on blukii technology.
+The [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/) should help you to understand developing based on blukii technology.
