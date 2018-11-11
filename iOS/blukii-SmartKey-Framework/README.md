@@ -3,7 +3,7 @@
 blukii-SmartKey-Framwork is a framework for an easy use of our blukii SmartKey in your own app.  With the framework you can configure the blukii SmartKey and authenticate with the blukii SmartKey. 
 
 ## Documentation and support
-To learn about the usage of the framework classees please find the [blukiiSK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-SmartKey-Framework/html/)
+To learn about the usage of the framework classees please find the [blukiiSK Framework Reference](hhttps://blukii.github.io/Developers/iOS/blukii-SmartKey-Framework/html/)
 
 There you will also find sample code framgments and a demo project. 
 
@@ -57,4 +57,4 @@ For a Swift project you have to add an Bridiging-Header and import the blukiiSK:
 
 Now you are ready to start developing your blukii App!
 
-The [blukiiSK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-SmartKey-Framework/html/) should help you to understand what are the right settings for your special use case.  Here you will find a demo Project: [Demo Project](https://github.com/schneiderma/blukii_developer/raw/gh-pages/iOS/blukii-SmartKey-Framework/html/examples/blukiiSK_Demo.zip)
+The [blukiiSK Framework Reference](https://blukii.github.io/Developers/iOS/blukii-SmartKey-Framework/html/) should help you to understand what are the right settings for your special use case.  Here you will find a demo Project: [Demo Project](https://blukii.github.io/Developers/raw/gh-pages/iOS/blukii-SmartKey-Framework/html/examples/blukiiSK_Demo.zip)
