@@ -2,13 +2,13 @@
 
 blukii-info-sdk is the library for discovering Bluetooth LE modules (especially for blukiis) and reading their emitting data like blukii configuration values, beacon sensor data and data of the standard protocols Eddystone and iBeacon.
 
-Furthermore this library lets you retrieve location based information that is assigned to any blukii on the [blukii Info Manager](https://manager.blukiiinfo.com).
+Furthermore this library lets you retrieve location based information that is assigned to any blukii on the [blukii Manager](https://manager.blukii.com).
 
 ## Documentation and support
 
-API Documentation: [blukiiInfoSDK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/)
+API Documentation: [blukiiInfoSDK Framework Reference](https://blukii.github.io/Developers/iOS/blukii-Info-SDK/docs/)
                                                             
-We recommend you to start with the documentation page of class [BKClient](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/Classes/BKClient.html)
+We recommend you to start with the documentation page of class [BKClient](https://blukii.github.io/Developers/iOS/blukii-Info-SDK/docs/Classes/BKClient.html)
 
 For further question please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com)
 
@@ -54,4 +54,4 @@ If you have and Objective-C Project, you have to insert a Swift file with the au
 
 Now you are ready to start developing your blukii App!
 
-The [blukiiInfoSDK Framework Reference](https://schneiderma.github.io/blukii_developer/iOS/blukii-Info-SDK/docs/) should help you to understand what are the right settings for your special use case.
+The [blukiiInfoSDK Framework Reference](https://blukii.github.io/Developers/iOS/blukii-Info-SDK/docs/) should help you to understand what are the right settings for your special use case.
