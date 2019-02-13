@@ -1,2 +1,6 @@
+com.blukii.sdk.cloud
+com.blukii.sdk.common
 com.blukii.sdk.config
+com.blukii.sdk.config.datatype
+com.blukii.sdk.discovery
 com.blukii.sdk.info
