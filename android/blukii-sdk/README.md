@@ -29,6 +29,9 @@ For Advanced features a fee-based blukii API key is needed: all feature with con
 Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting an blukii API key.
 
 ## Changelog
+### Version 2.0.1
+- Hotfix: Exception when calling BlukiiClient.startDiscovery() and BlukiiClient.stopDiscovery() without running Bluetooth on device.
+
 ### Version 2.0.0
 - Refactoring of package info: separation of **discovery** and **info** features in two functional separated packages. See javadoc of classes [discovery/BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/discovery/BlukiiClient.html) and [info/BlukiiInfo](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiInfo.html) for learning how to use it now.
 - Support of Smart Beacon firmware 002.009, e.g.
@@ -64,7 +67,7 @@ The blukii-sdk can be easily integrated by adding the following dependency to yo
 ```
  dependencies {
     ...
-    compile 'com.blukii:blukii-sdk:2.0.0'
+    compile 'com.blukii:blukii-sdk:2.0.1'
     ...
  }
 ```
