@@ -29,6 +29,9 @@ For Advanced features a fee-based blukii API key is needed: all feature with con
 Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting an blukii API key.
 
 ## Changelog
+### Version 2.0.2
+- Hotfix: Exception when stopping discovery if BluetoothAdapter is disabled
+
 ### Version 2.0.1
 - Hotfix: Exception when calling BlukiiClient.startDiscovery() and BlukiiClient.stopDiscovery() without running Bluetooth on device.
 
@@ -67,7 +70,7 @@ The blukii-sdk can be easily integrated by adding the following dependency to yo
 ```
  dependencies {
     ...
-    compile 'com.blukii:blukii-sdk:2.0.1'
+    compile 'com.blukii:blukii-sdk:2.0.2'
     ...
  }
 ```
