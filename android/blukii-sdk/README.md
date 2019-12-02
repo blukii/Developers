@@ -5,12 +5,12 @@ blukii-sdk is the library for discovery and connection based configuration of bl
 
 ## Documentation and support
 
-To learn about the usage of the library classes please find the [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/).
+To learn about the usage of the library classes please find the [library's javadoc documentation](javadoc/index.html).
 
 We recommend you to start with the following documentation pages where you can find some sample code fragments:
-- Package **discovery**: class [discovery/BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/discovery/BlukiiClient.html), for discovery of Bluetooth LE modules (especially for blukiis) and detection of their emitting data like blukii Beacon sensor data and data of the standard protocols Eddystone and iBeacon. Furthermore this package lets you decrypt encrypted blukii Secure Beacon advertising data by connecting to [blukii Manager](https://manager.blukii.com).
-- Package **info**: class [info/BlukiiInfo](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiInfo.html), for retrieving and reporting location based information that is assigned to any blukii on the [blukii Manager Info CMS](https://manager.blukii.com).
-- Package **config**: class [config/Blukii](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/config/Blukii.html), for connection based configuring of core blukii and type-based settings for SmartBeacon, SmartKey and SmartSensor modules. Furthermore this package lets you synchronize configuration data with [blukii Manager](https://manager.blukii.com).
+- Package **discovery**: class [discovery/BlukiiClient](javadoc/com/blukii/sdk/discovery/BlukiiClient.html), for discovery of Bluetooth LE modules (especially for blukiis) and detection of their emitting data like blukii Beacon sensor data and data of the standard protocols Eddystone and iBeacon. Furthermore this package lets you decrypt encrypted blukii Secure Beacon advertising data by connecting to [blukii Manager](https://manager.blukii.com).
+- Package **info**: class [info/BlukiiInfo](javadoc/com/blukii/sdk/info/BlukiiInfo.html), for retrieving and reporting location based information that is assigned to any blukii on the [blukii Manager Info CMS](https://manager.blukii.com).
+- Package **config**: class [config/Blukii](javadoc/com/blukii/sdk/config/Blukii.html), for connection based configuring of core blukii and type-based settings for SmartBeacon, SmartKey and SmartSensor modules. Furthermore this package lets you synchronize configuration data with [blukii Manager](https://manager.blukii.com).
 
 For further question please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com).
 
@@ -29,6 +29,17 @@ For Advanced features a fee-based blukii API key is needed: all feature with con
 Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting an blukii API key.
 
 ## Changelog
+### Version 2.1.0
+- AndroidX: Version 2.1.0 requires the migration of your app to AndroidX. See [Migrating to AndroidX](https://developer.android.com/jetpack/androidx/migrate).
+- BlukiiController: new main controller of blukii SDK: get instances of package controllers ([BlukiiCloud](javadoc/com/blukii/sdk/cloud/BlukiiCloud.html), [BlukiiClient](javadoc/com/blukii/sdk/discovery/BlukiiClient.html), [BlukiiInfo](javadoc/com/blukii/sdk/info/BlukiiInfo.html), [Blukii](javadoc/com/blukii/sdk/config/Blukii.html)) via BlukiiController only.
+- Package discovery: 
+  - optimized background discovery for new Android versions
+  - DiscoverySettings: new [DiscoveryProfile](javadoc/com/blukii/sdk/discovery/BlukiiClient.html) replaces separate setting of scan types for foreground, background and screen off
+  - BlukiiClient: simplified initialization and start/stop of discovery 
+  - permission ACCESS_FINE_LOCATION required
+- Package Info:
+  - resolve InfoBundles from [blukii Manager](https://manager.blukii.com): see [BlukiiInfo](javadoc/com/blukii/sdk/info/BlukiiInfo.html) documentation
+
 ### Version 2.0.2
 - Hotfix: Exception when stopping discovery if BluetoothAdapter is disabled
 
@@ -36,7 +47,7 @@ Please contact the blukii developer support at [support@blukii.com](mailto:suppo
 - Hotfix: Exception when calling BlukiiClient.startDiscovery() and BlukiiClient.stopDiscovery() without running Bluetooth on device.
 
 ### Version 2.0.0
-- Refactoring of package info: separation of **discovery** and **info** features in two functional separated packages. See javadoc of classes [discovery/BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/discovery/BlukiiClient.html) and [info/BlukiiInfo](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiInfo.html) for learning how to use it now.
+- Refactoring of package info: separation of **discovery** and **info** features in two functional separated packages. See javadoc of classes [discovery/BlukiiClient](javadoc/com/blukii/sdk/discovery/BlukiiClient.html) and [info/BlukiiInfo](javadoc/com/blukii/sdk/info/BlukiiInfo.html) for learning how to use it now.
 - Support of Smart Beacon firmware 002.009, e.g.
   - blukii Secure Beacon
   - blukii Event Beacon
@@ -70,7 +81,7 @@ The blukii-sdk can be easily integrated by adding the following dependency to yo
 ```
  dependencies {
     ...
-    compile 'com.blukii:blukii-sdk:2.0.2'
+    implementation 'com.blukii:blukii-sdk:2.1.0'
     ...
  }
 ```
@@ -86,7 +97,7 @@ For Bluetooth LE you need to insert the following permissions to your AndroidMan
 
 For Apps with **targetSdkVersion 23** (Android 6) and later you need to add a third permission:
 ```
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog](https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en) gives you a good instruction.
 
@@ -100,4 +111,4 @@ If you use advanced functions that communicate with [blukii Manager](https://man
 
 Now you are ready to start developing your blukii App!
 
-The [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/) should help you to understand developing based on blukii technology.
+The [library's javadoc documentation](javadoc/index.html) should help you to understand developing based on blukii technology.
