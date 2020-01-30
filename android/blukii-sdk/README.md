@@ -29,6 +29,9 @@ For Advanced features a fee-based blukii API key is needed: all feature with con
 Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting an blukii API key.
 
 ## Changelog
+### Version 3.0.1
+- Hotfix: ClassNotFoundException because of missing library dependency
+
 ### Version 3.0.0
 - AndroidX: Version 3.0.0 requires the migration of your app to AndroidX. See [Migrating to AndroidX](https://developer.android.com/jetpack/androidx/migrate).
 - BlukiiController: new main controller of blukii SDK: get instances of package controllers ([BlukiiCloud](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/cloud/BlukiiCloud.html), [BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/discovery/BlukiiClient.html), [BlukiiInfo](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiInfo.html), [Blukii](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/config/Blukii.html)) via BlukiiController only.
@@ -82,7 +85,7 @@ The blukii-sdk can be easily integrated by adding the following dependency to yo
 ```
  dependencies {
     ...
-    implementation 'com.blukii:blukii-sdk:3.0.0'
+    implementation 'com.blukii:blukii-sdk:3.0.1'
     ...
  }
 ```
