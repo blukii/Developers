@@ -8,7 +8,7 @@ Furthermore this library lets you retrieve location based information that is as
 
 API Documentation: [blukiiInfoSDK Framework Reference](https://blukii.github.io/Developers/iOS/blukii-Info-SDK/docs/)
                                                             
-We recommend you to start with the documentation page of class [BKClient](https://blukii.github.io/Developers/iOS/blukii-Info-SDK/docs/Classes/BKClient.html)
+We recommend you to start with the documentation page of class [BKController](https://blukii.github.io/Developers/iOS/blukii-Info-SDK/docs/Classes/BKController.html)
 
 For further question please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com)
 
@@ -18,7 +18,7 @@ Please follow the instructions for using the blukii-info-sdk in your xCode-Proje
 
 ### iOS Version
 
-The minimum iOS Version is iOS 8.0
+The minimum iOS Version is iOS 10.0
 
 ### Installion with CocoaPods
 CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects like the blukiiSK.  [Here](https://cocoapods.org) you will find more information about CocoaPod. 

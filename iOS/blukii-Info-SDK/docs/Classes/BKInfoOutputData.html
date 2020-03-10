@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKInfoOutputData Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BKInfoOutputData" class="dashAnchor"></a>
+    <a title="BKInfoOutputData Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">blukiiInfoSDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKInfoOutputData Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBlukiiCloud.html">BKBlukiiCloud</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBlukiiInfo.html">BKBlukiiInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKController.html">BKController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoBundleData.html">BKInfoBundleData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoBundleOutputData.html">BKInfoBundleOutputData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoData.html">BKInfoData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoOutputData.html">BKInfoOutputData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiCloudError.html">BKBlukiiCloudError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiCloudUserRole.html">BKBlukiiCloudUserRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiType.html">BKBlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKCommonState.html">BKCommonState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKDiscoveryError.html">BKDiscoveryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKDiscoveryInfo.html">BKDiscoveryInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKSecureBeaconState.html">BKSecureBeaconState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKBlukiiCloudDelegate.html">BKBlukiiCloudDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKBlukiiReportInfoViolationDelegate.html">BKBlukiiReportInfoViolationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKDecryptSecureBeaconsDelegate.html">BKDecryptSecureBeaconsDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKInfoOutputData</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BKInfoOutputData</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCoding</span></code></pre>
+
+                </div>
+              </div>
+            <p>Read only data object for output language based blukii data retrieved from blukii Manager Info CMS.</p>
+
+<p>It is a child object of <code><a href="../Classes/BKInfoData.html">BKInfoData</a></code> and contains all data that is language specific</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)title"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)title">title</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of output <em>Title</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">internal(set)</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Value of Title</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)url"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)url">url</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of output <em>URL</em>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">internal(set)</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Value of URL</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)previewUrl"></a>
+                    <a name="//apple_ref/swift/Property/previewUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)previewUrl">previewUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the url of <em>preview Image</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">internal(set)</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">previewUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Value of preview url</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo16BKInfoOutputDataC10outputTypeAA08BKOutputG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/outputType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo16BKInfoOutputDataC10outputTypeAA08BKOutputG0OSgvp">outputType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of Output Type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">internal(set)</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">outputType</span><span class="p">:</span> <span class="kt"><a href="../Enums/BKOutputType.html">BKOutputType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Enums/BKOutputType.html">BKOutputType</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)urlExtra"></a>
+                    <a name="//apple_ref/swift/Property/urlExtra" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)urlExtra">urlExtra</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of the <em>Audio File URL</em>.</p>
+
+<p><strong>Note:</strong> This field is optional and only valid for OutputType <em>PDF</em> (@see <code><a href="../Classes/BKInfoOutputData.html#/s:10BlukiiInfo16BKInfoOutputDataC10outputTypeAA08BKOutputG0OSgvp">outputType</a></code>). It contains a url of an audio file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">internal(set)</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">urlExtra</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Value of Audio File URL of Content Type PDF.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)plainTextExtra"></a>
+                    <a name="//apple_ref/swift/Property/plainTextExtra" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BlukiiInfo@objc(cs)BKInfoOutputData(py)plainTextExtra">plainTextExtra</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The value of  <em>Text to speech</em>.</p>
+
+<p>The language is defined by property <code>language</code>.</p>
+
+<p><strong>Note:</strong> This field is optional and only valid for OutputType <em>PDF</em> (@see <code><a href="../Classes/BKInfoOutputData.html#/s:10BlukiiInfo16BKInfoOutputDataC10outputTypeAA08BKOutputG0OSgvp">outputType</a></code>). It contains a text.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">internal(set)</span> <span class="kd">open</span> <span class="k">var</span> <span class="nv">plainTextExtra</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Value of Text to speech of Content Type PDF.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://www.blukii.com" target="_blank" rel="external">Blukii</a>. All rights reserved. (Last updated: 2020-03-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKDecryptSecureBeaconsDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/BKDecryptSecureBeaconsDelegate" class="dashAnchor"></a>
+    <a title="BKDecryptSecureBeaconsDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">blukiiInfoSDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKDecryptSecureBeaconsDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBlukiiCloud.html">BKBlukiiCloud</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBlukiiInfo.html">BKBlukiiInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKController.html">BKController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoBundleData.html">BKInfoBundleData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoBundleOutputData.html">BKInfoBundleOutputData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoData.html">BKInfoData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoOutputData.html">BKInfoOutputData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiCloudError.html">BKBlukiiCloudError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiCloudUserRole.html">BKBlukiiCloudUserRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiType.html">BKBlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKCommonState.html">BKCommonState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKDiscoveryError.html">BKDiscoveryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKDiscoveryInfo.html">BKDiscoveryInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKSecureBeaconState.html">BKSecureBeaconState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKBlukiiCloudDelegate.html">BKBlukiiCloudDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKBlukiiReportInfoViolationDelegate.html">BKBlukiiReportInfoViolationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKDecryptSecureBeaconsDelegate.html">BKDecryptSecureBeaconsDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKDecryptSecureBeaconsDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BKDecryptSecureBeaconsDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate for the SecureBeacon decryption</p>
+
+<p>Decrypt Delegate is registred by <code><a href="../Classes/BKClient.html#/s:10BlukiiInfo8BKClientC27decryptSecureBeaconDelegateAA09BKDecrypte7BeaconsG0_pSgvp">BKClient.decryptSecureBeaconDelegate</a></code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo30BKDecryptSecureBeaconsDelegateP09onDecryptdE0_14decryptedCountySayAA15BKDiscoveryDataCG_SitF"></a>
+                    <a name="//apple_ref/swift/Method/onDecryptSecureBeacons(_:decryptedCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo30BKDecryptSecureBeaconsDelegateP09onDecryptdE0_14decryptedCountySayAA15BKDiscoveryDataCG_SitF">onDecryptSecureBeacons(_:decryptedCount:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Will be called if <code><a href="../Classes/BKClient.html#/s:10BlukiiInfo8BKClientC20decryptSecureBeacons17discoveryDataListySayAA011BKDiscoveryH0CG_tF">BKClient.decryptSecureBeacons(discoveryDataList:)</a></code> is successfully requested. Parameter <code>decryptedDiscoveryDataList</code> contains all list items contained as parameter in <code><a href="../Classes/BKClient.html#/s:10BlukiiInfo8BKClientC20decryptSecureBeacons17discoveryDataListySayAA011BKDiscoveryH0CG_tF">BKClient.decryptSecureBeacons(discoveryDataList:)</a></code>. If the authenticated blukii Manager user is owner of list items that are marked with <code><a href="../Classes/BKDiscoveryData.html#/s:10BlukiiInfo15BKDiscoveryDataC17secureBeaconStateAA08BKSecurefG0Ovp">BKDiscoveryData.secureBeaconState</a></code> as <code><a href="../Enums/BKSecureBeaconState.html#/s:10BlukiiInfo19BKSecureBeaconStateO9encryptedyA2CmF">BKSecureBeaconState.encrypted</a></code>, these are decrypted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onDecryptSecureBeacons</span><span class="p">(</span><span class="n">_</span> <span class="nv">decryptedDiscoveryDataList</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a></span><span class="p">],</span> <span class="nv">decryptedCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedDiscoveryDataList</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>result list of discoveryData objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>count of items that are decrypted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo30BKDecryptSecureBeaconsDelegateP14onDecryptErroryys0I0_pF"></a>
+                    <a name="//apple_ref/swift/Method/onDecryptError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo30BKDecryptSecureBeaconsDelegateP14onDecryptErroryys0I0_pF">onDecryptError(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Will be called if <code><a href="../Classes/BKClient.html#/s:10BlukiiInfo8BKClientC20decryptSecureBeacons17discoveryDataListySayAA011BKDiscoveryH0CG_tF">BKClient.decryptSecureBeacons(discoveryDataList:)</a></code> requested has done with errors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onDecryptError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Contains an error message</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://www.blukii.com" target="_blank" rel="external">Blukii</a>. All rights reserved. (Last updated: 2020-03-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

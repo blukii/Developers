@@ -1,0 +1,411 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBlukii+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "BKBlukii.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBlukii+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "BKBlukii.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBlukii+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "BKBlukii.infopointId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBlukii+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "BKBlukii.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBlukii+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "BKBlukii.infopoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "BKBundle.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "BKBundle.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "BKBundle.infotimestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "BKBundle.itemsprotected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "BKBundle.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "BKBundle.unresolved",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "BKBundle.bundleOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 26,
+      "symbol": "BKBundle.infopoints",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 34,
+      "symbol": "BKBundle.addToBundleOutput(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 37,
+      "symbol": "BKBundle.removeFromBundleOutput(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 40,
+      "symbol": "BKBundle.addToBundleOutput(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 43,
+      "symbol": "BKBundle.removeFromBundleOutput(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 51,
+      "symbol": "BKBundle.addToInfopoints(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 54,
+      "symbol": "BKBundle.removeFromInfopoints(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 57,
+      "symbol": "BKBundle.addToInfopoints(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundle+CoreDataProperties.swift",
+      "line": 60,
+      "symbol": "BKBundle.removeFromInfopoints(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundleOutput+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "BKBundleOutput.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundleOutput+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "BKBundleOutput.bundleid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundleOutput+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "BKBundleOutput.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundleOutput+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "BKBundleOutput.previewurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundleOutput+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "BKBundleOutput.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKBundleOutput+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "BKBundleOutput.bundle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "BKInfopoint.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "BKInfopoint.condition",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "BKInfopoint.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "BKInfopoint.rssi",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "BKInfopoint.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "BKInfopoint.blukiis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "BKInfopoint.bundles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 26,
+      "symbol": "BKInfopoint.outputInfos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 34,
+      "symbol": "BKInfopoint.addToBlukiis(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 37,
+      "symbol": "BKInfopoint.removeFromBlukiis(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 40,
+      "symbol": "BKInfopoint.addToBlukiis(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 43,
+      "symbol": "BKInfopoint.removeFromBlukiis(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 51,
+      "symbol": "BKInfopoint.addToBundles(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 54,
+      "symbol": "BKInfopoint.removeFromBundles(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 57,
+      "symbol": "BKInfopoint.addToBundles(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 60,
+      "symbol": "BKInfopoint.removeFromBundles(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 68,
+      "symbol": "BKInfopoint.addToOutputInfos(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 71,
+      "symbol": "BKInfopoint.removeFromOutputInfos(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 74,
+      "symbol": "BKInfopoint.addToOutputInfos(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKInfopoint+CoreDataProperties.swift",
+      "line": 77,
+      "symbol": "BKInfopoint.removeFromOutputInfos(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "BKOutputinfo.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "BKOutputinfo.infopointid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "BKOutputinfo.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "BKOutputinfo.outputtype",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "BKOutputinfo.plaintextextra",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "BKOutputinfo.previewurl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "BKOutputinfo.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 26,
+      "symbol": "BKOutputinfo.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 27,
+      "symbol": "BKOutputinfo.urlextra",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/info/BKOutputinfo+CoreDataProperties.swift",
+      "line": 28,
+      "symbol": "BKOutputinfo.infopoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo/BlukiiInfo/util/BKReachability.swift",
+      "line": 148,
+      "symbol": "BKReachability",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/lennartfleig/Documents/Bitbucket_Code/blukii_ios_infoapp/infoApp/BlukiiInfo"
+}

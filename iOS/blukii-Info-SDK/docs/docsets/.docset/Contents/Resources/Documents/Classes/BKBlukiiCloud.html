@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BKBlukiiCloud Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BKBlukiiCloud" class="dashAnchor"></a>
+    <a title="BKBlukiiCloud Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">blukiiInfoSDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BKBlukiiCloud Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BKAxisData.html">BKAxisData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBeaconSensorData.html">BKBeaconSensorData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBlukiiCloud.html">BKBlukiiCloud</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKBlukiiInfo.html">BKBlukiiInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKClient.html">BKClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKController.html">BKController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoveryData.html">BKDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKDiscoverySettings.html">BKDiscoverySettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKEddystoneData.html">BKEddystoneData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKFeatureValidator.html">BKFeatureValidator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoBundleData.html">BKInfoBundleData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoBundleOutputData.html">BKInfoBundleOutputData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoData.html">BKInfoData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKInfoOutputData.html">BKInfoOutputData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData.html">BKKeyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKKeyData/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BKiBeaconData.html">BKiBeaconData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiCloudError.html">BKBlukiiCloudError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiCloudUserRole.html">BKBlukiiCloudUserRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKBlukiiType.html">BKBlukiiType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKCommonState.html">BKCommonState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKDiscoveryError.html">BKDiscoveryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKDiscoveryInfo.html">BKDiscoveryInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKOutputType.html">BKOutputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BKSecureBeaconState.html">BKSecureBeaconState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BKBlukiiCloudDelegate.html">BKBlukiiCloudDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKBlukiiReportInfoViolationDelegate.html">BKBlukiiReportInfoViolationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKClientDiscoveryDelegate.html">BKClientDiscoveryDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BKDecryptSecureBeaconsDelegate.html">BKDecryptSecureBeaconsDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BKBlukiiCloud</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BKBlukiiCloud</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is the main controller for blukii cloud based actions.</p>
+
+<p>You can get a <code>BKBlukiiCloud</code> object via <code><a href="../Classes/BKController.html#/s:10BlukiiInfo12BKControllerC8instanceACvpZ">BKController.instance</a></code>.</p>
+
+<p>With a blukii cloud object you have access to the cloud state. You can set credentials and
+a API key, get the user role, check if the user is authenticated and you can do the login and
+logout.</p>
+
+<p><strong>Note</strong>: The API key has be purchased from blukii. Please contact <a href="mailto:support@blukii.com">support@blukii.com</a> for more information.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC8delegateAA0cD8Delegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC8delegateAA0cD8Delegate_pSgvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>delegate which listens if login was successful or an error occurred</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BKBlukiiCloudDelegate.html">BKBlukiiCloudDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20API"></a>
+                <a name="//apple_ref/swift/Section/Public API" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20API"></a>
+                  <h3 class="section-name"><p>Public API</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC14setCredentials4user8passwordySS_SStF"></a>
+                    <a name="//apple_ref/swift/Method/setCredentials(user:password:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC14setCredentials4user8passwordySS_SStF">setCredentials(user:password:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the user credentials</p>
+
+<p>These are needed for sdk functions that transfers user assigned data with blukii Manager</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setCredentials</span><span class="p">(</span><span class="nv">user</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>user&rsquo;s username</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>user&rsquo;s password</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC9setApiKey03apiG0ySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/setApiKey(apiKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC9setApiKey03apiG0ySS_tF">setApiKey(apiKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the API key</p>
+
+<p>This is needed for every SDK function that needs to interact with blukii Manager</p>
+
+<p>The API Key has be purchased from blukii. Please contact <a href="mailto:support@blukii.com">support@blukii.com</a> for more information</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setApiKey</span><span class="p">(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>developer&rsquo;s API key</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC11getUserRoleAA0cdfG0OyF"></a>
+                    <a name="//apple_ref/swift/Method/getUserRole()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC11getUserRoleAA0cdfG0OyF">getUserRole()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the role of an authenticated user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getUserRole</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/BKBlukiiCloudUserRole.html">BKBlukiiCloudUserRole</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the <code><a href="../Enums/BKBlukiiCloudUserRole.html">BKBlukiiCloudUserRole</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC17isAuthentificatedSbyF"></a>
+                    <a name="//apple_ref/swift/Method/isAuthentificated()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC17isAuthentificatedSbyF">isAuthentificated()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if the user is logged in</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">isAuthentificated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code>if user is authenticated, otherwise <code>false</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC5loginyyF"></a>
+                    <a name="//apple_ref/swift/Method/login()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC5loginyyF">login()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Do login with before set credentials and API key</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10BlukiiInfo13BKBlukiiCloudC6logoutyyF"></a>
+                    <a name="//apple_ref/swift/Method/logout()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BlukiiInfo13BKBlukiiCloudC6logoutyyF">logout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Do logout.</p>
+
+<p>After this method call, user is no longer authenticated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://www.blukii.com" target="_blank" rel="external">Blukii</a>. All rights reserved. (Last updated: 2020-03-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
