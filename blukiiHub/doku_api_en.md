@@ -157,7 +157,7 @@ Depending on the configuration and hardware variant of the Beacon, the following
 - _advInterval_: Advertising interval of the Beacon. This Field is only included, when it was received.
 - _firmware_: Firmware version of the beacon. This Field is only included, when it was received.
 
-#### rssi
+#### Rssi
 Rssi contains a list of records, in JSON format, with the following content:
 ```
 "rssi": [
@@ -176,7 +176,7 @@ Rssi contains a list of records, in JSON format, with the following content:
 
 The records are sorted in ascending order according to timestamp.
 
-#### beaconSensorData
+#### Beacon Sensor Data
 ```
 "beaconSensorData": [
                       "magnetism": [ ... ],
@@ -190,7 +190,7 @@ Entries that are available  depending on the configuration of the blukiis:
 - _acceleration_: Returns a list of data records with measured values of the acceleration sensor.
 - _environment_: Returns a list of datasets with environmental metrics such as barometric pressure, light, humidity, and temperature.
 
-##### magnetism
+##### Magnetism
 Magnetism contains a list of records, in JSON format, with the following content:
 ```
 "magnetism": [
@@ -215,7 +215,7 @@ Magnetism contains a list of records, in JSON format, with the following content
 
 The records are sorted in ascending order according to timestamp.
 
-##### acceleration
+##### Acceleration
 ```
 "acceleration": [
                   {
@@ -239,7 +239,7 @@ The records are sorted in ascending order according to timestamp.
 
 The records are sorted in ascending order according to timestamp.
 
-##### environment
+##### Environment
 ```
 "environment": [
                   {
@@ -267,7 +267,7 @@ The records are sorted in ascending order according to timestamp.
 
 The records are sorted in ascending order according to timestamp.
 
-#### iBeaconData
+#### iBeacon Data
 ```
 "iBeaconData": [
                   {
@@ -295,7 +295,7 @@ The records are sorted in ascending order according to timestamp.
 
 The records are sorted in ascending order according to timestamp.
 
-#### eddystoneUID
+#### Eddystone UID
 ```
 "eddystoneUID": [
                   {
@@ -317,7 +317,7 @@ The records are sorted in ascending order according to timestamp.
 
 The records are sorted in ascending order according to timestamp.
 
-#### eddystoneURL
+#### Eddystone URL
 ```
 "eddystoneURL": [
                   {
@@ -336,7 +336,7 @@ The records are sorted in ascending order according to timestamp.
 
 The records are sorted in ascending order according to timestamp.
 
-#### eddystoneTLM
+#### Eddystone TLM
 ```
 "eddystoneTLM": [
                   {
