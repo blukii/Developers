@@ -138,7 +138,7 @@ Depending on the configuration and hardware variant of the Beacon, the following
 - _eddystoneURL_: Returns a list of urls.
 - _eddystoneTLM_: Returns a list of datasets with the Eddysteon TLM data.
 
-### Detailed Description of the Values
+### Detailed description of the values
 
 #### General
 ```
@@ -150,7 +150,7 @@ Depending on the configuration and hardware variant of the Beacon, the following
 "firmware": "003.007",
 ```
 
-- _blukiiId_: blukii Id of the current blukii. This field is always available
+- _blukiiId_: blukii Id of the current blukii. This field is always available.
 - _macAddress_: Bluetooth MAC address of the current blukii. This field is always available.
 - _type_: The type of the blukii Beacon. Valid values: "SENSOR_BEACON", "SMART_BEACON", "UNKNOWN", "SMART_KEY". This Field is only included, when it was received.
 - _battery_: Battery state of the last received Frame. Value is in [%]. This Field is only included, when it was received.
@@ -172,7 +172,7 @@ Rssi contains a list of records, in JSON format, with the following content:
         ]
 ```
 - _timestamp_: Time of data acquisition in the form of a Unix timestamp in milliseconds.
-- _rssi_: RSSI measured value in [dBm]
+- _rssi_: RSSI measured value in [dBm].
 
 The records are sorted in ascending order according to timestamp.
 
