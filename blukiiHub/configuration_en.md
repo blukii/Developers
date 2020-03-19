@@ -1,6 +1,6 @@
 # blukii Hub Configuration
 
-This documentation describes the configuration options of the blukii hub.
+This documentation describes the configuration options of the blukii Hub.
 
 ## Call the configuration interface
 
@@ -12,13 +12,13 @@ Currently is no configuration interface available. This will be delivered soon. 
 ```properties
 blukii.data.service.serverUrl=https://192.168.10.21:8087/push
 ```
-Remote server to which the data of the blukiiHub should be sent. By default this value is empty.
+Remote server to which the data of the blukii Hub should be sent. By default this value is empty.
 
 ### HTTP Method
 ```properties
 blukii.data.service.httpMethod=POST
 ```
-The Http methods which are used to push the data to the remote server. 
+The Http method which is used to push the data to the remote server. 
 
 Valid values are:
 - _POST_
@@ -57,15 +57,17 @@ The interval in milliseconds. This value is only valid, if the _pushOption_ is s
 Default value is:
 - nil
 
-### Authentification for remote Server
+### Authentication for remote Server
 ```properties
 blukii.data.service.authentication.type=
 ```
+The method of authentication for the remote Server
+
 Valid values are:
-- [Empty]: For no authentification
-- _basic_: HTTP Basic Authentication. Requieres: _username_, _password_ 
-- _oauthCC_: OAuth Client Credetials Gant Requieres: _clientId_, _secret_
-- _oauthPW_: OAuth User Password Grant: _username_, _password_, _clientId_, _secret_
+- [Empty]: No authentication
+- _basic_: HTTP Basic Authentication. Requires: _username_, _password_ 
+- _oauthCC_: OAuth Client Credetials Gant. Requires: _clientId_, _secret_
+- _oauthPW_: OAuth User Password Grant. Requires: _username_, _password_, _clientId_, _secret_
 
 Default value is:
 - [Empty]
@@ -79,13 +81,13 @@ blukii.data.service.authServerUrl=
 blukii.data.service.username=
 blukii.data.service.password=
 ```
-Username and password to authentificate with _basic_ or _oauthPW_.
+Username and password to authenticate with _basic_ or _oauthPW_.
 
 ```properties
 blukii.data.service.clientId=
 blukii.data.service.secret=
 ```
-clientId and secret to authentificate with _oauthCC_ or _oauthPW_.
+clientId and secret to authenticate with _oauthCC_ or _oauthPW_.
 
 # Filter Frames
 Specify which type of data (Frames) will be pushed to the remote server.

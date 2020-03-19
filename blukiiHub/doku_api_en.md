@@ -1,18 +1,18 @@
-# Customer documenetation blukii Hub
-In this documentation the api  functions of the blukii hub are described.
+# Customer documentation blukii Hub
+In this documentation the api functions of the blukiiHub are described.
 
 ## Push interface
 
-The blukii hub received data of all blukiis and sends it to your configured server.
+The blukii Hub received data of all blukiis and sends it to your configured server.
 You must ensure that your server correctly interprets and processes the data from the blukii Hub.
-The data is sent from the blukii hub via a HTTP POST or HTTP PUT interface in JSON format.
-The following is a structure of a JSON record. The structure of a data record depends on the hardware variant and the configuration of the blukii sensorBeacon or smartBeacon. In the example below, the following configuration was used:
+The data is sent from the blukii Hub via a HTTP POST or HTTP PUT interface in JSON format.
+The following is a structure of a JSON record. The structure of a data record depends on the hardware variant and the configuration of the blukii Sensor Beacon or Smart Beacon. In the example below, the following configuration was used:
 - blukii Hub
   - Serial number: SMAA9ET9WL
-- blukii smartBeacon
+- blukii Smart Beacon
   - blukii_address: CC78AB6FFEBF
-  - Frames iBeacon, EddystoneUID, EddystoneURL and EddystoneTLM enabled 
-- blukii sensorBeacon
+  - Frames iBeacon, Eddystone UID, Eddystone URL and Eddystone TLM enabled 
+- blukii Sensor Beacon
   - blukii_address: CC78AB6FD698
   - all sensor readings are sent
 
@@ -152,10 +152,10 @@ Depending on the configuration and hardware variant of the Beacon, the following
 
 - _blukiiId_: blukii Id of the current blukii. This field is always available.
 - _macAddress_: Bluetooth MAC address of the current blukii. This field is always available.
-- _type_: The type of the blukii Beacon. Valid values: "SENSOR_BEACON", "SMART_BEACON", "UNKNOWN", "SMART_KEY". This Field is only included, when it was received.
-- _battery_: Battery state of the last received Frame. Value is in [%]. This Field is only included, when it was received.
-- _advInterval_: Advertising interval of the Beacon. This Field is only included, when it was received.
-- _firmware_: Firmware version of the beacon. This Field is only included, when it was received.
+- _type_: The type of the blukii Beacon. Valid values: "SENSOR_BEACON", "SMART_BEACON", "UNKNOWN", "SMART_KEY". This field is only included, when it was received.
+- _battery_: Battery state of the last received Frame. Value is in [%]. This field is only included, when it was received.
+- _advInterval_: Advertising interval of the Beacon. This field is only included, when it was received.
+- _firmware_: Firmware version of the beacon. This field is only included, when it was received.
 
 #### Rssi
 Rssi contains a list of records, in JSON format, with the following content:
@@ -244,14 +244,14 @@ The records are sorted in ascending order according to timestamp.
 "environment": [
                   {
                     "timestamp": 1519734268362,
-                    "pressure": 938,
+                    "airPressure": 938,
                     "light": 40,
                     "humidity": 14,
                     "temperature": 23.1875
                   },
                   {
                     "timestamp": 1519734267939,
-                    "pressure": 938,
+                    "airPressure": 938,
                     "light": 40,
                     "humidity": 14,
                     "temperature": 23.1875
@@ -260,7 +260,7 @@ The records are sorted in ascending order according to timestamp.
 ```
 
 - _timestamp_: Time of data acquisition in the form of a Unix timestamp in milliseconds.
-- _pressure_: air pressure in [hPa].
+- _airPressure_: air pressure in [hPa].
 - _light_: Illuminance in [lux].
 - _humidity_: Humidity in [%].
 - _temperature_: temperature in [°C].
