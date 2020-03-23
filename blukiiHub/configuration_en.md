@@ -4,15 +4,15 @@ This documentation describes the configuration options of the blukii Hub.
 
 ## Call the configuration interface
 
-Currently is no configuration interface available. This will be delivered soon. If you want to configure something, please contact suppor†@blukii.com .
+Currently is no configuration interface available. This will be delivered soon. If you want to configure something, please contact suppor†@blukii.com.
 
 ## Configuration
 
-### Server Url
+### Server URL
 ```properties
 blukii.data.service.serverUrl=https://192.168.10.21:8087/push
 ```
-Remote server to which the data of the blukii Hub should be sent. By default this value is empty.
+Remote server to which the data of the blukii Hub should be sent. By default, this value is empty.
 
 ### HTTP Method
 ```properties
@@ -34,7 +34,7 @@ blukii.data.service.pushOption=amount
 Sets the push trigger.
 
 Valid values are:
-- _amount_: Push the data to remote server when the amount of frames is received. When there are many sending beacons around the blukiiHub the preferred option should be _interval_.  
+- _amount_: Push the data to remote server when the amount of frames is received. When there are many sending beacons around the blukii Hub the preferred option should be _interval_.  
 - _interval_: Push the data to remote server when the interval is expired.
 
 Default value is:
@@ -66,7 +66,7 @@ The method of authentication for the remote Server
 Valid values are:
 - [Empty]: No authentication
 - _basic_: HTTP Basic Authentication. Requires: _username_, _password_ 
-- _oauthCC_: OAuth Client Credetials Gant. Requires: _clientId_, _secret_
+- _oauthCC_: OAuth Client Credentials Gant. Requires: _clientId_, _secret_
 - _oauthPW_: OAuth User Password Grant. Requires: _username_, _password_, _clientId_, _secret_
 
 Default value is:

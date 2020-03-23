@@ -1,12 +1,12 @@
 # Customer documentation blukii Hub
-In this documentation the api functions of the blukiiHub are described.
+In this documentation the api functions of the blukii Hub are described.
 
 ## Push interface
 
-The blukii Hub received data of all blukiis and sends it to your configured server.
+The blukii Hub received data of all blukii Sensor Beacons or blukii Smart Beacons and sends it to your configured server.
 You must ensure that your server correctly interprets and processes the data from the blukii Hub.
 The data is sent from the blukii Hub via a HTTP POST or HTTP PUT interface in JSON format.
-The following is a structure of a JSON record. The structure of a data record depends on the hardware variant and the configuration of the blukii Sensor Beacon or Smart Beacon. In the example below, the following configuration was used:
+The following is a structure of a JSON record. The structure of a data record depends on the hardware variant and the configuration of the blukii Sensor Beacon or blukii Smart Beacon. In the example below, the following configuration was used:
 - blukii Hub
   - Serial number: SMAA9ET9WL
 - blukii Smart Beacon
@@ -126,17 +126,17 @@ The following is a structure of a JSON record. The structure of a data record de
     ]
 }
 ```
-Basically, a new block is added per Beacon from which the Hub receives data.
+Basically, a new block is added per blukii from which the Hub receives data.
 Such a block always consists of:
 - _macAddress_: MAC Address of the blukii.
 - _rssi_: Returns a list of records with information about the Bluetooth connection.
 
-Depending on the configuration and hardware variant of the Beacon, the following parts may be added:
+Depending on the configuration and hardware variant of the blukii, the following parts may be added:
 - _beaconSensorData_: Returns a list of data with magnetism, acceleration and/or environment data. 
-- _iBeaconData_: Returns a list of datasets with th iBeacon Data such as UUID, Major, Minor and measuredPower.
+- _iBeaconData_: Returns a list of datasets with the iBeacon Data such as UUID, Major, Minor and measured Power.
 - _eddystoneUID_: Returns a list of datasets with uidNamespace and uidInstance.
-- _eddystoneURL_: Returns a list of urls.
-- _eddystoneTLM_: Returns a list of datasets with the Eddysteon TLM data.
+- _eddystoneURL_: Returns a list of URLs.
+- _eddystoneTLM_: Returns a list of datasets with the Eddystone TLM data.
 
 ### Detailed description of the values
 
@@ -185,7 +185,7 @@ The records are sorted in ascending order according to timestamp.
 ]
 ```
 
-Entries that are available  depending on the configuration of the blukiis: 
+Entries that are available depending on the configuration of the blukiis: 
 - _magnetism_: Returns a list of data sets with measured values of the magnetic sensor.
 - _acceleration_: Returns a list of data records with measured values of the acceleration sensor.
 - _environment_: Returns a list of datasets with environmental metrics such as barometric pressure, light, humidity, and temperature.

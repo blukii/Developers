@@ -1,10 +1,10 @@
-# Quickstart with the blukii Hub
+# QuickStart guide blukii Hub
 
-This short guide will show you how to get your blukii Hub up and how to get the data from a Sensor Beacon or a Smart Beacon.
+This short guide will show you how to get your blukii Hub up and how to get the data from a blukii Sensor Beacon or a blukii Smart Beacon.
 
 ## 1. Connect blukii Hub to power supply
 - Connect the blukii Hub with an Ethernet cable to a Router or a Switch with an DHCP Server in the network. 
-- Connect the blukii Hub with the supplied power supply unit and ensure the power supply.
+- Connect the blukii Hub with the supplied power supply unit and ensure the power supply. As soon as the status LED is constantly green, the hub is up and running. 
 
 ## 2. Place blukii Beacon near the blukii Hub
 Place a blukii Beacon near the blukii Hub.
