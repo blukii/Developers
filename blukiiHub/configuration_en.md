@@ -4,7 +4,7 @@ This documentation describes the configuration options of the blukii Hub.
 
 ## Call the configuration interface
 
-Currently is no configuration interface available. This will be delivered soon. If you want to configure something, please call 077729/888-4220.
+Currently is no configuration interface available. This will be delivered soon. If you want to configure something, please contact suppor†@blukii.com .
 
 ## Configuration
 
