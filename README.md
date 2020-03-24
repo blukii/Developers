@@ -25,5 +25,5 @@ blukii-SmartKey-Framwork is a framework for an easy use of our blukii SmartKey i
 
 ### [blukii Hub](blukiiHub)
 
-The blukii Hub is a hardware for collecting sensorBeacon data. The blukiiHub collects the data and makes it available via REST Api.
+The blukii Hub is a hardware for collecting blukii Sensor Beacon or blukii Smart Beacon data. The blukii Hub collects the data and push the data to your server.
 
