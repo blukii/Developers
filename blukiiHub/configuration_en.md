@@ -2,6 +2,9 @@
 
 With the blukii Admin Panel you can manage your Hubs.
 
+## System Requierements
+Windows 7 64 Bit or newer and a Internet Connection.
+
 ## Hubs List View
 
 In the Hub View you will see all Hubs that are assigned to your user. 
@@ -11,14 +14,14 @@ In the Hub View you will see all Hubs that are assigned to your user.
 Values: 
 - _Identity_: The unique identifier of the blukii Hub, is also printet on the back of the blukii Hub
 - _Version_: The current installed Version of the blukii Hub
-- _Proxy-Connection_: The Last time the blukii Hub connected to the cloud. 
+- _Proxy-Connection_: The time when the last message was received in the cloud. 
 - _Cloud-Connection_: The Timestamp is the timestamp since the Hub is connected to the cloud.
 - _ServiceMode_: True or False. The Service Mode allows blukii to remolty access the blukii Hub. The service mode can be enable by pressing the grey Button on the blukii Hub front.
 
 
 A click on the magnifing glass opens the detail View of the selected Hub.
 
-In the searchbar you can filter the Hub list. You can filter the fields Identity, Assigned To and Version.
+In the searchbar you can filter the Hub list. You can filter for the fields Identity, Assigned To and Version.
 
 The View will only refresh with a click on the reload button. 
 
@@ -34,7 +37,7 @@ In this view you can manage the Push Configurations of the Hub.
 
 On load the Push Configurations will be loaded from the Hub automatically. With the reload Button you can manually load the Push configurations. If something goes wrong check the internet connection of the hub. 
 
-With a click on create you can add a new Push Configuration. On hover one Push Configuration you can edit or delete the selected Push configuration. You can use more than one Push configuration in parallel [more](#Push-Configuration)
+With a click on create you can add a new Push Configuration. On hover one Push Configuration you can edit or delete the selected Push configuration. You can use more than one Push configuration in parallel. [Details for Push configuration](#push-configuration)
 
 ### Client-Ids
 In this view all Client-ID are listed. Client-IDs are one time passwords. You can use the ID to login into certain apps which communicate with the Hub.
@@ -45,15 +48,15 @@ Values:
 - _ID_: The One Time Password
 - _Issued at_: Date of creation 
 - _Used_: Date of first time used
-- _Created by_: User which created the Certificate
+- _Created by_: User who created the Certificate
 - _Online_: The online/offline State of the Client ID
 
-With Generate Client-ID you can add additional Client-IDs to the hub. On hover you can remove the Client-ID with a click on the trash bin symbol. By Default there are two unused Client IDs.
+With Generate Client-ID you can add additional Client-IDs to the hub. On hover a Client-ID you can remove the Client-ID with a click on the trash bin symbol. By Default there are two unused Client IDs.
 
 
 ## Push Configuration
 
-In the Detail View of the Hub you can create multible Push Configurations. 
+In the Create Push-Config View of the Hub you set all the requiered settings. 
 
 ![Create Push Config Example](config_push_detail.png "Create Push Config Example")
 
