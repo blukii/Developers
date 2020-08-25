@@ -12,7 +12,7 @@ The blukii Beacon now sends readings to the blukii Hub.
 
 ## 3. Configure Remote Server
 
-Download and install the Admin Panel [here](https://apps.blukii.com/hub/blukiiAdminPanel_Setup_1.0.0.exe)
+Download [Link](https://apps.blukii.com/hub/blukiiAdminPanel_Setup_1.0.0.exe) and install the Admin Panel 
 
 Login with your User and ClientID. The Client ID is only one time valid. 
 
