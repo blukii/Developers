@@ -5,6 +5,9 @@ With the blukii Admin Panel you can manage your Hubs.
 ## System Requierements
 Windows 7 64 Bit or newer and a Internet Connection.
 
+## Login 
+On first startup you will be requested to login. You have to enter your user name and your one time password. 
+
 ## Hubs List View
 
 In the Hub View you will see all Hubs that are assigned to your user. 
@@ -116,3 +119,6 @@ Default value is:
 
 ### Enabled
 Enables or disables the current Configuration. 
+
+### Save
+With a click on save, the configuration will be written to the blukii Hub. If the configuartion is enabled, then the hub will start to send data immediately.
