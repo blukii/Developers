@@ -14,16 +14,9 @@ The blukii Beacon now sends readings to the blukii Hub.
 
 Download [Link](https://apps.blukii.com/hub/blukiiAdminPanel_Setup_1.0.0.exe) and install the Admin Panel 
 
-Login with your User and ClientID. The Client ID is only one time valid. 
+Login with your User and ClientID. The Client ID is only one time valid. You should find the User and ClientID in the package of the product.
 
-How to get a User and ClientID?
-- Login with User and Password given with the Product
- - or - 
-- Reqest User and Login at the support account (add the hub ID(s) to the message)
- - or - 
-- If user already exists request for hub assignment
-
-open Hub and add a Configuration. Detailed Configuration Parameter are explained here: [blukii Hub Configuration](configuration_en.md) 
+If you are logged in, you can see your own Hubs. Open the detail View and add a Configuration. Detailed Configuration Parameter are explained here: [blukii Hub Configuration](configuration_en.md) 
 
 ## 4. Get Data
 The blukii Hub will send periodically data to the configured server. A detailed explanation and description of all functions can be found here: [API Push Interface](doku_api_en.md)
