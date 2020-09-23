@@ -5,6 +5,13 @@ With the blukii Admin Panel you can manage your Hubs.
 ## System Requierements
 Windows 7 64 Bit or newer and a Internet Connection.
 
+## Communication Schema
+![blukii_cloud](Cloud_Schema.png "Blukii Cloud")
+
+The blukii Hub and blukii Admin Panel communicate via the cloud. The configuration is not saved in the cloud, it is only saved on the blukii Hub. 
+
+The collected data will not be send to the blukii cloud. The Push Server can be in your local network or in your own Cloud. 
+
 ## Login 
 On first startup you will be requested to login. You have to enter your user name and your one time password. 
 
