@@ -29,6 +29,9 @@ For Advanced features a fee-based blukii API key is needed: all feature with con
 Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting an blukii API key.
 
 ## Changelog
+### Version 3.1.1
+- Hotfix discovery: Scan is off on background or screen off if DiscoverySettings.setProfile(DiscoveryProfile.CONTINUOUS) is set
+
 ### Version 3.1.0
 - Package config: Blukii.updateData() for synchronizing cloud data to blukii device
 - Bug fixes: internal discovery and connection error handling
