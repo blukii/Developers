@@ -16,20 +16,19 @@ For further question please contact the blukii developer support at [support@blu
 
 ## Feature Licensing
 
-You have to distinguish between basic and advanced features that are provided by blukii-sdk.
+Since version 4.0.0 a developer API key is mandatory for using blukii-sdk. You can create a free basic API key at [blukii Manager](https://manager.blukii.com) on your Account settings section API KEYS.
 
-Basic features are free of charge: all offline features that have no need to communicate with [blukii Manager](https://manager.blukii.com):
+Basic API key allows to use the following blukii-sdk features:
 
 - Discovery of blukii advertising Data (package **discovery**)
-- Connection based configuration (package **config**)
+- Connection based configuration (package **config**) without data sync to [blukii Manager](https://manager.blukii.com).
 
-For Advanced features a fee-based blukii API key is needed: all feature with connection to [blukii Manager](https://manager.blukii.com):
+For advanced features the API key has to assigned to additional fee-based permissions:
 
-- Decryption of blukii Secure Beacons (package **discovery**)
 - All features of package **info**
-- Sync of connection based blukii configuration data with [blukii Manager](https://manager.blukii.com)
+- Connection based configuration (package **config**) with sync to [blukii Manager](https://manager.blukii.com).
 
-Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting an blukii API key.
+Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting additional permissions.
 
 ## Getting started
 
@@ -37,25 +36,35 @@ Please follow the instructions for using the blukii-sdk in your Android Studio p
 
 ### Android version
 
-The minimum Android version is 4.4 Kitkat (API level 19) and the device has to support Bluetooth LE 4.0.
+The minimum Android version is 4.4 Kitkat (API level 19) and the device has to support Bluetooth LE 4.0 or later.
 
-### Dependencies
+### Gradle settings
 
-The blukii-sdk can be easily integrated by adding the following dependency to your module's build.gradle:
+The blukii-sdk can be easily integrated by adding the following parts to your module's build.gradle:
 
 ```text
- dependencies {
-    ...
-    implementation 'com.blukii:blukii-sdk:3.1.2'
-    ...
- }
+android {
+  ...
+  compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_8
+      targetCompatibility JavaVersion.VERSION_1_8
+  }
+  ...
+}
+...
+dependencies {
+  ...
+  implementation 'com.blukii:blukii-sdk:4.0.0.'
+  ...
+}
 ```
 
 ### Permissions
 
-For Bluetooth LE you need to insert the following permissions to your AndroidManifest.xml:
+You need to insert the following permissions to your AndroidManifest.xml:
 
 ```text
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 ```
@@ -75,10 +84,21 @@ Therefore please read Google's manual about [access to device location in the ba
 
 Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog](https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en) gives you a good instruction.
 
-If you use advanced functions that communicate with [blukii Manager](https://manager.blukii.com) you need to add the following:
+### API key setting
+
+You need to insert the following meta-data part to application settings of your AndroidManifest.xml:
 
 ```text
-    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".YourApp"
+        ...
+        >
+
+        <meta-data android:name="com.blukii.sdk.API_KEY"
+            android:value="<your API key>"/>
+
+        ...
+    </application>
 ```
 
 ### Ready
@@ -88,6 +108,13 @@ Now you are ready to start developing your blukii App!
 The [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/index.html) should help you to understand developing based on blukii technology.
 
 ## Changelog
+
+### Version 4.0.0
+
+- New [Feature Licensing](#Feature-Licensing) prodecure based on API key. For update to 4.0.0 please check [Getting Started](#Getting-Started).
+- Support of blukii BLE 5.x firmware.
+- Package config: Blukii.updateFirmware() for updating BLE 5.x firmware version via blukii Manager.
+- Code refactorings and optimizations
 
 ### Version 3.1.2
 
