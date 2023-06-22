@@ -1,131 +1,139 @@
-# blukii Admin Panel
+blukii Hub Configuration Website
+=====================
 
-With the blukii Admin Panel you can manage your Hubs.
+Access the Website
+------------------
 
-## System Requierements
-Windows 7 64 Bit or newer and a Internet Connection.
+You can access the configuration website via http://*<serial_number>*.local (e.g. [http://hubabcd0123.local/](http://hubabcd0123.local/)) if your network supports the mDNS protocol.
 
-## Communication Schema
-![blukii_cloud](Cloud_Schema.png "Blukii Cloud")
+Alternatively you have access it via hostname: [http://hubabcd0123/](http://hubabcd0123/) if this is supported by your network.
 
-The blukii Hub and blukii Admin Panel communicate via the cloud. The configuration is not saved in the cloud, it is only saved on the blukii Hub. 
+Finally it can be accessed via local IP address. Therefore please ask your network administrator.
 
-The collected data will not be send to the blukii cloud. The Push Server can be in your local network or in your own Cloud. 
+If the website can not be accessed resticted access could be a reason. Therefore see section [Configuration Access](#configuration-access).
 
-## Login 
-On first startup you will be requested to login. You have to enter your user name and your one time password. 
+Configuration Sections
+----------------------
 
-## Hubs List View
+The Configuration view is separated in topic related sections. Each section need to be saved separately after editing a value.
 
-In the Hub View you will see all Hubs that are assigned to your user. 
+### WLAN Credentials
 
-![All Hubs](all_hubs.png "All Hubs")
+Settings for connection to network via WLAN.
+![WLAN Credentials](images/config_wlan.png)
 
-Values: 
-- _Identity_: The unique identifier of the blukii Hub, is also printet on the back of the blukii Hub
-- _Version_: The current installed Version of the blukii Hub
-- _Proxy-Connection_: The time when the last message was received in the cloud. 
-- _Cloud-Connection_: The Timestamp is the timestamp since the Hub is connected to the cloud.
-- _ServiceMode_: True or False. The Service Mode allows blukii to remolty access the blukii Hub. The service mode can be enable by pressing the grey Button on the blukii Hub front.
+* Secure Mode
 
+  * **WPA/WPA2**: Basic Authentication with **SSID** and **Password**
 
-A click on the magnifing glass opens the detail View of the selected Hub.
+  * **WPA2 Enterprise**: Enterprise Authentication with **SSID**, **Identity** and **Password**
 
-In the searchbar you can filter the Hub list. You can filter for the fields Identity, Assigned To and Version.
+* Note:
 
-The View will only refresh with a click on the reload button. 
+  * If the WLAN credentials are changed, the blukii Hub is restarted.
 
+  * If SSID or Password are empty, the WLAN Access Point will be activated.
 
-## Hub Detail View
+### Configuration Access
 
-In the Hub Detail View are two Tabs: Push-Config and Client-Ids
+Settings for limiting the **Access** to this configuration website.
+![Configuration Access](images/config_access.png)
 
-### Push-Config
-In this view you can manage the Push Configurations of the Hub.
+* **Always**: the configuration website is always accessible for everyone in the local network(default).
 
-![Push Config Preview](config_push_all.png "All Push Configs")
+* **No Access after Timeout**: the configuration website is accessible for everyone as long as the **Timeout (in seconds)** is not expired. The Timeout is restarted after startup or short press of push button.
 
-On load the Push Configurations will be loaded from the Hub automatically. With the reload Button you can manually load the Push configurations. If something goes wrong check the internet connection of the hub. 
+* **Password after Timeout**: the configuration website is accessible for everyone as long as the **Timeout (in seconds)** is not expired. After that the user has to insert the **Password** for configuration access. The Timeout will be restarted after startup or short press of push button.
 
-With a click on create you can add a new Push Configuration. On hover one Push Configuration you can edit or delete the selected Push configuration. You can use more than one Push configuration in parallel. [Details for Push configuration](#push-configuration)
+### Data Processing
 
-### Client-Ids
-In this view all Client-ID are listed. Client-IDs are one time passwords. You can use the ID to login into certain apps which communicate with the Hub.
+Settings for scan and collection of blukii advertising data.
+![Data Processing](images/config_dataproc.png)
 
-![Client IDs View](client_ID_view.png "All Client Ids View")
+* **Data Types**: Defines, which blukii data packet types are collected.
 
-Values: 
-- _ID_: The One Time Password
-- _Issued at_: Date of creation 
-- _Used_: Date of first time used
-- _Created by_: User who created the Certificate
-- _Online_: The online/offline State of the Client ID
+  * **iBeacon**: UUID, Major, Minor, Measured Power
 
-With Generate Client-ID you can add additional Client-IDs to the hub. On hover a Client-ID you can remove the Client-ID with a click on the trash bin symbol. By Default there are two unused Client IDs.
+  * **Eddystone UID**: Namespace, Instance
 
+  * **Eddystone TLM**: Battery (in mV), Temperature, Packets, Active Time
 
-## Push Configuration
+  * **Sensor Beacon**: Accelerometer Axis Values
 
-In the Create Push-Config View of the Hub you set all the requiered settings. 
+  * **Device Tracing**: RSSI-Distance to other blukii Device Tracing Beacons
 
-![Create Push Config Example](config_push_detail.png "Create Push Config Example")
+* **Collection Mode**:
 
+  * **One Per Data Type**: For each packet type and blukii Beacon will be collected only one (the last) packet during push interval.
 
-### Name
-A readable Name for your Config.
+  * **All Packets**: All packets are collected. Duplicates of packet type and blukii Beacon are allowed.
 
-### Server-URL
-Remote server to which the data of the blukii Hub should be sent. By default, this value is empty.
+* **Push Interval**: Time (in seconds) of one collection duration.
 
-### Push-Method
-The Http method which is used to push the data to the remote server. 
+Note:
 
-Valid values are:
-- _POST_
-- _PUT_
+* It is recommended to reduce the processed and transferred data amount. This can be done by
 
-Default Value is:
-- _POST_
+  * Checking only relevant data types
 
-### Push-Type
-Sets the push trigger.
+  * Use Collection Mode “All Packets” only for high performance data logging like Accelerometer Sensor.
 
-Valid values are:
-- _amount_: Push the data to remote server when the amount of frames is received. When there are many sending beacons around the blukii Hub the preferred option should be _interval_.  
-- _interval_: Push the data to remote server when the interval is expired.
+* The data packet amount per push interval is limited (depends on selected data types and amount of different blukii IDs) to approx. 75 data packets. If you need a high amount of data packets use a small push interval.
 
-Default value is:
-- _interval_
+* After every push interval duration a push request will be sent to the defined server url. If no data packet is found during the push interval the request is skipped.
 
-### Interval(ms) or Amount
-The amount of frames, that will be collected before sending it to the server. In this example, the push server is called after one Frame.
-This Value is only valid, if the _Push-Type_ is set to _amount_.  
+* If request is done the green LED will be paused until the request is finished.
 
-The interval in milliseconds. This value is only valid, if the _Push-Type_ is set to _interval_.
+* Only blukii Beacons are supported.
 
-### Filter Types
-Specify which type of data (Frames) will be pushed to the remote server.
+### Data Transfer
 
-Selectable Values are: 
-- _All_: All Beacon frames will be pushed to the remote server. Values _SensorBeacon_, _eddystone_, _IBeacon_ will be ignored. 
-- _SensorBeacon_: All Sensor frames will be pushed to the remote server.
-- _Eddystone_: All Eddystone frames will be pushed to the remote server.
-- _IBeacon_: All iBeacon frames will be pushed to the remote server.
+Settings for connection to the target server for blukii packet data.
+![Data Transfer](images/config_datatrans.png)
 
-### Auth-Type
-The method of authentication for the remote Server
+* **Server Url**: Target server url for push requests
 
-Valid values are:
-- _No Authentification_: No authentication
-- _Basic Authentification_: HTTP Basic Authentication. Requires: _username_, _password_ 
-- _OAuth Client Credentials Grant_: OAuth Client Credentials Gant. Requires: _clientId_, _secret_
-- _OAuth Password Grant_: OAuth User Password Grant. Requires: _username_, _password_, _clientId_, _secret_
+* **Push Method**:
 
-Default value is:
-- _No Authentification_
+  * **POST**
 
-### Enabled
-Enables or disables the current Configuration. 
+  * **PUT**
 
-### Save
-With a click on save, the configuration will be written to the blukii Hub. If the configuartion is enabled, then the hub will start to send data immediately.
+* **Authentication**
+
+  * **Off**: No Authentication
+
+  * **Basic**: Basic Authentication (Username, Password)
+
+  * **Bearer:** Bearer Token Authentication (Token)
+
+* **Api Key**: Optional additional ApiKey Authentication (X-API-KEY)
+
+### System Settings
+
+Administrative settings for system logging and maintainance.
+![System Settings](images/config_system.png.png)
+
+* **Log Level**: Level of system logging messages
+
+  * **Severe**
+
+  * **Warning** (default)
+
+  * **Info**
+
+  * **Debug**
+
+* **Log To File**: Log Messages are stored in internal log file (default: off).
+
+* **Log To blukii Server**: Log Messages are sent to blukii monitoring server (default: on).
+
+* **Get Firmware Updates:** The Hub is periodically checking, if a firmware update is available (default: on).
+
+Note:
+
+* Change **Log Level** and **Log To File** only in consultation with blukii support! This may affect the system performance.
+
+* For **Log To blukii Server** a internet connection is needed. Only system processing data is logged, no passwords or api keys. It is recommended to switch this feature off, if the Hub is in a local network without external access.
+
+* **Firmware Updates** are done remotely by blukii Support in coordination with the Hub owner. During the update is running, red and green LED are blinking simultaneously.
