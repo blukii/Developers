@@ -10,7 +10,7 @@ Alternatively you have access it via hostname: [http://hubabcd0123/](http://huba
 
 Finally it can be accessed via local IP address. Therefore please ask your network administrator.
 
-If the website can not be accessed resticted access could be a reason. Therefore see section [Configuration Access](#configuration-access).
+If the website can not be accessed, restricted access could be a reason. Therefore see section [Configuration Access](#configuration-access).
 
 Configuration Sections
 ----------------------

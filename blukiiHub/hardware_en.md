@@ -1,4 +1,4 @@
-Hardware Inputs and Outputs
+blukii Hub Hardware Inputs and Outputs
 ===========================
 
 Antenna Port
