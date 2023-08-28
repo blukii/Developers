@@ -54,7 +54,7 @@ android {
 ...
 dependencies {
   ...
-  implementation 'com.blukii:blukii-sdk:4.0.1'
+  implementation 'com.blukii:blukii-sdk:4.0.2'
   ...
 }
 ```
@@ -109,13 +109,17 @@ The [library's javadoc documentation](https://blukii.github.io/Developers/androi
 
 ## Changelog
 
+### Version 4.0.2
+
+- iBeacon support for 3rd party BLE devices (with data length byte 0x1b)
+
 ### Version 4.0.1
 
 - Manifest Fix for using in Android 12 apps (Android SDK 31): add android:exported to receivers and services
 
 ### Version 4.0.0
 
-- New [Feature Licensing](#Feature-Licensing) prodecure based on API key. For update to 4.0.0 please check [Getting Started](#Getting-Started).
+- New [Feature Licensing](#feature-licensing) prodecure based on API key. For update to 4.0.0 please check [Getting Started](#getting-started).
 - Support of blukii BLE 5.x firmware.
 - Package config: Blukii.updateFirmware() for updating BLE 5.x firmware version via blukii Manager.
 - Code refactorings and optimizations
