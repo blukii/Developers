@@ -54,7 +54,7 @@ android {
 ...
 dependencies {
   ...
-  implementation 'com.blukii:blukii-sdk:4.0.2'
+  implementation 'com.blukii:blukii-sdk:4.1.0'
   ...
 }
 ```
@@ -75,6 +75,14 @@ For Apps with **targetSdkVersion 23** (Android 6) and later you need to add the 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 
+For Apps with **targetSdkVersion 31** (Android 12) and later you need to add the following permission:
+
+```text
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+```
+
 For Apps with targetSdkVersion 29 (Android 10) and later that should use discovery in background you additionally have to handle the following permission in combination with **ACCESS_FINE_LOCATION**.
 Therefore please read Google's manual about [access to device location in the background](https://developer.android.com/about/versions/10/privacy/changes#app-access-device-location).
 
@@ -82,7 +90,7 @@ Therefore please read Google's manual about [access to device location in the ba
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 ```
 
-Please be aware that you have to handle "Runtime Permissions" in your App since Android 6. This [blog](https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en) gives you a good instruction.
+The javadoc documentation of class [discovery/BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/discovery/BlukiiClient.html) contains sample code snippets for requesting permissions in your app.
 
 ### API key setting
 
@@ -108,6 +116,12 @@ Now you are ready to start developing your blukii App!
 The [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/index.html) should help you to understand developing based on blukii technology.
 
 ## Changelog
+
+### Version 4.1.0
+
+- Full support of Android 13 (targetSdk 33)
+- Package config: New commands for accelerator sensor control and device tracing feature
+- Bug fixes
 
 ### Version 4.0.2
 
