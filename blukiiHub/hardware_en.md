@@ -4,7 +4,7 @@ blukii Hub Hardware Inputs and Outputs
 Antenna Port
 ------------
 
-The delivery contains a antenna that has to be mounted on the Antenna port.
+The delivery contains an antenna that has to be mounted on the Antenna port.
 
 It can be replaced with other antennas for special use cases (e.g. directional antenna). Please note, that the antenna model has to be certified for blukii Hub.
 
@@ -13,7 +13,7 @@ USB-C Port
 
 USB-C is primarily used for power supply.
 
-Additionally you can read the system logs via serial port.
+Additionally you can read the system logs via serial port. For more information please contact [blukii support](mailto:support@blukii.com).
 
 Push Button
 -----------

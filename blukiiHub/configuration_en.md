@@ -15,11 +15,11 @@ If the website can not be accessed, restricted access could be a reason. Therefo
 Configuration Sections
 ----------------------
 
-The Configuration view is separated in topic related sections. Each section need to be saved separately after editing a value.
+The Configuration view is separated in topic related sections. Each section must be saved separately after editing a value.
 
 ### WLAN Credentials
 
-Settings for connection to network via WLAN.
+Settings for connecting to a WLAN network.
 ![WLAN Credentials](images/config_wlan.png)
 
 * Secure Mode
@@ -72,19 +72,21 @@ Settings for scan and collection of blukii advertising data.
 
 Note:
 
-* It is recommended to reduce the processed and transferred data amount. This can be done by
+* It is recommended to reduce the processed and transferred data amount. Consider the Data Processing settings for optimizing your system:
 
-  * Checking only relevant data types
+  * Check only relevant data types.
 
   * Use Collection Mode “All Packets” only for high performance data logging like Accelerometer Sensor.
 
-* The data packet amount per push interval is limited (depends on selected data types and amount of different blukii IDs) to approx. 75 data packets. If you need a high amount of data packets use a small push interval.
+  * Use fast push interval (smaller than 5 seconds) only for high performance data logging or for high update rates.
 
-* After every push interval duration a push request will be sent to the defined server url. If no data packet is found during the push interval the request is skipped.
+  * The data packet amount per push interval is limited (depends on selected data types and amount of different blukii IDs) to approx. 75 data packets.
 
-* If request is done the green LED will be paused until the request is finished.
+* After every push interval duration a push request will be sent to the defined server url. If no data packet is found during the push interval, the request is skipped.
 
-* Only blukii Beacons are supported.
+* If request is done, the green LED will be paused until the request is finished.
+
+* blukii Hub does not support third party beacons (blukii Beacons only).
 
 ### Data Transfer
 
@@ -112,7 +114,7 @@ Settings for connection to the target server for blukii packet data.
 ### System Settings
 
 Administrative settings for system logging and maintainance.
-![System Settings](images/config_system.png.png)
+![System Settings](images/config_system.png)
 
 * **Log Level**: Level of system logging messages
 
@@ -136,4 +138,4 @@ Note:
 
 * For **Log To blukii Server** a internet connection is needed. Only system processing data is logged, no passwords or api keys. It is recommended to switch this feature off, if the Hub is in a local network without external access.
 
-* **Firmware Updates** are done remotely by blukii Support in coordination with the Hub owner. During the update is running, red and green LED are blinking simultaneously.
+* **Firmware Updates** are done remotely by blukii Support in coordination with the Hub owner. During the update, red and green LED are blinking simultaneously.

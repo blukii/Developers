@@ -2,6 +2,8 @@
 
 This short guide shows you how to install and use blukii Hub.
 
+If you need further help or information, please contact [blukii support](mailto:support@blukii.com).
+
 ## Hub ID
 
 Each blukii Hub has an identification serial number which has to be known for setup, configuration and data computing.
