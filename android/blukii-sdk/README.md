@@ -54,7 +54,7 @@ android {
 ...
 dependencies {
   ...
-  implementation 'com.blukii:blukii-sdk:4.1.0'
+  implementation 'com.blukii:blukii-sdk:4.2.0'
   ...
 }
 ```
@@ -116,6 +116,11 @@ Now you are ready to start developing your blukii App!
 The [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/index.html) should help you to understand developing based on blukii technology.
 
 ## Changelog
+
+### Version 4.2.0
+
+- Full support of Android 14 (targetSdk 34)
+- Bug fixes
 
 ### Version 4.1.0
 
