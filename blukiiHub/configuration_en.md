@@ -62,6 +62,8 @@ Settings for scan and collection of blukii advertising data.
 
   * **Device Tracing**: RSSI-Distance to other blukii Device Tracing Beacons
 
+  * **Special Frame**: Customer defined or future values
+
 * **Collection Mode**:
 
   * **One Per Data Type**: For each packet type and blukii Beacon will be collected only one (the last) packet during push interval.
@@ -110,6 +112,14 @@ Settings for connection to the target server for blukii packet data.
   * **Bearer:** Bearer Token Authentication (Token)
 
 * **Api Key**: Optional additional ApiKey Authentication (X-API-KEY)
+
+* **Payload JSON Format**: JSON Format in push request body
+
+  * **1.0 (default)**: Standard format with pre-parsed values
+
+  * **2.0 (optimized)**: Size optimized format with byte coding
+
+
 
 ### System Settings
 
