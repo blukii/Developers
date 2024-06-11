@@ -1,4 +1,4 @@
-blukii Hub JSON API Response
+blukii Device configuration via Hub JSON
 ================================
 
 This documentation describes the blukii configuration commands and result feedback in blukii Hub JSON body.
@@ -8,8 +8,8 @@ This lets the HTTP server configure blukii Devices via blukii Hub.
 Software version: 3.0.6.1.
 
 
-Response body overview
---------------
+## Configuration data via Response body
+
 
 ```java
 {
@@ -74,13 +74,13 @@ Note: The commands are derived from the blukii GATT command definition. Detailed
 * Value: N bytes value. Value range is defined by the characteristic definition. See blukii GATT commands documentation.
 
 
-### blukii config result
+## blukii config result in Hub data JSON
 For each blukii configuration item that is sent via blukii Hub to a blukii device, a config result information will be sent back to the server. This is included in the JSON body of a following hub data request.
 
 
 The coding will be shown for JSON 1.0 and 2.0.
 
-#### JSON 1.0
+### JSON 1.0
 
 The config result data will be added as node *blukiiState* to the data JSON (see [Version 1.0](api_json_en_1.md)). In this manual only the config result data is explained. 
 
@@ -145,7 +145,7 @@ The config result data will be added as node *blukiiState* to the data JSON (see
     
 * _timestamp_: UTC timestamp in milliseconds of the blukii device configuration or error.
 
-#### JSON 2.0
+### JSON 2.0
 
 The config result data will be added to the data JSON (see [Version 2.0](api_json_en_2.md)) as item of the frame data array. In this manual only the config result data is explained. 
 
@@ -160,10 +160,7 @@ The config result data will be added to the data JSON (see [Version 2.0](api_jso
 }
 ```
 
-Data frame coding
---------------
-
-### Common Frame Part
+**Data frame coding**
 
 | MAC | RSSI | Timestamp | Battery | Type | Subtype | Update | Result | Reason
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
