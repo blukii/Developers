@@ -40,7 +40,7 @@ Software version: 3.0.6.1.
 
 Notes: 
 * The described format is valid for JSON API version 1.0 and 2.0.
-* The blukii configuration data is only interpreted by the blukii Hub, if the HTTP response code is 200 (HTTP_OK).
+* The blukii configuration data is only interpreted by the blukii Hub, if the HTTP response code is 200 (HTTP_OK) or 201 (HTTP_ACCEPTED).
 
 This format contains a blukii array with configuration data. 
 
