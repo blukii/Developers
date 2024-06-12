@@ -15,7 +15,9 @@ If the WLAN Access Point is active the red LED is continuously on.
 
 If connected to the WLAN Access Point you can access the blukii Hub Configuration Website via <http://192.168.4.1/>.
 
-![Alt text](images/config_wlan.png)
+![WLAN Credentials](images/config_wlan_list.png)
+
+The SSID selection shows the networks that was available when the blukii Hub has started. If the target network is not in list, you can insert a SSID name after clicking the edit icon ![SSID Toggle](images/ssid_toggle.svg).
 
 Insert your WLAN credentials and save it.
 

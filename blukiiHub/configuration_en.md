@@ -39,12 +39,18 @@ Settings for connecting to a WLAN network.
 Settings for limiting the **Access** to this configuration website.
 ![Configuration Access](images/config_access.png)
 
-* **Always**: the configuration website is always accessible for everyone in the local network(default).
+* **Access Mode** 
+  * **Always**: the configuration website is always accessible for everyone in the local network(default).
 
-* **No Access after Timeout**: the configuration website is accessible for everyone as long as the **Timeout (in seconds)** is not expired. The Timeout is restarted after startup or short press of push button.
+  * **No Access after Timeout**: the configuration website is accessible for everyone as long as the **Timeout (in seconds)** is not expired. The Timeout is restarted after startup or short press of push button.
 
-* **Password after Timeout**: the configuration website is accessible for everyone as long as the **Timeout (in seconds)** is not expired. After that the user has to insert the **Password** for configuration access. The Timeout will be restarted after startup or short press of push button.
+  * **Password after Timeout**: the configuration website is accessible for everyone as long as the **Timeout (in seconds)** is not expired. After that the user has to insert the **Password** for configuration access. The Timeout will be restarted after startup or short press of push button.
 
+* **Visibility**: 
+  * **Show all Fields**: all configuration fields are visible.
+
+  * **Show WLAN Fields only**: only the section **WLAN Credentials** is visible, all other sections are hidden. If this option is set you can access all fields by calling the configuration website with URL parameter /admin.
+  
 ### Data Processing
 
 Settings for scan and collection of blukii advertising data.
