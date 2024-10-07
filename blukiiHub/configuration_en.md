@@ -78,6 +78,8 @@ Settings for scan and collection of blukii advertising data.
 
 * **Push Interval**: Time (in seconds) of one collection duration.
 
+* **Life Monitoring**: If option "Push even if no packets found" is checked, the blukii Hub pushes requests to server even if no frame data is available. This option is only available if at least one Data Type is selected.
+
 Note:
 
 * It is recommended to reduce the processed and transferred data amount. Consider the Data Processing settings for optimizing your system:

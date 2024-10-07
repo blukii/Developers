@@ -5,7 +5,7 @@ This documentation describes the blukii configuration commands and result feedba
 
 This lets the HTTP server configure blukii Devices via blukii Hub.  
 
-Software version: 3.0.6.1.
+Last modified for version: 3.0.7.8.
 
 
 ## Configuration data via Response body

@@ -3,7 +3,7 @@ blukii Hub JSON API 2.0
 
 In this documentation the JSON API structure 2.0 is described.
 
-Software version: 3.0.5.3.
+Last modified for version: 3.0.5.3.
 
 Push interface overview
 --------------
