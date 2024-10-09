@@ -5,6 +5,16 @@ In this documentation the JSON API structure 1.0 is described.
 
 Last modified for version: 3.0.5.3.
 
+HTTP Response format
+--------------
+
+The hub expects the following response data, if the server accepts the JSON data structure.
+
+* Response status codes: 200, 202, 204, 302
+
+* Response content: JSON string, if no content should be sent to Hub, then "{}" is expected
+
+
 Push interface overview
 --------------
 
