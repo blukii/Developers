@@ -20,8 +20,8 @@ Last modified for version: 3.0.7.8.
         "key": "11223344AABBCCDD11223344AABBCCDD",
         "timeout": "10",
         "commands": [
-            "B0020109C40101140064002C01",
-            "B0010104C201BC02"
+            "B002C40101140064002C01",
+            "B001C201BC02"
         ]
     },
     {
@@ -30,8 +30,8 @@ Last modified for version: 3.0.7.8.
         "key": "55667788AABBCCDD5566778844AABBCCDD",
         "timeout": "60",
         "commands": [
-            "B0020109C401020A00C8002003",
-            "B0010104C2012C01"
+            "B002C401020A00C8002003",
+            "B001C2012C01"
         ]
     }
   ]
@@ -40,7 +40,7 @@ Last modified for version: 3.0.7.8.
 
 Notes: 
 * The described format is valid for JSON API version 1.0 and 2.0.
-* The blukii configuration data is only interpreted by the blukii Hub, if the HTTP response code is 200 (HTTP_OK) or 201 (HTTP_ACCEPTED).
+* The blukii configuration data is only interpreted by the blukii Hub, if the HTTP response code is 200, 202, 204 or 302.
 
 This format contains a blukii array with configuration data. 
 
