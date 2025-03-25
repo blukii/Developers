@@ -15,14 +15,6 @@ blukii-sdk is the library for discovery and connection based configuration of bl
 Please note: this library replaces the former library blukii-info-sdk.
 
 
-### [blukii-info-sdk for iOS](iOS/blukii-Info-SDK)
-blukii-info-sdk is the library for discovering Bluetooth LE modules (especially for blukiis) and reading their emitting data like blukii configuration values, beacon sensor data and data of the standard protocols Eddystone and iBeacon.
-
-
-### [blukii-SmartKey-Framework for iOS](iOS/blukii-SmartKey-Framework)
-
-blukii-SmartKey-Framwork is a framework for an easy use of our blukii SmartKey in your own app.  With the framework you can configure the blukii SmartKey and authenticate with the blukii SmartKey.
-
 ### [blukii Hub](blukiiHub)
 
 The blukii Hub is a hardware for collecting blukii Sensor Beacon or blukii Smart Beacon data. The blukii Hub collects the data and push the data to your server.
