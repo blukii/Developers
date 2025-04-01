@@ -47,3 +47,8 @@ A detailed description of the JSON format is described in the [API Push Interfac
 If you want the blukii Hub mounted to a wall please read the [Wall Assembly manual](wallassembly_en.md).
 
 This step is optional.
+
+
+## Change log
+
+See blukii Hub [version change log](changelog_en.md).

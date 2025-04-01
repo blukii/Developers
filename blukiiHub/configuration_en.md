@@ -49,7 +49,7 @@ Settings for limiting the **Access** to this configuration website.
 * **Visibility**: 
   * **Show all Fields**: all configuration fields are visible.
 
-  * **Show WLAN Fields only**: only the section **WLAN Credentials** is visible, all other sections are hidden. If this option is set you can access all fields by calling the configuration website with URL parameter /admin.
+  * **Show WLAN Fields only**: only the section **WLAN Credentials** is visible, all other sections are hidden. If this option is set you can access all fields by calling the configuration website with URL parameter /admin.<br>If this option is combined with **Password after Timeout**, the all fields configuration page is password protected.
   
 ### Data Processing
 
