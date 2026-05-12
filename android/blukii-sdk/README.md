@@ -9,7 +9,6 @@ To learn about the usage of the library classes please find the [library's javad
 We recommend you to start with the following documentation pages where you can find some sample code fragments:
 
 - Package **discovery**: class [discovery/BlukiiClient](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/discovery/BlukiiClient.html), for discovery of Bluetooth LE modules (especially for blukiis) and detection of their emitting data like blukii Beacon sensor data and data of the standard protocols Eddystone and iBeacon. Furthermore this package lets you decrypt encrypted blukii Secure Beacon advertising data by connecting to [blukii Manager](https://manager.blukii.com).
-- Package **info**: class [info/BlukiiInfo](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/info/BlukiiInfo.html), for retrieving and reporting location based information that is assigned to any blukii on the [blukii Manager Info CMS](https://manager.blukii.com).
 - Package **config**: class [config/Blukii](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/com/blukii/sdk/config/Blukii.html), for connection based configuring of core blukii and type-based settings for SmartBeacon, SmartKey and SmartSensor modules. Furthermore this package lets you synchronize configuration data with [blukii Manager](https://manager.blukii.com).
 
 For further question please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com).
@@ -23,9 +22,8 @@ Basic API key allows to use the following blukii-sdk features:
 - Discovery of blukii advertising Data (package **discovery**)
 - Connection based configuration (package **config**) without data sync to [blukii Manager](https://manager.blukii.com).
 
-For advanced features the API key has to assigned to additional fee-based permissions:
+For advanced features the API key has to assigned to additional permissions:
 
-- All features of package **info**
 - Connection based configuration (package **config**) with sync to [blukii Manager](https://manager.blukii.com).
 
 Please contact the blukii developer support at [support@blukii.com](mailto:support@blukii.com) for requesting additional permissions.
@@ -36,25 +34,16 @@ Please follow the instructions for using the blukii-sdk in your Android Studio p
 
 ### Android version
 
-The minimum Android version is 4.4 Kitkat (API level 19) and the device has to support Bluetooth LE 4.0 or later.
+The minimum Android version is 8.0 Oreo (API level 26) and the device has to support Bluetooth LE 4.0 or later.
 
 ### Gradle settings
 
 The blukii-sdk can be easily integrated by adding the following parts to your module's build.gradle:
 
 ```text
-android {
-  ...
-  compileOptions {
-      sourceCompatibility JavaVersion.VERSION_1_8
-      targetCompatibility JavaVersion.VERSION_1_8
-  }
-  ...
-}
-...
 dependencies {
   ...
-  implementation 'com.blukii:blukii-sdk:4.2.0'
+  implementation 'com.blukii:blukii-sdk:4.3.0'
   ...
 }
 ```
@@ -67,13 +56,9 @@ You need to insert the following permissions to your AndroidManifest.xml:
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-```
-
-For Apps with **targetSdkVersion 23** (Android 6) and later you need to add the following permission:
-
-```text
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
+
 
 For Apps with **targetSdkVersion 31** (Android 12) and later you need to add the following permission:
 
@@ -116,6 +101,14 @@ Now you are ready to start developing your blukii App!
 The [library's javadoc documentation](https://blukii.github.io/Developers/android/blukii-sdk/javadoc/index.html) should help you to understand developing based on blukii technology.
 
 ## Changelog
+
+### Version 4.3.0
+
+- Full support of Android 16 (targetSdk 36)
+- Removed Package info (out of support)
+- Package config: New commands of blukii firmwares (006 and 007 series)
+- Improved proguard support
+- Bug fixes
 
 ### Version 4.2.0
 
